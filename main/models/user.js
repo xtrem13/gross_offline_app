@@ -8,18 +8,22 @@ const sequelize = new Sequelize({
 
 const User = sequelize.define('User', {
   // Model attributes are defined here
-  firstName: {
-    type: DataTypes.STRING,
+  user_id: {
+    type: DataTypes.INTEGER,
     allowNull: false
   },
-  lastName: {
+  token: {
     type: DataTypes.STRING
     // allowNull defaults to true
+  },
+  local_pass:{
+    type:DataTypes.STRING
   }
 }, {
   // Other model options go here
 });
 
+User.sync();
 
 
 module.exports=User;

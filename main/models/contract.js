@@ -20,6 +20,7 @@ const Contract = sequelize.define('Contract', {
   // Other model options go here
 });
 
+Contract.sync();
 
 
 module.exports=Contract;
