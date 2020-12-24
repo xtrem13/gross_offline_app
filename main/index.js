@@ -10,7 +10,7 @@ function createWindow () {
       nodeIntegration: true
     }
   })
-  win.loadFile('index.html')
+  win.loadFile("renderer/index.html")
 
 }
 
@@ -28,7 +28,7 @@ app.on('activate', () => {
   }
 })
 
-//routes
+//listener
 
 ipcMain.on('clicked', (event, arg) => {
   myfnc();

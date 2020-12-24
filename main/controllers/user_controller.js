@@ -1,9 +1,13 @@
+const { ipcMain } = require('electron')
+
 const users_controller=()=>{
+	
 	const myfnc=()=>{
 		console.log("myfunc triggered");
 	}
+	
 	return {
-		myfnc:myfnc
+		myfnc
 	}
 }
 module.exports=users_controller();
