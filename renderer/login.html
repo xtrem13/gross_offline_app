@@ -1,0 +1,50 @@
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>GROSS OFFLINE CLIENT</title>
+	<meta http-equiv="Content-Security-Policy" content="script-src 'self' 'unsafe-inline';" />
+	<link rel="stylesheet" href="../node_modules/bootstrap/dist/css/bootstrap.css">
+	<link rel="stylesheet" href="../assets/css/login.css">
+</head>
+<body style="background: white;">
+	<div class="wrapper">
+		<div class="loginForm">
+			<div class="logo">
+				<h3>GROSS OFFLINE</h3>
+			</div>
+			<div class="form-group">
+				<label for="login">LOGIN</label>
+				<input type="text" id="login" class="form-control">
+			</div>
+			<div class="form-group">
+				<label for="password">PAROL</label>
+				<input type="password" onkeyup="enter(event)" id="password" class="form-control">
+			</div>
+			<div class="form-group">
+				<button class="btn btn-info" onclick="auth()">KIRISH</button>
+			</div>
+			<div id="content">
+				
+			</div>
+		</div>
+	</div>
+	<script>
+		const {ipcRenderer}=require('electron');
+		
+		function auth(){
+			const loginEvent=new CustomEvent('login',{
+				detail:{
+					login:document.getElementById('login').value,
+					password:document.getElementById('password').value
+				}
+			});
+		}
+		function enter(event){
+			if(event.keyCode==13){
+				auth();
+			}
+		}
+
+	</script>
+</body>
+</html>

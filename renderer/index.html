@@ -5,8 +5,14 @@
 <body>
 	<button onclick="clickme()">Click to send</button>
 
+		<div id="content"></div>
 
+<script src="../helpers.js"></script>
 <script>
+
+	include("./content.html");
+
+	
 	const {ipcRenderer}=require('electron')
 	function clickme(){
 		ipcRenderer.send('clicked')
