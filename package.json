@@ -7,7 +7,7 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "rebuild": "electron-rebuild -f -w sqlite3",
     "start": "electron .",
-    "dev":"nodemon --watch * --exec \"electron . --debug\""
+    "dev": "nodemon --watch * --exec \"electron . --debug\""
   },
   "keywords": [],
   "author": "",
@@ -19,6 +19,7 @@
   "dependencies": {
     "axios": "^0.21.1",
     "bootstrap": "^4.5.3",
+    "md5": "^2.3.0",
     "sequelize": "^6.3.5",
     "sqlite3": "^5.0.0"
   }

@@ -7,25 +7,21 @@ const sequelize = new Sequelize({
 
 
 const User = sequelize.define('User', {
-  // Model attributes are defined here
-  user_id: {
+  SYSTEM_ID: {
     type: DataTypes.INTEGER,
     allowNull: false
   },
-  token: {
+  TOKEN: {
     type: DataTypes.STRING
     // allowNull defaults to true
   },
-  local_login:{
+  NAME:{
     type:DataTypes.STRING
   },
-  local_pass:{
+  LOCAL_PASSWORD_HASH:{
     type:DataTypes.STRING
   }
-}, {
-  // Other model options go here
 });
-
 User.sync();
 
 
