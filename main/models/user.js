@@ -16,6 +16,9 @@ const User = sequelize.define('User', {
     type: DataTypes.STRING
     // allowNull defaults to true
   },
+  local_login:{
+    type:DataTypes.STRING
+  },
   local_pass:{
     type:DataTypes.STRING
   }

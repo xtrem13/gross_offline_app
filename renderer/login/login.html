@@ -3,8 +3,8 @@
 	<meta charset="UTF-8">
 	<title>GROSS OFFLINE CLIENT</title>
 	<meta http-equiv="Content-Security-Policy" content="script-src 'self' 'unsafe-inline';" />
-	<link rel="stylesheet" href="../node_modules/bootstrap/dist/css/bootstrap.css">
-	<link rel="stylesheet" href="../assets/css/login.css">
+	<link rel="stylesheet" href="../../node_modules/bootstrap/dist/css/bootstrap.css">
+	<link rel="stylesheet" href="../../assets/css/login.css">
 </head>
 <body style="background: white;">
 	<div class="wrapper">
@@ -23,28 +23,36 @@
 			<div class="form-group">
 				<button class="btn btn-info" onclick="auth()">KIRISH</button>
 			</div>
-			<div id="content">
-				
+			<div id="set-local-login">
+				<div class="form-group">
+					<label for="login">OFFLINE LOGIN</label>
+					<input type="text" id="login" class="form-control">
+				</div>
+				<div class="form-group">
+					<label for="password">OFFLINE PAROL</label>
+					<input type="password" onkeyup="enter(event)" id="password" class="form-control">
+				</div>
 			</div>
+			<a href="local_password.html">Back to the local login</a>
 		</div>
 	</div>
 	<script>
 		const {ipcRenderer}=require('electron');
 		
 		function auth(){
-			const loginEvent=new CustomEvent('login',{
-				detail:{
-					login:document.getElementById('login').value,
-					password:document.getElementById('password').value
-				}
-			});
+			const login=document.getElementById('login').value;
+			const	password=document.getElementById('password').value;
+			
+			ipcRenderer.send("login",{login, password})
 		}
 		function enter(event){
 			if(event.keyCode==13){
 				auth();
 			}
 		}
-
+		ipcRenderer.on('successfull_login',function(event){
+			window.location.assign('../index.html');
+		});
 	</script>
 </body>
 </html>

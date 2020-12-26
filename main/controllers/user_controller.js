@@ -1,27 +1,29 @@
 const { ipcMain } = require('electron')
+const window = require('electron').BrowserWindow;
 const User = require('../models/user.js');
-// const Contract = require('../models/contract.js');
+const axios=require('axios');
+
 
 const users_controller=()=>{
-	const init=()=>{
-		return (User.findAll.length)===1;
-	}
-	const try_local_login=async (password)=>{
-		const users=await User.findAll();
-		console.log(users[0].local_pass==password);
-		if(users.length==1)
-			return users[0].local_pass==password;
-		return false;
-	}
 
-	const login=()=>{
-		console.log("login");
+	const login=(arg, win)=>{
+		axios.post('http://edupark.uz/auth.php', {
+			username: arg.login,
+			password: arg.password
+		})
+		.then(function (response) {
+			let data=response.data;
+			if(data.auth==true)
+				win.webContents.send('successfull_login');
+		})
+		.catch(function (error) {
+			
+		});
 	}
 	
+
 	return {
-		login:login,
-		init:init,
-		try_local_login:try_local_login
+		login:login
 	}
 }
 module.exports=users_controller();
