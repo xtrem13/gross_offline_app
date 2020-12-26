@@ -1,0 +1,221 @@
+<!doctype html>
+<html lang="en">
+<head>
+
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+	<!-- Bootstrap CSS -->
+	<link rel="stylesheet" href="bootstrap.min.css">
+	<link rel="stylesheet" href="css.css">
+
+	<title>GROSS OFFLINE</title>
+</head>
+<body>
+	<div class="container-fluid">
+		<div class="wrapper">
+			<div class="sidebar">
+				<div class="glogo">
+					<div>
+						<img src="glogo.png" alt="logo">
+						<span>OFFLINE</span>
+					</div>
+				</div>
+				<ul>
+					<li>
+						<a href="#">New Contract</a>
+					</li>
+					<li>
+						<a href="#">Buffer</a>
+					</li>
+					<li>
+						<a href="#">Sent Contracts</a>
+					</li>
+					<li>
+						<a href="#">Logout</a>
+					</li>
+				</ul>
+			</div>
+
+			<div class="main">
+				<div class="top">
+					<div class="lang-drop">
+						<span id="active-lang">Uzbek</span>
+						<ul id="lang-options">
+							<li>Russian</li>
+						</ul>
+					</div>
+					<div class="right">
+						<div class="sync">
+							Last sync: 123120-123122-2020
+						</div>
+						<div class="name">
+							Salimov Salim
+						</div>
+					</div>
+				</div>
+				<div class="content">
+					<div class="card">
+						<table class="table">
+							<thead>
+								<th>ID of Contract</th>
+								<th>TYPE</th>
+								<th>Client</th>
+								<th>Date</th>
+							</thead>
+							<tbody>
+								<tr>
+									<td>12312</td>
+									<td>Kredit</td>
+									<td>Adashev G'ofur</td>
+									<td>9-123122-2020</td>
+								</tr>
+								<tr>
+									<td>12312</td>
+									<td>Kredit</td>
+									<td>Adashev G'ofur</td>
+									<td>9-123122-2020</td>
+								</tr>
+								<tr>
+									<td>12312</td>
+									<td>Kredit</td>
+									<td>Adashev G'ofur</td>
+									<td>9-123122-2020</td>
+								</tr>
+								<tr>
+									<td>12312</td>
+									<td>Kredit</td>
+									<td>Adashev G'ofur</td>
+									<td>9-123122-2020</td>
+								</tr>
+								<tr>
+									<td>12312</td>
+									<td>Kredit</td>
+									<td>Adashev G'ofur</td>
+									<td>9-123122-2020</td>
+								</tr>
+								<tr>
+									<td>12312</td>
+									<td>Kredit</td>
+									<td>Adashev G'ofur</td>
+									<td>9-123122-2020</td>
+								</tr>
+								<tr>
+									<td>12312</td>
+									<td>Kredit</td>
+									<td>Adashev G'ofur</td>
+									<td>9-123122-2020</td>
+								</tr>
+
+								<tr>
+									<td>12312</td>
+									<td>Kredit</td>
+									<td>Adashev G'ofur</td>
+									<td>9-123122-2020</td>
+								</tr>
+								<tr>
+									<td>12312</td>
+									<td>Kredit</td>
+									<td>Adashev G'ofur</td>
+									<td>9-123122-2020</td>
+								</tr>
+								<tr>
+									<td>12312</td>
+									<td>Kredit</td>
+									<td>Adashev G'ofur</td>
+									<td>9-123122-2020</td>
+								</tr>
+								<tr>
+									<td>12312</td>
+									<td>Kredit</td>
+									<td>Adashev G'ofur</td>
+									<td>9-123122-2020</td>
+								</tr>
+								<tr>
+									<td>12312</td>
+									<td>Kredit</td>
+									<td>Adashev G'ofur</td>
+									<td>9-123122-2020</td>
+								</tr>
+								<tr>
+									<td>12312</td>
+									<td>Kredit</td>
+									<td>Adashev G'ofur</td>
+									<td>9-123122-2020</td>
+								</tr>
+								<tr>
+									<td>12312</td>
+									<td>Kredit</td>
+									<td>Adashev G'ofur</td>
+									<td>9-123122-2020</td>
+								</tr>
+								<tr>
+									<td>12312</td>
+									<td>Kredit</td>
+									<td>Adashev G'ofur</td>
+									<td>9-123122-2020</td>
+								</tr>
+								<tr>
+									<td>12312</td>
+									<td>Kredit</td>
+									<td>Adashev G'ofur</td>
+									<td>9-123122-2020</td>
+								</tr>
+								<tr>
+									<td>12312</td>
+									<td>Kredit</td>
+									<td>Adashev G'ofur</td>
+									<td>9-123122-2020</td>
+								</tr>
+								<tr>
+									<td>12312</td>
+									<td>Kredit</td>
+									<td>Adashev G'ofur</td>
+									<td>9-123122-2020</td>
+								</tr>
+								<tr>
+									<td>12312</td>
+									<td>Kredit</td>
+									<td>Adashev G'ofur</td>
+									<td>9-123122-2020</td>
+								</tr>
+							</tbody>
+						</table>
+					</div>
+					<img src="pattern.png" class="pattern">
+				</div>
+			</div>
+		</div>
+	</div>
+	<script>
+		
+		const active_lang=document.getElementById('active-lang');
+		const lang_options=document.getElementById('lang-options');
+		const body=document.getElementsByTagName('body')[0];
+
+
+		active_lang.addEventListener('click', function(event){
+			toggle_lang_options(event);
+		})
+		
+		body.addEventListener('click', function(){
+			close_lang();
+		})
+
+		function toggle_lang_options(event){
+			event.stopPropagation();
+			if(lang_options.style.display=='block'){
+				lang_options.style.display="none";
+				return;
+			}
+			lang_options.style.display="block";
+			return;
+		}
+
+		function close_lang(event){
+			lang_options.style.display="none";
+			return;
+		}
+	</script>
+</body>
+</html>

@@ -7,7 +7,11 @@ const sequelize = new Sequelize({
 })
 
 
-const Payment = sequelize.define('Payment', {
+const Transch = sequelize.define('Transch', {
+    user_id: {
+        type: DataTypes.INTEGER,
+        allowNull: false
+      },
     SUMMA: {
         type: DataTypes.DECIMAL(15, 2),
         allowNull: false
@@ -15,19 +19,11 @@ const Payment = sequelize.define('Payment', {
     DATE: {
         type: DataTypes.date,
         allowNull: false
-    },
-    TYPE: {
-        type: DataTypes.SMALLINT,
-        allowNull: false
-    },
-    PAYDOC: {
-        type: DataTypes.STRING,
-        allowNull: true
     }
 });
 
-Payment.belongsTo(Contract, {foreignKey: 'CONTRACT_ID'});
-Payment.sync({force: true});
+Transch.belongsTo(Contract, {foreignKey: 'CONTRACT_ID'});
+Transch.sync({force: true});
 
 
-module.exports = Payment;
+module.exports = Transch;
