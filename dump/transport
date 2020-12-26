@@ -1,0 +1,294 @@
+<div class="uRegionContent clearfix">
+    <input type="hidden" name="p_arg_names" value="6966236263801949"><input type="hidden" name="p_t01" id="P27_TB_ID" value=""><input type="hidden" name="p_arg_checksums" value="6966236263801949_BH9YSjkzZAOi5zPJmQUbdxoZ3Tk"><input type="hidden" name="p_arg_names" value="6966444969801951"><input type="hidden" name="p_t02" id="P27_TB_DIVISION" value="90000"><input type="hidden" name="p_arg_names" value="6966644653801951"><input type="hidden" name="p_t03" id="P27_TB_ANKETA" value="515189"><input type="hidden" name="p_arg_names" value="8311761847545795"><input type="hidden" name="p_t04" id="P27_OWNER" value=""><table id="apex_layout_6966057908801949" border="0" class="formlayout" role="presentation"><tbody><tr><td align="right"><label for="P27_OWNERNAME" id="P27_OWNERNAME_LABEL" class="uRequired">Владелец/Залогодатель/Лизингополучатель: <img src="/i/f_spacer.gif" alt="Обязательное значение" class="uAsterisk"></label></td><td colspan="7" align="left" valign="middle"><a href="#" class="goclient1" shref="f?p=100:79:5395629248331:::79:P79_TB_ID,P79_EDIT:,0:"><span id="P27_OWNERNAME" class="display_only"></span></a><a href="#" class="goopen1"><img src="ins/r/100/files/static/v120Y/goopen.png" style="vertical-align: middle;"></a><a href="#" class="gocopy"><img src="ins/r/100/files/static/v120Y/copy.png" style="vertical-align: middle;"></a></td></tr></tbody></table><table id="apex_layout_6966057908801949" border="0" class="formlayout" role="presentation"><tbody><tr><td align="left"><label for="P27_TB_REGNUMBER" id="P27_TB_REGNUMBER_LABEL" class="uRequired">Гос.номер <img src="/i/f_spacer.gif" alt="Обязательное значение" class="uAsterisk"></label><br><input type="hidden" name="p_arg_names" value="6967641796801952"><input type="text" id="P27_TB_REGNUMBER" name="p_t05" required="" aria-required="true" class="text_field" style="text-transform: uppercase;" value="" size="12" maxlength="50"></td><td align="left"><label for="P27_TB_YEAR" id="P27_TB_YEAR_LABEL" class="uRequired">Год выпуска <img src="/i/f_spacer.gif" alt="Обязательное значение" class="uAsterisk"></label><br><input type="hidden" name="p_arg_names" value="6967460967801952"><input type="text" id="P27_TB_YEAR" name="p_t06" class="number_field numint2" value="2020" size="5" maxlength="255" style="text-align:right"></td><td align="left"><label for="P27_TB_KUZOV" id="P27_TB_KUZOV_LABEL" class="uOptional">№ кузова</label><br><input type="hidden" name="p_arg_names" value="6967862600801952"><input type="text" id="P27_TB_KUZOV" name="p_t07" class="text_field" value="" size="21" maxlength="50" style="text-transform: uppercase;"></td><td align="left"><label for="P27_TB_SHASSI" id="P27_TB_SHASSI_LABEL" class="uOptional">Номер шасси</label><br><input type="hidden" name="p_arg_names" value="6969637752801954"><input type="text" id="P27_TB_SHASSI" name="p_t08" class="text_field" value="" size="16" maxlength="50" style="text-transform: uppercase;"></td><td align="left"><label for="P27_TB_DVIGATEL" id="P27_TB_DVIGATEL_LABEL" class="uOptional">№ двигателя</label><br><input type="hidden" name="p_arg_names" value="6968041680801954"><input type="text" id="P27_TB_DVIGATEL" name="p_t09" class="text_field" value="" size="21" maxlength="50" style="text-transform: uppercase;"></td></tr></tbody></table><table id="apex_layout_6966057908801949" border="0" class="formlayout" role="presentation"><tbody><tr><td align="left"><label for="P27_TB_MARKA" id="P27_TB_MARKA_LABEL" class="uRequired">Марка <img src="/i/f_spacer.gif" alt="Обязательное значение" class="uAsterisk"></label><br><input type="hidden" name="p_arg_names" value="6966850292801951"><select id="P27_TB_MARKA" name="p_t10" required="" aria-required="true" class="selectlist" size="1"><option value="137">...</option>
+<option value="2">ALFA ROMEO</option>
+<option value="5">ASTON MARTIN</option>
+<option value="6">AUDI</option>
+<option value="127">AVIA</option>
+<option value="8">BENTLEY</option>
+<option value="168">BMC</option>
+<option value="9">BMW</option>
+<option value="160">BUGATTI</option>
+<option value="10">BUICK</option>
+<option value="11">CADILLAC</option>
+<option value="146">CASE</option>
+<option value="99">CATERPILLAR</option>
+<option value="12">CHANGAN</option>
+<option value="13">CHEVROLET</option>
+<option value="14">CHRYSLER</option>
+<option value="15">CITROEN</option>
+<option value="152">CLAAS</option>
+<option value="16">DACIA</option>
+<option value="17">DAEWOO</option>
+<option value="153">DAF</option>
+<option value="18">DAIHATSU</option>
+<option value="126">DAIMLER BENZ</option>
+<option value="156">DAIMLER-CHRYSLER</option>
+<option value="135">DESOTO</option>
+<option value="20">DODGE</option>
+<option value="131">DONG FENG</option>
+<option value="171">DOOSAN</option>
+<option value="134">FARGO</option>
+<option value="167">FAW</option>
+<option value="23">FERRARI</option>
+<option value="24">FIAT</option>
+<option value="25">FORD</option>
+<option value="116">FOTON</option>
+<option value="27">GAZ</option>
+<option value="28">GENERAL MOTORS</option>
+<option value="100">GREATWALL</option>
+<option value="119">HAFEI SONGHUAJIANG</option>
+<option value="112">HONDA</option>
+<option value="132">HONGYAN</option>
+<option value="140">HOWO</option>
+<option value="158">HUMMER</option>
+<option value="33">HYUNDAI</option>
+<option value="113">IKARUS</option>
+<option value="34">INFINITI</option>
+<option value="36">ISUZU</option>
+<option value="147">IVECO</option>
+<option value="145">JAC</option>
+<option value="37">JAGUAR</option>
+<option value="110">JAVA</option>
+<option value="162">JBC</option>
+<option value="38">JEEP</option>
+<option value="39">JIANGBEI</option>
+<option value="150">JINGONG</option>
+<option value="41">KAMAZ</option>
+<option value="42">KIA</option>
+<option value="43">LADA</option>
+<option value="44">LAMBORGHINI</option>
+<option value="45">LANCIA</option>
+<option value="46">LAND ROVER</option>
+<option value="47">LEXUS</option>
+<option value="48">LINCOLN</option>
+<option value="50">LUAZ</option>
+<option value="133">MAN</option>
+<option value="53">MASERATI</option>
+<option value="148">MAYBACH</option>
+<option value="96">MAZ</option>
+<option value="54">MAZDA</option>
+<option value="55">MERCEDES BENZ</option>
+<option value="56">MERCURY</option>
+<option value="159">MINI</option>
+<option value="57">MITSUBISHI</option>
+<option value="59">MOSKVICH</option>
+<option value="60">NISSAN</option>
+<option value="163">NORTH BENZ</option>
+<option value="61">OLDSMOBILE</option>
+<option value="121">O'LONG</option>
+<option value="62">OPEL</option>
+<option value="63">PEUGEOT</option>
+<option value="64">PLYMOUTH</option>
+<option value="65">PONTIAC</option>
+<option value="66">PORSCHE</option>
+<option value="111">RAF</option>
+<option value="172">RAVON</option>
+<option value="70">RENAULT</option>
+<option value="169">RENAULT SAMSUNG</option>
+<option value="72">ROLLS-ROYCE</option>
+<option value="73">ROVER</option>
+<option value="74">SAAB</option>
+<option value="149">SAMSUNG</option>
+<option value="138">SCANIA</option>
+<option value="76">SEAT</option>
+<option value="151">SETRA</option>
+<option value="164">SHAANXI</option>
+<option value="157">SINOTRUK HOKA</option>
+<option value="78">SKODA</option>
+<option value="161">SMART</option>
+<option value="79">SSANGYONG</option>
+<option value="165">STERLING </option>
+<option value="80">SUBARU</option>
+<option value="81">SUZUKI</option>
+<option value="170">TALBOT</option>
+<option value="82">TATA</option>
+<option value="83">TATRA</option>
+<option value="85">TOFAS</option>
+<option value="86">TOYOTA</option>
+<option value="88">UAZ</option>
+<option value="106">UZOTOYOL</option>
+<option value="93">VAZ</option>
+<option value="90">VOLKSWAGEN</option>
+<option value="91">VOLVO</option>
+<option value="94">ZAZ</option>
+<option value="130">АВТОГРЕЙДЕР</option>
+<option value="101">БЕЛАЗ</option>
+<option value="141">БЕЛАРУС</option>
+<option value="144">ДНЕПР</option>
+<option value="104">ЕРАЗ</option>
+<option value="124">ЖУК</option>
+<option value="95">ЗИЛ</option>
+<option value="35">ИЖ</option>
+<option value="114">ИКАРУС</option>
+<option value="115">КАВЗ</option>
+<option value="122">КМЗ</option>
+<option value="103">КРАЗ</option>
+<option value="117">ЛАЗ</option>
+<option value="129">ЛИАЗ</option>
+<option value="136">ЛТЗ</option>
+<option value="155">ЛУАЗ</option>
+<option value="128">МИНСК</option>
+<option value="125">МОАЗ</option>
+<option value="143">МОТОНАКЛИЕТ</option>
+<option value="120">МТЗ</option>
+<option value="109">ПАЗ</option>
+<option value="142">РМЗ</option>
+<option value="166">СЕАЗ</option>
+<option value="139">СЕМАР</option>
+<option value="105">ТАРЗ</option>
+<option value="108">ТТЗ</option>
+<option value="102">УРАЛ</option>
+<option value="118">ЧАЗ</option>
+</select></td><td align="left"><label for="P27_TB_MODEL" id="P27_TB_MODEL_LABEL" class="uOptional">Модель</label><br><input type="hidden" name="p_arg_names" value="6967033905801952"><select id="P27_TB_MODEL" name="p_t11" class="selectlist" size="1"><option value="" selected="selected">Другая модель...</option>
+</select>&nbsp; <input type="hidden" name="p_arg_names" value="8282434537626501"><input type="hidden" name="p_t12" id="P27_MODEL0" value=""><span class="uNoLabel"></span><input type="hidden" name="p_arg_names" value="6969447412801954"><input type="text" id="P27_TB_VMODEL" name="p_t13" class="text_field" value="" size="32" maxlength="50" style="text-transform: uppercase;"></td><td align="left"><label for="P27_TB_TYPE" id="P27_TB_TYPE_LABEL" class="uRequired">Вид транспорта <img src="/i/f_spacer.gif" alt="Обязательное значение" class="uAsterisk"></label><br><input type="hidden" name="p_arg_names" value="6967257240801952"><select id="P27_TB_TYPE" name="p_t14" required="" aria-required="true" class="selectlist" size="1"><option value="8">АВТОБУСЫ</option>
+<option value="6">ГРУЗОВЫЕ АВТО</option>
+<option value="1">ЛЕГКОВЫЕ АВТО</option>
+</select></td><td align="left"><label for="P27_TB_MOSCH" id="P27_TB_MOSCH_LABEL" class="uOptional">Объем</label><br><input type="hidden" name="p_arg_names" value="6969231814801954"><input type="text" id="P27_TB_MOSCH" name="p_t15" class="number_field numint" value="" size="12" maxlength="255" style="text-align:right"> см³</td></tr><tr><td align="left"><label for="P27_TB_STOIMOST" id="P27_TB_STOIMOST_LABEL" class="uRequired">Стоимость ТС <img src="/i/f_spacer.gif" alt="Обязательное значение" class="uAsterisk"></label><br><input type="hidden" name="p_arg_names" value="6973053697801959"><input type="text" id="P27_TB_STOIMOST" name="p_t16" class="number_field numflt" value="" size="32" maxlength="255" style="text-align:right"> сум</td><td align="left"><label for="P27_TB_COLOR" id="P27_TB_COLOR_LABEL" class="uOptional">Цвет кузова </label><br><input type="hidden" name="p_arg_names" value="6972830851801957"><input type="text" id="P27_TB_COLOR" name="p_t17" class="text_field" value="" size="32" maxlength="20" style="text-transform: uppercase;"></td></tr></tbody></table><table id="apex_layout_6966057908801949" border="0" class="formlayout" role="presentation"><tbody><tr><td align="left"><label for="P27_TB_TEXPSERY" id="P27_TB_TEXPSERY_LABEL" class="uOptional">№ тех. паспорта</label><br><input type="hidden" name="p_arg_names" value="6968236139801954"><input type="text" id="P27_TB_TEXPSERY" name="p_t18" class="text_field" value="" size="4" maxlength="10" style="text-transform: uppercase;">&nbsp; <span class="uNoLabel"></span><input type="hidden" name="p_arg_names" value="6968438907801954"><input type="text" id="P27_TB_TEXPNUMBER" name="p_t19" class="text_field" value="" size="12" maxlength="20" style="text-transform: uppercase;"><input type="hidden" name="p_arg_names" value="6968635237801954"><input type="hidden" name="p_t20" id="P27_TB_TEXPREO" value=""></td><td align="left"><label for="P27_TB_TEXPDATE" id="P27_TB_TEXPDATE_LABEL" class="uOptional">Дата выдачи</label><br><input type="hidden" name="p_arg_names" value="6968839780801954"><input type="text" class="datepicker hasDatepicker" id="P27_TB_TEXPDATE" name="p_t21" maxlength="255" size="10" value="" autocomplete="off"><button type="button" class="ui-datepicker-trigger a-Button a-Button--calendar"><span class="a-Icon icon-calendar"></span><span class="u-VisuallyHidden">Всплывающий календарь: Дата выдачи<span></span></span></button></td></tr></tbody></table><table id="apex_layout_6966057908801949" border="0" class="formlayout" role="presentation"><tbody><tr><td align="left"><label for="P27_TB_COMMENT" id="P27_TB_COMMENT_LABEL" class="uOptional">Примечание</label><br><input type="hidden" name="p_arg_names" value="6969045085801954"><fieldset id="P27_TB_COMMENT_fieldset" class="textarea" tabindex="-1"><textarea name="p_t22" rows="2" cols="100" maxlength="400" wrap="virtual" id="P27_TB_COMMENT" class="textarea" style="resize: both; text-transform: uppercase;"></textarea></fieldset><input type="hidden" name="p_arg_names" value="6974038486815716"><input type="hidden" name="p_t23" id="P27_TB_ID_NEXT" value=""><input type="hidden" name="p_arg_names" value="6974360471820774"><input type="hidden" name="p_t24" id="P27_TB_ID_PREV" value=""><input type="hidden" name="p_arg_names" value="6974554864823346"><input type="hidden" name="p_t25" id="P27_TB_ID_COUNT" value=""></td></tr></tbody></table><table id="apex_layout_6966057908801949" border="0" class="formlayout" role="presentation"><tbody><tr><td align="right"><label for="P27_RATE" id="P27_RATE_LABEL" class="uOptional">Коэффициенты</label></td><td align="left" valign="middle"><input type="hidden" name="p_arg_names" value="9486640001523596"><fieldset tabindex="-1" id="P27_RATE" aria-labelledby="P27_RATE_LABEL" class="checkbox_group">
+</fieldset>
+</td></tr></tbody></table>
+<section class="uRegion uBorderlessRegion uHideShowRegion  clearfix" id="R9451148812538437">
+  <div class="uRegionHeading">
+    <h1>
+      <a href="javascript:void(0)" class="uRegionControl uRegionCollapsed"><img src="/i/f_spacer.gif" alt="Hide/Show"></a>
+      Дополнительно
+    </h1>
+    <span class="uButtonContainer">
+      
+    </span>
+  </div>
+  <div class="uRegionContent clearfix" style="display: none;">
+    <table id="apex_layout_9451148812538437" border="0" class="formlayout" role="presentation"><tbody><tr><td align="left"><label for="P27_TB_DEFEKT" id="P27_TB_DEFEKT_LABEL" class="uOptional">Дефекты</label><br><input type="hidden" name="p_arg_names" value="6969844820801955"><input type="hidden" id="P27_TB_DEFEKT_HIDDEN" name="p_t27" value="0"><input type="checkbox" id="P27_TB_DEFEKT" value="0" class="simple_checkbox"></td><td colspan="5" align="left"><label for="P27_TB_DEFEKT_OPIS" id="P27_TB_DEFEKT_OPIS_LABEL" class="uOptional">Наличие повреждений</label><br>1. <input type="hidden" name="p_arg_names" value="6970044452801955"><fieldset id="P27_TB_DEFEKT_OPIS_fieldset" class="textarea" tabindex="-1"><textarea name="p_t28" rows="1" cols="90" maxlength="400" wrap="virtual" id="P27_TB_DEFEKT_OPIS" class="textarea apex_disabled" disabled="" style="resize: both; text-transform: uppercase;"></textarea></fieldset></td></tr><tr><td valign="top"><span class="apex-grid-nbsp">&nbsp;</span></td><td colspan="5" align="left">2. <input type="hidden" name="p_arg_names" value="7934141080103645"><fieldset id="P27_TB_DEFEKT_OPIS2_fieldset" class="textarea" tabindex="-1"><textarea name="p_t29" rows="1" cols="90" maxlength="400" wrap="virtual" id="P27_TB_DEFEKT_OPIS2" class="textarea apex_disabled" disabled="" style="resize: both; text-transform: uppercase;"></textarea></fieldset><br><span class="uNoLabel">Наличие повреждений</span></td></tr><tr><td valign="top"><span class="apex-grid-nbsp">&nbsp;</span></td><td colspan="5" align="left">3. <input type="hidden" name="p_arg_names" value="7935139990119401"><fieldset id="P27_TB_DEFEKT_OPIS3_fieldset" class="textarea" tabindex="-1"><textarea name="p_t30" rows="1" cols="90" maxlength="400" wrap="virtual" id="P27_TB_DEFEKT_OPIS3" class="textarea apex_disabled" disabled="" style="resize: both; text-transform: uppercase;"></textarea></fieldset><br><span class="uNoLabel">Наличие повреждений</span></td></tr><tr><td valign="top"><span class="apex-grid-nbsp">&nbsp;</span></td><td colspan="5" align="left">4. <input type="hidden" name="p_arg_names" value="7935336108121177"><fieldset id="P27_TB_DEFEKT_OPIS4_fieldset" class="textarea" tabindex="-1"><textarea name="p_t31" rows="1" cols="90" maxlength="400" wrap="virtual" id="P27_TB_DEFEKT_OPIS4" class="textarea apex_disabled" disabled="" style="resize: both; text-transform: uppercase;"></textarea></fieldset><br><span class="uNoLabel">Наличие повреждений</span></td></tr><tr><td valign="top"><span class="apex-grid-nbsp">&nbsp;</span></td><td colspan="5" align="left">5. <input type="hidden" name="p_arg_names" value="7935563053123909"><fieldset id="P27_TB_DEFEKT_OPIS5_fieldset" class="textarea" tabindex="-1"><textarea name="p_t32" rows="1" cols="90" maxlength="400" wrap="virtual" id="P27_TB_DEFEKT_OPIS5" class="textarea apex_disabled" disabled="" style="resize: both; text-transform: uppercase;"></textarea></fieldset><br><span class="uNoLabel">Наличие повреждений</span></td></tr><tr><td valign="top"><span class="apex-grid-nbsp">&nbsp;</span></td><td colspan="5" align="left">6. <input type="hidden" name="p_arg_names" value="7935758740125913"><fieldset id="P27_TB_DEFEKT_OPIS6_fieldset" class="textarea" tabindex="-1"><textarea name="p_t33" rows="1" cols="90" maxlength="400" wrap="virtual" id="P27_TB_DEFEKT_OPIS6" class="textarea apex_disabled" disabled="" style="resize: both; text-transform: uppercase;"></textarea></fieldset><br><span class="uNoLabel">Наличие повреждений</span></td></tr></tbody></table><table id="apex_layout_9451148812538437" border="0" class="formlayout" role="presentation"><tbody><tr><td align="left" valign="middle"><label for="P27_TB_DOP_KOL" id="P27_TB_DOP_KOL_LABEL" class="uOptional">Количество доп.обор.</label><br><input type="hidden" name="p_arg_names" value="7931540378906537"><input type="text" id="P27_TB_DOP_KOL" name="p_t34" class="number_field numint2" value="" size="6" maxlength="4000" style="text-align:right"></td><td align="left"><label for="P27_TB_SUMM_DOP_OBOR" id="P27_TB_SUMM_DOP_OBOR_LABEL" class="uOptional">Дополнительное оборудование</label><br><input type="hidden" name="p_arg_names" value="6970259862801955"><input type="text" id="P27_TB_SUMM_DOP_OBOR" name="p_t35" class="number_field numflt" value="" size="32" maxlength="255" style="text-align:right"></td><td align="left"><label for="P27_TB_SUMM_ARENDA" id="P27_TB_SUMM_ARENDA_LABEL" class="uOptional">Арендованное ТС </label><br><input type="hidden" name="p_arg_names" value="6970459591801955"><input type="text" id="P27_TB_SUMM_ARENDA" name="p_t36" class="number_field" value="" size="32" maxlength="255" style="text-align:right"></td><td align="left"><label for="P27_TB_SIGNAL" id="P27_TB_SIGNAL_LABEL" class="uOptional">Противоугонная сигнализация</label><br><input type="hidden" name="p_arg_names" value="6970642266801955"><input type="hidden" id="P27_TB_SIGNAL_HIDDEN" name="p_t37" value="0"><input type="checkbox" id="P27_TB_SIGNAL" value="0" class="simple_checkbox"></td></tr></tbody></table>
+<section class="uRegion uBorderlessRegion  clearfix" id="R7918153901475016">
+  <div class="uRegionHeading">
+    <h1>Дополнительное оборудование</h1>
+    <span class="uButtonContainer">
+      
+    </span>
+  </div>
+  <div class="uRegionContent clearfix">
+    <table id="apex_layout_7918153901475016" border="0" class="formlayout" role="presentation"><tbody><tr><td align="left" valign="middle"><label for="P27_ITEM1" id="P27_ITEM1_LABEL" class="uOptional" style="font-weight:bold;">Наименование</label><br><span id="P27_ITEM1" class="display_only">Автомагнитола</span></td><td align="left" valign="middle"><label for="P27_DOP1" id="P27_DOP1_LABEL" class="uOptional" style="font-weight:bold;">Спецификация</label><br><input type="hidden" name="p_arg_names" value="7930637433816724"><input type="text" id="P27_DOP1" name="p_t38" class="text_field" value="" size="32" maxlength="4000" style="text-transform: uppercase;"></td><td align="left"><label for="P27_TB_DOP1_KOL" id="P27_TB_DOP1_KOL_LABEL" class="uOptional" style="font-weight:bold;">Кол-во</label><br><input type="hidden" name="p_arg_names" value="7919037261497727"><input type="text" id="P27_TB_DOP1_KOL" name="p_t39" class="number_field numint2" onchange="dopCount()" value="" size="5" maxlength="255" style="text-align:right"></td><td align="left"><label for="P27_TB_DOP1_SUM" id="P27_TB_DOP1_SUM_LABEL" class="uOptional" style="font-weight:bold;">Стоимость</label><br><input type="hidden" name="p_arg_names" value="7919454718504824"><input type="text" id="P27_TB_DOP1_SUM" name="p_t40" class="number_field numflt" onchange="dopSum()" value="" size="32" maxlength="255" style="text-align:right"></td></tr><tr><td style="display:none;" align="left"><span class="uNoLabel">Наименование</span></td><td align="left" valign="middle"><span id="P27_ITEM2" class="display_only">Колонки задние</span></td><td style="display:none;" align="left"><span class="uNoLabel">Спецификация</span></td><td align="left"><input type="hidden" name="p_arg_names" value="7919840915511196"><input type="text" id="P27_TB_DOP2_SPEC" name="p_t41" class="text_field" value="" size="32" maxlength="255" style="text-transform: uppercase;"></td><td style="display:none;" align="left"><span class="uNoLabel">Кол-во</span></td><td align="left"><input type="hidden" name="p_arg_names" value="7920037249512918"><input type="text" id="P27_TB_DOP2_KOL" name="p_t42" class="number_field numint2" onchange="dopCount()" value="" size="5" maxlength="255" style="text-align:right"></td><td style="display:none;" align="left"><span class="uNoLabel">Спецификация</span></td><td align="left"><input type="hidden" name="p_arg_names" value="7920233583514643"><input type="text" id="P27_TB_DOP2_SUM" name="p_t43" class="number_field numflt" onchange="dopSum()" value="" size="32" maxlength="255" style="text-align:right"></td></tr><tr><td style="display:none;" align="left"><span class="uNoLabel">Наименование</span></td><td align="left" valign="middle"><span id="P27_ITEM3" class="display_only">Колонки передние</span></td><td style="display:none;" align="left"><span class="uNoLabel">Спецификация</span></td><td align="left"><input type="hidden" name="p_arg_names" value="7921232276530387"><input type="text" id="P27_TB_DOP3_SPEC" name="p_t44" class="text_field" value="" size="32" maxlength="255" style="text-transform: uppercase;"></td><td style="display:none;" align="left"><span class="uNoLabel">Кол-во</span></td><td align="left"><input type="hidden" name="p_arg_names" value="7921457496533854"><input type="text" id="P27_TB_DOP3_KOL" name="p_t45" class="number_field numint2" onchange="dopCount()" value="" size="5" maxlength="255" style="text-align:right"></td><td style="display:none;" align="left"><span class="uNoLabel">Спецификация</span></td><td align="left"><input type="hidden" name="p_arg_names" value="7921653830535593"><input type="text" id="P27_TB_DOP3_SUM" name="p_t46" class="number_field numflt" onchange="dopSum()" value="" size="32" maxlength="255" style="text-align:right"></td></tr><tr><td style="display:none;" align="left"><span class="uNoLabel">Наименование</span></td><td align="left" valign="middle"><span id="P27_ITEM4" class="display_only">Противоугонное устройство</span></td><td style="display:none;" align="left"><span class="uNoLabel">Спецификация</span></td><td align="left"><input type="hidden" name="p_arg_names" value="7922040891541563"><input type="text" id="P27_TB_DOP4_SPEC" name="p_t47" class="text_field" value="" size="32" maxlength="255" style="text-transform: uppercase;"></td><td style="display:none;" align="left"><span class="uNoLabel">Кол-во</span></td><td align="left"><input type="hidden" name="p_arg_names" value="7922236793543471"><input type="text" id="P27_TB_DOP4_KOL" name="p_t48" class="number_field numint2" onchange="dopCount()" value="" size="5" maxlength="255" style="text-align:right"></td><td style="display:none;" align="left"><span class="uNoLabel">Спецификация</span></td><td align="left"><input type="hidden" name="p_arg_names" value="7922432695545430"><input type="text" id="P27_TB_DOP4_SUM" name="p_t49" class="number_field numflt" onchange="dopSum()" value="" size="32" maxlength="255" style="text-align:right"></td></tr><tr><td style="display:none;" align="left"><span class="uNoLabel">Наименование</span></td><td align="left" valign="middle"><span id="P27_ITEM5" class="display_only">CD-changer</span></td><td style="display:none;" align="left"><span class="uNoLabel">Спецификация</span></td><td align="left"><input type="hidden" name="p_arg_names" value="7922853818550782"><input type="text" id="P27_TB_DOP5_SPEC" name="p_t50" class="text_field" value="" size="32" maxlength="255" style="text-transform: uppercase;"></td><td style="display:none;" align="left"><span class="uNoLabel">Кол-во</span></td><td align="left"><input type="hidden" name="p_arg_names" value="7923040878556843"><input type="text" id="P27_TB_DOP5_KOL" name="p_t51" class="number_field numint2" onchange="dopCount()" value="" size="5" maxlength="255" style="text-align:right"></td><td style="display:none;" align="left"><span class="uNoLabel">Спецификация</span></td><td align="left"><input type="hidden" name="p_arg_names" value="7923233546560157"><input type="text" id="P27_TB_DOP5_SUM" name="p_t52" class="number_field numflt" onchange="dopSum()" value="" size="32" maxlength="255" style="text-align:right"></td></tr><tr><td style="display:none;" align="left"><span class="uNoLabel">Наименование</span></td><td align="left" valign="middle"><span id="P27_ITEM6" class="display_only">Саб-буфер</span></td><td style="display:none;" align="left"><span class="uNoLabel">Спецификация</span></td><td align="left"><input type="hidden" name="p_arg_names" value="7923757231594818"><input type="text" id="P27_TB_DOP6_SPEC" name="p_t53" class="text_field" value="" size="32" maxlength="255" style="text-transform: uppercase;"></td><td style="display:none;" align="left"><span class="uNoLabel">Кол-во</span></td><td align="left"><input type="hidden" name="p_arg_names" value="7923952271597118"><input type="text" id="P27_TB_DOP6_KOL" name="p_t54" class="number_field numint2" onchange="dopCount()" value="" size="5" maxlength="255" style="text-align:right"></td><td style="display:none;" align="left"><span class="uNoLabel">Спецификация</span></td><td align="left"><input type="hidden" name="p_arg_names" value="7924146448599841"><input type="text" id="P27_TB_DOP6_SUM" name="p_t55" class="number_field numflt" onchange="dopSum()" value="" size="32" maxlength="255" style="text-align:right"></td></tr><tr><td style="display:none;" align="left"><span class="uNoLabel">Наименование</span></td><td align="left" valign="middle"><span id="P27_ITEM7" class="display_only">Усилитель</span></td><td style="display:none;" align="left"><span class="uNoLabel">Спецификация</span></td><td align="left"><input type="hidden" name="p_arg_names" value="7924559807608793"><input type="text" id="P27_TB_DOP7_SPEC" name="p_t56" class="text_field" value="" size="32" maxlength="255" style="text-transform: uppercase;"></td><td style="display:none;" align="left"><span class="uNoLabel">Кол-во</span></td><td align="left"><input type="hidden" name="p_arg_names" value="7924755925610641"><input type="text" id="P27_TB_DOP7_KOL" name="p_t57" class="number_field numint2" onchange="dopCount()" value="" size="5" maxlength="255" style="text-align:right"></td><td style="display:none;" align="left"><span class="uNoLabel">Спецификация</span></td><td align="left"><input type="hidden" name="p_arg_names" value="7924951827612452"><input type="text" id="P27_TB_DOP7_SUM" name="p_t58" class="number_field numflt" onchange="dopSum()" value="" size="32" maxlength="255" style="text-align:right"></td></tr><tr><td style="display:none;" align="left"><span class="uNoLabel">Наименование</span></td><td align="left" valign="middle"><span id="P27_ITEM8" class="display_only">Диски</span></td><td style="display:none;" align="left"><span class="uNoLabel">Спецификация</span></td><td align="left"><input type="hidden" name="p_arg_names" value="7925343417616363"><input type="text" id="P27_TB_DOP8_SPEC" name="p_t59" class="text_field" value="" size="32" maxlength="255" style="text-transform: uppercase;"></td><td style="display:none;" align="left"><span class="uNoLabel">Кол-во</span></td><td align="left"><input type="hidden" name="p_arg_names" value="7925540397617818"><input type="text" id="P27_TB_DOP8_KOL" name="p_t60" class="number_field numint2" onchange="dopCount()" value="" size="5" maxlength="255" style="text-align:right"></td><td style="display:none;" align="left"><span class="uNoLabel">Спецификация</span></td><td align="left"><input type="hidden" name="p_arg_names" value="7925732418621491"><input type="text" id="P27_TB_DOP8_SUM" name="p_t61" class="number_field numflt" onchange="dopSum()" value="" size="32" maxlength="255" style="text-align:right"></td></tr><tr><td style="display:none;" align="left"><span class="uNoLabel">Наименование</span></td><td align="left" valign="middle"><span id="P27_ITEM9" class="display_only">Шины</span></td><td style="display:none;" align="left"><span class="uNoLabel">Спецификация</span></td><td align="left"><input type="hidden" name="p_arg_names" value="7926151599627799"><input type="text" id="P27_TB_DOP9_SPEC" name="p_t62" class="text_field" value="" size="32" maxlength="255" style="text-transform: uppercase;"></td><td style="display:none;" align="left"><span class="uNoLabel">Кол-во</span></td><td align="left"><input type="hidden" name="p_arg_names" value="7926348364629268"><input type="text" id="P27_TB_DOP9_KOL" name="p_t63" class="number_field numint2" onchange="dopCount()" value="" size="5" maxlength="255" style="text-align:right"></td><td style="display:none;" align="left"><span class="uNoLabel">Спецификация</span></td><td align="left"><input type="hidden" name="p_arg_names" value="7926540385632970"><input type="text" id="P27_TB_DOP9_SUM" name="p_t64" class="number_field numflt" onchange="dopSum()" value="" size="32" maxlength="255" style="text-align:right"></td></tr><tr><td style="display:none;" align="left"><span class="uNoLabel">Наименование</span></td><td align="left" valign="middle"><span id="P27_ITEM10" class="display_only">Иное</span></td><td style="display:none;" align="left"><span class="uNoLabel">Спецификация</span></td><td align="left"><input type="hidden" name="p_arg_names" value="7926931112637260"><input type="text" id="P27_TB_DOP10_SPEC" name="p_t65" class="text_field" value="" size="32" maxlength="255" style="text-transform: uppercase;"></td><td style="display:none;" align="left"><span class="uNoLabel">Кол-во</span></td><td align="left"><input type="hidden" name="p_arg_names" value="7927160213639018"><input type="text" id="P27_TB_DOP10_KOL" name="p_t66" class="number_field numint2" onchange="dopCount()" value="" size="5" maxlength="255" style="text-align:right"></td><td style="display:none;" align="left"><span class="uNoLabel">Спецификация</span></td><td align="left"><input type="hidden" name="p_arg_names" value="7927356116640946"><input type="text" id="P27_TB_DOP10_SUM" name="p_t67" class="number_field numflt" onchange="dopSum()" value="" size="32" maxlength="255" style="text-align:right"></td></tr></tbody></table>
+  </div>
+</section>
+
+  </div>
+</section>
+
+<section class="uRegion uBorderlessRegion uHideShowRegion  clearfix" id="R9445144600433073">
+  <div class="uRegionHeading">
+    <h1>
+      <a href="javascript:void(0)" class="uRegionControl uRegionCollapsed"><img src="/i/f_spacer.gif" alt="Hide/Show"></a>
+      Предыдущее страхование 
+    </h1>
+    <span class="uButtonContainer">
+      
+    </span>
+  </div>
+  <div class="uRegionContent clearfix" style="display: none;">
+    <table id="apex_layout_9445144600433073" border="0" class="formlayout" role="presentation"><tbody><tr><td align="right"><label for="P27_TB_LASTINSURER" id="P27_TB_LASTINSURER_LABEL" class="uOptional">Страхователь</label></td><td align="left"><input type="hidden" name="p_arg_names" value="6970841193801955"><select id="P27_TB_LASTINSURER" name="p_t68" class="selectlist" size="1"><option value="" selected="selected"></option>
+<option value="0">-</option>
+<option value="98">ACORD GRUP</option>
+<option value="63">AIG EUROPE S.A. (FINLAND)</option>
+<option value="101">ALBORZ INSURANCE</option>
+<option value="62">ALLIANZ RISK TRANSFER AG</option>
+<option value="37">APEX INSURANCE</option>
+<option value="69">ARABIA INSURANCE COMPANY</option>
+<option value="49">ARMAN INSURANCE</option>
+<option value="73">ASURANSI INTRA ASIA</option>
+<option value="84">BARENTS REINSURANCE S.A.</option>
+<option value="94">BEST MERIDIAN INTERNATIONAL INSURANCE COMPANY</option>
+<option value="85">BHUTAN INSURANCE</option>
+<option value="55">BIMEH ALBORZ</option>
+<option value="97">BIMEH ALL LOCATIONS</option>
+<option value="50">BIMEH IRAN</option>
+<option value="74">BIMEH MARKAZI</option>
+<option value="40">CHUBB EUROPEAN GROUP LIMITED</option>
+<option value="103">CREDITO HIPOTECARIO NACIONAL</option>
+<option value="47">EMG RE LTD.</option>
+<option value="96">ENTERPRISE INSURANCE</option>
+<option value="102">GARANTIE</option>
+<option value="60">GENERAL ASIGURARI</option>
+<option value="93">GHANA UNION ASSURANCE</option>
+<option value="100">GREEN DELTA INSURANCE</option>
+<option value="54">IRAN INSURANCE COMPANY</option>
+<option value="79">KMD</option>
+<option value="56">KOWSAR INSURANCE</option>
+<option value="72">LA POSITIVA SEGUROS</option>
+<option value="67">MILITARY INSURANCE CORPORATION</option>
+<option value="59">MOLDCARGO</option>
+<option value="95">NEW LIFE INSURANCE</option>
+<option value="82">OCEAN INTERNATIONAL REINSURANCE COMPANY LIMITED</option>
+<option value="80">OMAD SUG'URTA</option>
+<option value="43">OOO "PERFECT INSURANCE"</option>
+<option value="70">PARSIAN INSURANCE COMPANY</option>
+<option value="68">PIONEER INSURANCE</option>
+<option value="91">POST &amp; TELECOM</option>
+<option value="87">PROFESSIONAL INSURANCE CORPORATION ZAMBIA PLC.</option>
+<option value="41">PSB INSURANCE</option>
+<option value="88">PVI INSURANCE CORPORATION</option>
+<option value="86">QITA MUTUAL FUND</option>
+<option value="89">ROYAL INSURANCE</option>
+<option value="71">SARMAD INSURANCE COMPANY</option>
+<option value="53">SEGUROS AFIRME</option>
+<option value="99">SOUTHERN CROSS ASSURANCE</option>
+<option value="48">SWISS RE EUROPE S.A.</option>
+<option value="28">TASHKENT INSURANCE GROUP</option>
+<option value="78">TEJARAT INSURANCE</option>
+<option value="52">WETHAQ TAFAKUL</option>
+<option value="90">ZURICH SEGUROS ECUADOR</option>
+<option value="81">АЗРЕ</option>
+<option value="42">АК БАРС СТРАХОВАНИЕ</option>
+<option value="61">АЛЬФА СТРАХОВАНИЕ</option>
+<option value="45">АО СГ СПАССКИЕ ВОРОТА</option>
+<option value="77">АО СОГАЗ</option>
+<option value="7">АО "Страховая компания КАФОЛАТ"</option>
+<option value="39">АО "ЧУЛПАН"</option>
+<option value="65">АРМЕЕЦ</option>
+<option value="66">АРСЕНАЛЪ</option>
+<option value="92">АСТРО-ВОЛГА</option>
+<option value="64">АСТРО-ВОЛГА</option>
+<option value="57">АТН ПОЛИС</option>
+<option value="1">ГАСК "Кафолат"</option>
+<option value="3">ГАСК "Узагросугурта"</option>
+<option value="8">ДСК "GARANT INSURANCE GROUP"</option>
+<option value="58">ИНГОССТРАХ</option>
+<option value="4">МСК "IShONCh"</option>
+<option value="2">НКЭИС "Узбекинвест"</option>
+<option value="14">ОАО "Agro Invest Sug'urta"</option>
+<option value="11">ОАО "Kapital Sug'urta"</option>
+<option value="27">ОАО СК "Silk Road Insurance"</option>
+<option value="5">ОАО СП СК "ALSKOM"</option>
+<option value="18">ООО "DD General Insurance"</option>
+<option value="21">ООО "Gross Insurance"</option>
+<option value="22">ООО "Hamkor Sug'urta"</option>
+<option value="30">ООО "UNIPOLIS"</option>
+<option value="38">ООО ГЕЛИОС</option>
+<option value="44">ООО "РИКС"</option>
+<option value="33">ООО СК "Halq Sug'urta"</option>
+<option value="75">ООО СК "IMKON-SUG'URTA"</option>
+<option value="31">ООО СК "UVT-INShURANS"</option>
+<option value="46">ООО СК ОРБИТА</option>
+<option value="36">ООО СПК "Юнити Ре"</option>
+<option value="25">СА ООО "Мадад"</option>
+<option value="76">СБ РИФАМС</option>
+<option value="23">СЗАО "ИНГО-Узбекистан"</option>
+<option value="35">СК ДХО "O'zbekinvest Hayot"</option>
+<option value="10">СК ЗАО "ALFA INVEST"</option>
+<option value="32">СК ЗАО "Universal Sug'urta"</option>
+<option value="15">СК ООО "Asia Inshurans"</option>
+<option value="16">СК ООО "ASKO-VOSTOK"</option>
+<option value="24">СК ООО "Kafil Sug'urta"</option>
+<option value="26">СК ООО "Mega Invest Insurance"</option>
+<option value="51">СК "ТИТ"</option>
+<option value="34">СО ДХО "Alfa Life"</option>
+<option value="9">СО ООО "Euroasia Insurance"</option>
+<option value="20">СО ООО "Global Insurance Group"</option>
+<option value="6">СП "Transinsurance PLus"</option>
+<option value="29">СП ООО "Temiryo'l-Sug'urta"</option>
+<option value="17">СП ООО СК "Chartis Uzbekistan"</option>
+<option value="13">СП СК «Standard Insurance Group»</option>
+<option value="83">0</option>
+</select></td></tr></tbody></table><table id="apex_layout_9445144600433073" border="0" class="formlayout" role="presentation"><tbody><tr><td align="left"><label for="P27_TB_UB_GOD1" id="P27_TB_UB_GOD1_LABEL" class="uOptional">Год</label><br><input type="hidden" name="p_arg_names" value="6971060129801955"><input type="text" id="P27_TB_UB_GOD1" name="p_t69" class="number_field numint2" value="" size="5" maxlength="255" style="text-align:right"></td><td align="left"><label for="P27_TB_UB_SUM1" id="P27_TB_UB_SUM1_LABEL" class="uOptional">Сумма убытков</label><br><input type="hidden" name="p_arg_names" value="6971251231801955"><input type="text" id="P27_TB_UB_SUM1" name="p_t70" class="number_field numflt" value="" size="32" maxlength="255" style="text-align:right"></td><td align="left"><label for="P27_TB_UB_PRICHINA1" id="P27_TB_UB_PRICHINA1_LABEL" class="uOptional">Основная причина</label><br><input type="hidden" name="p_arg_names" value="6971453166801957"><fieldset id="P27_TB_UB_PRICHINA1_fieldset" class="textarea" tabindex="-1"><textarea name="p_t71" rows="1" cols="80" maxlength="400" wrap="virtual" id="P27_TB_UB_PRICHINA1" class="textarea" style="resize: both; text-transform: uppercase;"></textarea></fieldset></td></tr><tr><td style="display:none;" align="left"><span class="uNoLabel">Год 2</span></td><td align="left"><input type="hidden" name="p_arg_names" value="6971650622801957"><input type="text" id="P27_TB_UB_GOD2" name="p_t72" class="number_field numint2" value="" size="5" maxlength="255" style="text-align:right"></td><td style="display:none;" align="left"><span class="uNoLabel">Сумма убытков 2</span></td><td align="left"><input type="hidden" name="p_arg_names" value="6971848093801957"><input type="text" id="P27_TB_UB_SUM2" name="p_t73" class="number_field numflt" value="" size="32" maxlength="255" style="text-align:right"></td><td style="display:none;" align="left"><span class="uNoLabel">Основная причина 2</span></td><td align="left"><input type="hidden" name="p_arg_names" value="6972047329801957"><fieldset id="P27_TB_UB_PRICHINA2_fieldset" class="textarea" tabindex="-1"><textarea name="p_t74" rows="1" cols="80" maxlength="400" wrap="virtual" id="P27_TB_UB_PRICHINA2" class="textarea" style="resize: both; text-transform: uppercase;"></textarea></fieldset></td></tr><tr><td style="display:none;" align="left"><span class="uNoLabel">Год 3</span></td><td align="left"><input type="hidden" name="p_arg_names" value="6972248707801957"><input type="text" id="P27_TB_UB_GOD3" name="p_t75" class="number_field numint2" value="" size="5" maxlength="255" style="text-align:right"></td><td style="display:none;" align="left"><span class="uNoLabel">Сумма убытков 3</span></td><td align="left"><input type="hidden" name="p_arg_names" value="6972447645801957"><input type="text" id="P27_TB_UB_SUM3" name="p_t76" class="number_field numflt" value="" size="32" maxlength="255" style="text-align:right"></td><td style="display:none;" align="left"><span class="uNoLabel">Основная причина 3</span></td><td align="left"><input type="hidden" name="p_arg_names" value="6972641992801957"><fieldset id="P27_TB_UB_PRICHINA3_fieldset" class="textarea" tabindex="-1"><textarea name="p_t77" rows="1" cols="80" maxlength="400" wrap="virtual" id="P27_TB_UB_PRICHINA3" class="textarea" style="resize: both; text-transform: uppercase;"></textarea></fieldset></td></tr></tbody></table>
+  </div>
+</section>
+
+  </div>
