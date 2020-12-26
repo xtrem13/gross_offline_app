@@ -9,28 +9,27 @@
 <body style="background: white;">
 	<div class="wrapper">
 		<div class="loginForm">
-			<div class="logo">
-				<h3>GROSS OFFLINE</h3>
-			</div>
-			<div class="form-group">
-				<label for="login">LOGIN</label>
-				<input type="text" id="login" class="form-control">
-			</div>
-			<div class="form-group">
-				<label for="password">PAROL</label>
-				<input type="password" onkeyup="enter(event)" id="password" class="form-control">
-			</div>
-			<div class="form-group">
-				<button class="btn btn-info" onclick="auth()">KIRISH</button>
-			</div>
-			<div id="set-local-login">
+			<div id="onlinelogin">
+				<div class="logo">
+					<h3>GROSS OFFLINE</h3>
+				</div>
 				<div class="form-group">
-					<label for="login">OFFLINE LOGIN</label>
+					<label for="login">LOGIN</label>
 					<input type="text" id="login" class="form-control">
 				</div>
 				<div class="form-group">
-					<label for="password">OFFLINE PAROL</label>
+					<label for="password">PAROL</label>
 					<input type="password" onkeyup="enter(event)" id="password" class="form-control">
+				</div>
+				<div class="form-group">
+					<button class="btn btn-info" onclick="auth()">KIRISH</button>
+				</div>
+			</div>
+			<div id="set-local-login">
+				<p>Please set your local password</p>
+				<div class="form-group">
+					<label for="password">PAROL</label>
+					<input type="password" onkeyup="set_local_password(event, this)" id="password" class="form-control">
 				</div>
 			</div>
 			<a href="local_password.html">Back to the local login</a>
@@ -38,20 +37,35 @@
 	</div>
 	<script>
 		const {ipcRenderer}=require('electron');
-		
+		const online_login=document.getElementById("onlinelogin");
+		const local_password=document.getElementById("set-local-login");
+		var user_id;
 		function auth(){
 			const login=document.getElementById('login').value;
-			const	password=document.getElementById('password').value;
-			
+			const password=document.getElementById('password').value;
 			ipcRenderer.send("login",{login, password})
 		}
+
 		function enter(event){
 			if(event.keyCode==13){
 				auth();
 			}
 		}
-		ipcRenderer.on('successfull_login',function(event){
-			window.location.assign('../index.html');
+
+		function set_local_password(event, elem){
+			if(event.keyCode==13){
+				ipcRenderer.send("set_local_password",user_id, elem.value)
+			}
+		}
+
+		ipcRenderer.on('successfull_login',function(event,id){
+			user_id=id;
+			online_login.style.display="none";
+			local_password.style.display="block";
+		});
+
+		ipcRenderer.on('local_password_saved',function(event,id){
+			window.location.assign("../index.html");
 		});
 	</script>
 </body>

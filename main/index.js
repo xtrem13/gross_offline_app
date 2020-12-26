@@ -1,6 +1,7 @@
 const { app, BrowserWindow, ipcMain} = require('electron')
-const {login, init,try_local_login} = require('./controllers/user_controller.js');
+const {login,set_local_password,local_password_init, check_local_pass} = require('./controllers/user_controller.js');
 
+var mainWindow;
 async function createWindow() {
   const win = new BrowserWindow({
     width: 800,
@@ -11,8 +12,8 @@ async function createWindow() {
   })
   win.maximize();
   // win.removeMenu()
-  win.loadFile("renderer/index.html")
-
+  win.loadFile("renderer/login/login.html")
+  mainWindow=win;
 }
 
 app.whenReady().then(createWindow)
@@ -31,7 +32,19 @@ app.on('activate', () => {
 
 //listener
 
-ipcMain.on('login', (event, arg, win) => {
-  login(arg);
+ipcMain.on('login', (event, arg) => {
+  login(arg, mainWindow);
+});
+
+ipcMain.on('set_local_password', (event, user_id, local_password) => {
+  set_local_password(user_id, local_password,mainWindow );
+});
+
+ipcMain.on('local_password_init', (event) => {
+  local_password_init(event, mainWindow);
+});
+
+ipcMain.on('check_local_pass', (event, credentials) => {
+  check_local_pass(event, credentials, mainWindow);
 });
 
