@@ -13,16 +13,15 @@
 .sidebar{
 	flex: 0 0 20%;
 	max-width: 20%;
-	background-color: #25489f;
+	background-color: #007bff;
 	height: 100vh;
 }
 .sidebar .glogo {
 	height: 70px;
-	background-color: #25489f;
+	background-color: #0048ff;
 	display: flex;
 	align-items: center;
 	padding:25px;
-	border-bottom:1px solid white;
 }
 .sidebar .glogo img{
 	width:60%;
@@ -36,6 +35,7 @@
 	list-style: none;
 	padding:0;
 	padding-top:10px;
+	font-size:16px;
 }
 .sidebar li{
 	width:100%;
@@ -91,6 +91,7 @@
 	position: fixed;
 	width:80%;
 	z-index: 2;
+	font-size: 16px;
 }
 
 .main .top .sync{

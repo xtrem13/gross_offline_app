@@ -12,7 +12,7 @@ async function createWindow() {
   })
   win.maximize();
   // win.removeMenu()
-  win.loadFile("renderer/login/login.html")
+  win.loadFile("renderer/create_contract.html")
   mainWindow=win;
 }
 
