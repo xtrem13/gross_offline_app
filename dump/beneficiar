@@ -1,0 +1,714 @@
+<form action="wwv_flow.accept" method="post" name="wwv_flow" id="wwvFlowForm" novalidate="">
+<input type="hidden" name="p_flow_id" value="100" id="pFlowId"><input type="hidden" name="p_flow_step_id" value="31" id="pFlowStepId"><input type="hidden" name="p_instance" value="5395629248331" id="pInstance"><input type="hidden" name="p_page_submission_id" value="2613459219054" id="pPageSubmissionId"><input type="hidden" name="p_request" value="" id="pRequest">
+  <div id="uBodyContainer"><header id="uHeader">
+  
+  <hgroup>
+    <a href="f?p=100:1:5395629248331" id="uLogo"><img src="ins/r/100/files/static/v120Y/logo_ru.png" alt="INSURANCE ONLINE" title="INSURANCE ONLINE"></a>
+    <div class="userBlock">
+      <img src="/i/f_spacer.gif" class="navIcon user" alt="">
+      <span style="text-transform:uppercase">ЮЛДОШОВ ДИЛШОД </span>
+      <span style="text-transform:uppercase">&nbsp; ЦЕНТРАЛЬНЫЙ ОФИС ООО «GROSS INSURANCE»</span>
+      <a href="javascript:$s('FSP_LANGUAGE_PREFERENCE','uz');apex.submit();">Ўзбек тилида</a><a href="apex_authentication.logout?p_app_id=100&amp;p_session_id=5395629248331">ВЫЙТИ</a>
+    </div>
+  </hgroup>
+  <nav>
+    <ul>
+      <li><a href="javascript:apex.submit('T_HOME');">Главная</a></li><li><a href="javascript:apex.submit('T_ШАРТНОМАЛАР');">Договоры</a></li><li><a href="javascript:apex.submit('T_ХИСОБОТЛАР');">Отчёты</a></li><li><a href="javascript:apex.submit('T_ЛУГАТЛАР');">Справочники</a></li><li><a href="javascript:apex.submit('Полис');">Полис</a></li><li><a href="javascript:apex.submit('Комиссионка');">Агент</a></li><li><a href="javascript:apex.submit('T_ПОЛИСЫ');">Полисы</a></li><li><a href="javascript:apex.submit('T_ВИДЕОУРОКИ');">Полезное</a></li><li><a href="javascript:apex.submit('Банк');">Банк</a></li><li><a href="javascript:apex.submit('СМК');">СМК</a></li><li><a href="javascript:apex.submit('Запросы');">Запросы</a></li><li><a href="javascript:apex.submit('Зарплата');">Зарплата</a></li><li><a href="javascript:apex.submit('E-Baholash');">E-Baholash</a></li><li><a href="javascript:apex.submit('Расторжение');">Расторжение</a></li>
+    </ul>
+    <div class="navActions clearfix">
+<ul><li><a href="f?p=100:1:5395629248331::NO:::"><img src="/i/f_spacer.gif" alt="" class="navIcon help"> <span>Помощь</span></a></li></ul>
+</div> <!-- navActions -->
+  </nav>
+  
+</header>
+
+
+<div id="uOneCol">
+
+<div class="cWizard">
+	<div class="cWizardHeader">
+		<div id="R7409244460900154" class=""> 
+<div class="uHorizontalProgressList">
+  <ul>    <li class="first-current">
+       <span>Общие сведения</span>
+    </li>    <li class="non-current">
+      <span>Объект</span>
+    </li>    <li class="non-current">
+      <span>Договор страхования</span>
+    </li>    <li class="non-current">
+      <span>Оплата</span>
+    </li>    <li class="last-non-current">
+      <span>Полис</span>
+    </li>  </ul>
+</div>
+
+</div><div class="cWizardButtons cWizardButtonsLeft">
+<a href="javascript:apex.navigation.redirect('f?p=100:2:5395629248331::NO:::');" class="uButtonLarge  " id="B7379861275118037" role="button"><span>Отмена</span></a> 
+</div>
+<div class="cWizardButtons cWizardButtonsRight">
+<a href="javascript:apex.submit('NEXT');" class="uButtonLarge nextButton  " id="B7410038108901862" role="button"><span>Далее<img src="/i/f_spacer.gif" class="uButtonIcon nextIcon" alt=""></span></a> 
+</div>
+	</div>
+    <div class="cWizardContentContainer">
+    <div class="cWizardContent">
+        <section class="uRegion uBorderlessRegion clearfix" id="R7379249647118035">
+    <input type="hidden" name="p_arg_names" value="7380661509118085"><input type="hidden" name="p_t01" id="P31_INS_ID" value=""><input type="hidden" name="p_arg_names" value="12288129397336720"><input type="hidden" name="p_t02" id="P31_FIZYUR" value=""><input type="hidden" name="p_arg_names" value="7380842316118098"><input type="hidden" name="p_t03" id="P31_INS_DIV" value="90000"><input type="hidden" name="p_arg_names" value="13616634111483137"><input type="hidden" name="p_t04" id="P31_DIV" value="10"><input type="hidden" name="p_arg_names" value="7382060253118101"><input type="hidden" name="p_t05" id="P31_VAL_TYPE" value="1"><table id="apex_layout_7379249647118035" border="0" class="formlayout" role="presentation"><tbody><tr><td align="right"><label for="P31_INS_DATE" id="P31_INS_DATE_LABEL" class="uRequired">Дата заключения: <img src="/i/f_spacer.gif" alt="Необходимо указать значение" class="uAsterisk"></label></td><td align="left"><input type="hidden" name="p_arg_names" value="7381253537118099"><input type="text" required="" aria-required="true" class="datepicker hasDatepicker" id="P31_INS_DATE" name="p_t06" maxlength="10" size="10" value="26.12.2020" autocomplete="off" style="cursor: text;"><button type="button" class="ui-datepicker-trigger a-Button a-Button--calendar"><span class="a-Icon icon-calendar"></span><span class="u-VisuallyHidden">Всплывающий календарь: Дата заключения:<span></span></span></button>г.<input type="hidden" name="p_arg_names" value="13617449600521578"><input type="hidden" name="p_t07" id="P31_YEAR" value="20"></td></tr><tr style="display: none;"><td align="right"><label for="P31_INS_DATE_OSGOR" id="P31_INS_DATE_OSGOR_LABEL" class="uRequired">Дата заключения: <img src="/i/f_spacer.gif" alt="Обязательное значение" class="uAsterisk"></label></td><td align="left"><input type="hidden" name="p_arg_names" value="95768457379701654"><input type="text" required="" aria-required="true" class="datepicker hasDatepicker" id="P31_INS_DATE_OSGOR" name="p_t08" maxlength="10" size="10" value="26.12.2020" autocomplete="off"><button type="button" class="ui-datepicker-trigger a-Button a-Button--calendar"><span class="a-Icon icon-calendar"></span><span class="u-VisuallyHidden">Всплывающий календарь: Дата заключения:<span></span></span></button>г.<input type="hidden" name="p_arg_names" value="7381463474118099"><input type="hidden" name="p_t09" id="P31_INS_TYPE" value=""></td></tr><tr><td align="right"><label for="P31_PTURI" id="P31_PTURI_LABEL" class="uRequired">Вид страхования: <img src="/i/f_spacer.gif" alt="Обязательное значение" class="uAsterisk"></label></td><td colspan="7" align="left" valign="middle"><input type="hidden" name="p_arg_names" value="4393839242127470">
+      <div class="select2-container selectlist" id="s2id_P31_PTURI" style="width: 537px;"><a href="javascript:void(0)" class="select2-choice select2-default" tabindex="-1">   <span class="select2-chosen" id="select2-chosen-1"> </span><abbr class="select2-search-choice-close"></abbr>   <span class="select2-arrow" role="presentation"><b role="presentation"></b></span></a><label for="s2id_autogen1" class="select2-offscreen">Вид страхования: </label><input class="select2-focusser select2-offscreen" type="text" aria-haspopup="true" role="button" aria-labelledby="select2-chosen-1" id="s2id_autogen1"><div class="select2-drop select2-display-none select2-with-searchbox">   <div class="select2-search">       <label for="s2id_autogen1_search" class="select2-offscreen">Вид страхования: </label>       <input type="text" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" class="select2-input" role="combobox" aria-expanded="true" aria-autocomplete="list" aria-owns="select2-results-1" id="s2id_autogen1_search" placeholder="">   </div>   <ul class="select2-results" role="listbox" id="select2-results-1">   </ul></div></div><select id="P31_PTURI" name="p_v10" class="selectlist" tabindex="-1" title="Вид страхования: " style="display: none;">
+<option value="" selected="selected"></option>
+<option value="9">01.Страхование от несчастных случаев</option>
+<option value="10">02.Страхование на случай болезни</option>
+<option value="11">03.Страхование наземных транспортных средств</option>
+<option value="12">04.Страхование железнодорожного подвижного состава</option>
+<option value="13">05.Авиационное страхование</option>
+<option value="156">05-11.страхование авиационных рисков</option>
+<option value="14">06.Морское страхование</option>
+<option value="15">07.Страхование грузов</option>
+<option value="68">0701.Страхование грузов</option>
+<option value="16">08.Страхование имущества от огня и стихийных бедствий</option>
+<option value="70">09.Страхование имущества от ущерба</option>
+<option value="18">10.Страхование автогражданской ответственности </option>
+<option value="141">100.СТРАХОВАНИЯ КРЕДИТА (ДЛЯ КЛАСТЕРОВ)</option>
+<option value="142">101.СТРАХОВАНИЯ ОТВЕТСТВЕННОСТИ 
+ЗА НЕУПЛАТУ ТАМОЖЕННЫХ ПЛАТЕЖЕЙ</option>
+<option value="146">103.СТРАХОВАНИЕ УРОЖАЯ ХЛОПЧАТНИКА</option>
+<option value="143">104.СТРАХОВАНИЕ МИГРАНТОВ</option>
+<option value="147">105.СТРАХОВАНИЕ УРОЖАЯ МАСЛЕНИЧНЫХ КУЛЬТУР</option>
+<option value="151">106.СТРАХОВАНИЯ ЖИВОТНЫХ ЮРИДИЧЕСКИХ ЛИЦ</option>
+<option value="150">107.Страхования туристов от несчастных случаев</option>
+<option value="148">109.ПАХТА ХОМ АШЁСИ ЕТИШТИРИШ ХАРАЖАТЛАРИНИ МОЛИЯЛАШТИРИШ МАҚСАДИДА АЖРАТИЛАДИГАН ИМТИЁЗЛИ КРЕДИТЛАРНИ СУҒУРТА ҚИЛИШ </option>
+<option value="168">1092.Страхование туристов, посещающих Узбекистан </option>
+<option value="19">11.Страхование ответственности в рамках авиационного страхования</option>
+<option value="149">110.АЧЧИҚ ҚАЛАМПИР ҲОСИЛИНИ СУҒУРТА ҚИЛИШ</option>
+<option value="152">111.СТРАХОВАНИЕ УРОЖАЯ САДОВОДСТВА</option>
+<option value="153">112.СТРАХОВАНИЕ ЛЬГОТНЫХ КРЕДИТОВ, ВЫДЕЛЯЕМЫХ ДЛЯ ВЫРАЩИВАНИЯ ЗЕРНО-КОЛОСОВЫХ ПО ГЕНЕРАЛЬНОМУ ПОЛИСУ</option>
+<option value="159">114.ГЕНЕРАЛЬНЫЙ 
+ДОГОВОР КОЛЛЕКТИВНОГО МЕДИЦИНСКОГО СТРАХОВАНИЯ 
+ (для юридических лиц)</option>
+<option value="160">115.ДОГОВОР 
+МЕДИЦИНСКОГО СТРАХОВАНИЯ 
+(для физических лиц)</option>
+<option value="161">117.СТРАХОВАНИЕ ТРАНСПОРТНЫХ
+СРЕДСТВ «AVTO–VIP»</option>
+<option value="158">118.ДОГОВОР СТРАХОВАНИЯ НЕ ПОГАШЕНИЯ МИКРОЗАЙМА</option>
+<option value="162">119.СТРАХОВАНИЕ ТРАНСПОРТНЫХ
+СРЕДСТВ «AVTO–VIP» для Юр.л</option>
+<option value="20">12.Страхование ответственности в рамках морского страхования</option>
+<option value="163">120.Табиий ёгингарчилик етишмаслиги натижасида 
+Лалми экинлардан криладиган молиявий зарарни 
+Сугурталаш намунавий шартномаси</option>
+<option value="165">121.ДОГОВОР 
+СТРАХОВАНИЯ НАЛИЧНОСТИ 
+В ПРОЦЕССЕ ПЕРЕВОЗКИ</option>
+<option value="166">122.ДОГОВОР СТРАХОВАНИЯ ПРОФЕССИОНАЛЬНОЙ ОТВЕТСТВЕННОСТИ МЕДИЦИНСКОГО РАБОТНИКА</option>
+<option value="169">123.ГЕНЕРАЛЬНЫЙ ДОГОВОР НА СТРАХОВАНИЕ РИСКА НЕИСПОЛНЕНИЯ ДОГОВОРНЫХ ОБЯЗАТЕЛЬСТВ ПРИ РЕАЛИЗАЦИИ КВАРТИР В РАССРОЧКУ</option>
+<option value="170">125."Автохамрох" полис добровольного страхования автотранспортных средств</option>
+<option value="176">126.ДОБРОВОЛЬНОЕ СТРАХОВАНИЕ ТРАНСПОРТНЫХ СРЕДСТВ «AVTO–LIMIT»</option>
+<option value="171">127.Обязательное страхование гражданской ответственности занимающихся частной практикой нотариусов</option>
+<option value="175">128.ДОБРОВОЛЬНОЕ СТРАХОВАНИЯ ИМУЩЕСТВА ФИЗИЧЕСКИХ ЛИЦ «МЕНИНГ УЙИМ»</option>
+<option value="174">129.ТИПОВОЙ ДОГОВОР СТРАХОВАНИЯ «АВТОНАСИЯ» (риск неуплаты платежа)</option>
+<option value="172">129.ТИПОВОЙ ДОГОВОР СТРАХОВАНИЯ «АВТОНАСИЯ»</option>
+<option value="21">13.Страхование общей гражданской ответственности</option>
+<option value="178">131.ОНЛАЙН СТРАХОВАНИЕ ЗДОРОВЬЯ «БОЛАЖОНИМ»</option>
+<option value="177">132.ДОГОВОР СТРАХОВАНИЯ ЗДОРОВЬЯ «БОЛАЖОНИМ»</option>
+<option value="22">14.Страхование кредитов (страхователь - банк)</option>
+<option value="23">15.Страхование поручительства (гарантий)</option>
+<option value="24">16.Страхование от прочих финансовых рисков</option>
+<option value="25">17.Страхование расходов, связанных с правовой защитой</option>
+<option value="26">18.Страхование объектов лизинга (транспорт)</option>
+<option value="27">19.Страхование спортсменов от несчастных случаев</option>
+<option value="28">20.Комплексное страхование транспортных средств</option>
+<option value="29">21.Страхование транспортных средств, выставляемых в залог</option>
+<option value="144">2103.Страхование транспортных средств, выставляемых в залог (только ДТП)</option>
+<option value="30">22.Страхование имущества, выставляемого в залог</option>
+<option value="31">23.Страхование объектов лизинга (имущество)</option>
+<option value="2">24.Обязательное страхование строительных рисков при возведении объектов за счет государственных средств и кредитов под правительственную гарантию (оСМР)</option>
+<option value="32">25.Страхование ответственности на случай банкротства заемщика</option>
+<option value="33">26.Страхование ответственности заемщика за непогашение кредита (страхователь - заемщик)</option>
+<option value="34">27.Страхование строительно-монтажных рисков</option>
+<option value="35">29.Страхование имущества</option>
+<option value="36">30.Страхование урожая сельскохозяйственных культур (зерно)</option>
+<option value="37">31.Страхование урожая сельскохозяйственных культур (хлопчатник)</option>
+<option value="38">32.Страхование товара в обороте</option>
+<option value="6">33.Страхования гражданской ответственности организаций, эксплуатирующих ОПО, за причинение вреда жизни, здоровью или имуществу третьих лиц и окружающей природной среде в результате аварии на ОПО</option>
+<option value="39">34.Страхование профессиональной ответственности риэлторской организации</option>
+<option value="40">35.Страхование транспортных средств, выставляемых в залог (без ДТП)</option>
+<option value="41">36.Комплексное страхование экспортного контракта</option>
+<option value="42">37.Страхование ссудозаемщика от несчастных случаев</option>
+<option value="61">38.Комплексное ипотечное страхование</option>
+<option value="44">39.Страхование имущества при его хранении</option>
+<option value="45">40.Комплексное страхование гостиничного бизнеса</option>
+<option value="46">41.Страхование гражданской ответственности охранного предприятия</option>
+<option value="47">42.Страхование лизинга</option>
+<option value="48">43.Страхования профессиональной ответственности медицинского учреждения</option>
+<option value="49">44.Страхование профессиональной ответственности консалтинговой организации</option>
+<option value="50">45.Страхование профессиональной ответственности аудиторской организации</option>
+<option value="51">46.Страхование гражданской ответственности перед третьеми лицами при транспортировки опасных грузов</option>
+<option value="52">47.Страхование депозитного вклада</option>
+<option value="53">48.Страхование образовательного кредита</option>
+<option value="54">49.Страхование финансового потребительского кредита</option>
+<option value="55">50.Страхование риска непогашения кредита, в части необеспеченной залогом или другими видами обеспечения</option>
+<option value="56">51.Страхования профессиональной ответственности оценщика</option>
+<option value="57">52.Страхования профессиональной ответственности</option>
+<option value="58">53.Страхование ответственности налоговых консультантов
+</option>
+<option value="7">54.Обязательное страхование жизни и здоровья спасателей спасательных служб и спасательных формирований</option>
+<option value="59">56.Страхование специальной техники, выставляемой в залог</option>
+<option value="4">58.Обязательное страхование гражданской ответственности работодателя</option>
+<option value="94">59.Обязательное страхование гражданской ответственности перевозчика</option>
+<option value="60">60.Страхование гражданской ответственности владельцев таможенного или свободного склада</option>
+<option value="155">61.ДОГОВОР СТРАХОВАНИЯ 
+ПРОФЕССИОНАЛЬНОЙ ОТВЕТСТВЕННОСТИ ПЕРЕВОЗЧИКА</option>
+<option value="157">62.ДОГОВОР СТРАХОВАНИЯ ГРАЖДАНСКО-ПРАВОВОЙ 
+ОТВЕТСТВЕННОСТИ ЭКСПЕДИТОРОВ </option>
+<option value="17">63.Страхование путешествующих</option>
+<option value="62">64.Страхование автотранспортных средств "PRESTIGE"</option>
+<option value="63">65.Страхование автотранспортных средств "AVTOLADY"</option>
+<option value="64">66.Страхование студентов от несчастных случаев</option>
+<option value="67">67.Страхование имущества "Уй-жой"</option>
+<option value="65">68.Страхование газобаллонного оборудования "ГАЗ БАЛЛОН"</option>
+<option value="66">69.Страхование газобаллонного оборудования "ГАЗ БАЛЛОН" (VIP)</option>
+<option value="69">70.Обязательное государственное страхование жизни и здоровья государственных судебных экспертов</option>
+<option value="71">71.Страхование кредитов (ТЧСЖ)</option>
+<option value="125">72.Страхования ответственности акционерного общества на случай банкротства</option>
+<option value="124">73.Страхование имущества, заложенного в ломбард</option>
+<option value="137">74.СТРАХОВАНИЯ ОТВЕТСТВЕННОСТИ ТАМОЖЕННОГО ПЕРЕВОЗЧИКА</option>
+<option value="126">75."Страхование от прочих финансовых рисков"</option>
+<option value="127">76.Cтрахование ответственности грузоперевозчика</option>
+<option value="129">77.Страхование ответственности фармацевтических учреждений при клинических испытаниях препаратов</option>
+<option value="130">78.Страхование расходов, связанных с онкологическими заболеваниями</option>
+<option value="131">79.Страхование ресторанов</option>
+<option value="133">81.Страхование профессиональной ответственности туроператора (турагентства)</option>
+<option value="134">82.ПОЛИС СТРАХОВАНИЯ ЖИЛЬЯ «СПЕЦИАЛЬНАЯ ЗАЩИТА – ГАЗБАЛЛОН-ДОМ»</option>
+<option value="128">86.Страхование специальной техники, передаваемой в лизинг</option>
+<option value="136">87.СТРАХОВАНИЕ
+ВЫХОДА СКВАЖИН ИЗ ПОД КОНТРОЛЯ
+</option>
+<option value="154">88.ДОГОВОР 
+СТРАХОВАНИЯ ПРОФЕССИОНАЛЬНОЙ ОТВЕТСТВЕННОСТИ СУДЕБНОГО УПРАВЛЯЮЩЕГО </option>
+<option value="135">90.Страхование риска непогашения ремесленником кредита</option>
+<option value="164">92.Страхование туристов, посещающих Узбекистан </option>
+<option value="138">95.СТРАХОВАНИЕ ГРАЖДАНСКОЙ ОТВЕТСТВЕННОСТИ ВЛАДЕЛЬЦЕВ ИНОСТРАННЫХ ТС ПЕРЕД ТРЕТЬИМИ ЛИЦАМИ</option>
+<option value="139">97.СТРАХОВАНИЕ АВТОКРЕДИТА</option>
+<option value="140">97.СТРАХОВАНИЕ АВТОКРЕДИТА (НЕВОЗВР)</option>
+
+</select>
+<input type="hidden" name="p_arg_names" value="13616943803493876"><input type="hidden" name="p_t11" id="P31_PT" value=""></td></tr><tr><td align="right"><label for="P31_INS_DATEF" id="P31_INS_DATEF_LABEL" class="uRequired">Предварительный период:  <img src="/i/f_spacer.gif" alt="Обязательное значение" class="uAsterisk"></label></td><td colspan="7" align="left">с <input type="hidden" name="p_arg_names" value="7381637117118099"><input type="text" required="" aria-required="true" class="datepicker hasDatepicker" id="P31_INS_DATEF" name="p_t12" maxlength="10" size="10" value="26.12.2020" autocomplete="off" style="cursor: text;"><button type="button" class="ui-datepicker-trigger a-Button a-Button--calendar"><span class="a-Icon icon-calendar"></span><span class="u-VisuallyHidden">Всплывающий календарь: Предварительный период: <span></span></span></button>г. <span class="uNoLabel"></span><input type="hidden" name="p_arg_names" value="7458954040264482"><input type="text" id="P31_INSDAY" name="p_t13" class="number_field numint2" value="365" size="4" maxlength="4000" style="text-align:right"> дня(ей)<span class="uNoLabel">Ins Datet</span> &nbsp; по <input type="hidden" name="p_arg_names" value="7381841268118101"><input type="text" required="" aria-required="true" class="datepicker hasDatepicker" id="P31_INS_DATET" name="p_t14" maxlength="10" size="10" value="25.12.2021" autocomplete="off"><button type="button" class="ui-datepicker-trigger a-Button a-Button--calendar"><span class="a-Icon icon-calendar"></span><span class="u-VisuallyHidden">Всплывающий календарь: Ins Datet<span></span></span></button>г.</td></tr><tr><td align="right"><label for="P31_QUICK_PICK" id="P31_QUICK_PICK_LABEL" class="uOptional">Срок:</label></td><td align="left" valign="middle"><a href="javascript:$s('P31_INSDAY','365','365');" style="color:#811919;font-size: 11px;margin: 0 5px 5px 0;text-decoration:none;white-space:nowrap;">[1 год]</a>&nbsp;<a href="javascript:$s('P31_INSDAY','180','180');" style="color:#811919;font-size: 11px;margin: 0 5px 5px 0;text-decoration:none;white-space:nowrap;">[6 мес.]</a>&nbsp;<a href="javascript:$s('P31_INSDAY','91','91');" style="color:#811919;font-size: 11px;margin: 0 5px 5px 0;text-decoration:none;white-space:nowrap;">[3 мес.]</a>&nbsp;<a href="javascript:$s('P31_INSDAY','','');" style="color:#811919;font-size: 11px;margin: 0 5px 5px 0;text-decoration:none;white-space:nowrap;">[Очистить]</a>
+<input type="hidden" name="p_arg_names" value="7382851153118101"><input type="hidden" name="p_t15" id="P31_OWNER" value=""></td></tr><tr><td align="right" valign="middle"><label for="P31_OWNERNAME" id="P31_OWNERNAME_LABEL" class="uRequired">Страхователь: <img src="/i/f_spacer.gif" alt="Обязательное значение" class="uAsterisk"></label></td><td colspan="7" style="height:36px" align="left" valign="middle"><a href="#" class="goclient" style="width: 256px" shref="f?p=100:79:5395629248331:::79:P79_TB_ID,P79_EDIT:,0:"><span id="P31_OWNERNAME" class="display_only"></span></a><a href="#" class="goopen"><img src="ins/r/100/files/static/v120Y/goopen.png" style="vertical-align: middle;"></a></td></tr><tr><td align="right"><label for="P31_BENEFNAME" id="P31_BENEFNAME_LABEL" class="uRequired">Бенефициар: <img src="/i/f_spacer.gif" alt="Обязательное значение" class="uAsterisk"></label></td><td colspan="7" align="left" valign="middle"><a href="#" class="goclient1" shref="f?p=100:79:5395629248331:::79:P79_TB_ID,P79_EDIT:,0:"><span id="P31_BENEFNAME" class="display_only"></span></a><a href="#" class="goopen1"><img src="ins/r/100/files/static/v120Y/goopen.png" style="vertical-align: middle;"></a><a href="#" class="gocopy"><img src="ins/r/100/files/static/v120Y/copy.png" style="vertical-align: middle;"></a></td></tr><tr style="display: none;"><td align="right"><label for="P31_BORRNAME" id="P31_BORRNAME_LABEL" class="uRequired">Заемщик: <img src="/i/f_spacer.gif" alt="Обязательное значение" class="uAsterisk"></label></td><td colspan="7" align="left" valign="middle"><a href="#" class="goclient7" shref="f?p=100:79:5395629248331:::79:P79_TB_ID,P79_EDIT:,0"><span id="P31_BORRNAME" class="display_only"></span></a><a href="#" class="goopen7"><img src="ins/r/100/files/static/v120Y/goopen.png" style="vertical-align: middle;"></a><a href="#" class="gocopy2"><img src="ins/r/100/files/static/v120Y/copy.png" style="vertical-align: middle;"></a></td></tr><tr style="display: none;"><td align="right"><label for="P31_PLED1" id="P31_PLED1_LABEL" class="uRequired">Залогодатель: <img src="/i/f_spacer.gif" alt="Обязательное значение" class="uAsterisk"></label></td><td colspan="7" align="left" valign="middle"><a href="#" class="goclient2" shref="f?p=100:79:5395629248331:::79:P79_TB_ID,P79_EDIT:,0:"><span id="P31_PLED1" class="display_only"></span></a><a href="#" class="goopen2"><img src="ins/r/100/files/static/v120Y/goopen.png" style="vertical-align: middle;"></a><a href="#" class="gocopy1"><img src="ins/r/100/files/static/v120Y/copy.png" style="vertical-align: middle;"></a></td></tr><tr style="display: none;"><td align="right"><label for="P31_PLED2" id="P31_PLED2_LABEL" class="uOptional">Залогодатель 2:</label></td><td colspan="7" align="left" valign="middle"><a href="#" class="goclient3" shref="f?p=100:79:5395629248331:::79:P79_TB_ID,P79_EDIT:,0:"><span id="P31_PLED2" class="display_only"></span></a><a href="#" class="goopen3"><img src="ins/r/100/files/static/v120Y/goopen.png" style="vertical-align: middle;"></a></td></tr><tr style="display: none;"><td align="right"><label for="P31_PLED3" id="P31_PLED3_LABEL" class="uOptional">Залогодатель 3:</label></td><td colspan="7" align="left" valign="middle"><a href="#" class="goclient4" shref="f?p=100:79:5395629248331:::79:P79_TB_ID,P79_EDIT:,0:"><span id="P31_PLED3" class="display_only"></span></a><a href="#" class="goopen4"><img src="ins/r/100/files/static/v120Y/goopen.png" style="vertical-align: middle;"></a></td></tr><tr style="display: none;"><td align="right"><label for="P31_PLED4" id="P31_PLED4_LABEL" class="uOptional">Залогодатель 4:</label></td><td colspan="7" align="left" valign="middle"><a href="#" class="goclient5" shref="f?p=100:79:5395629248331:::79:P79_TB_ID,P79_EDIT:,0:"><span id="P31_PLED4" class="display_only"></span></a><a href="#" class="goopen5"><img src="ins/r/100/files/static/v120Y/goopen.png" style="vertical-align: middle;"></a></td></tr><tr style="display: none;"><td align="right"><label for="P31_PLED5" id="P31_PLED5_LABEL" class="uOptional">Залогодатель 5:</label></td><td colspan="7" align="left" valign="middle"><a href="#" class="goclient6" shref="f?p=100:79:5395629248331:::79:P79_TB_ID,P79_EDIT:,0:"><span id="P31_PLED5" class="display_only"></span></a><a href="#" class="goopen6"><img src="ins/r/100/files/static/v120Y/goopen.png" style="vertical-align: middle;"></a><input type="hidden" name="p_arg_names" value="7383034481118101"><input type="hidden" name="p_t16" id="P31_BENEFICIARY" value=""><input type="hidden" name="p_arg_names" value="608764299529307303"><input type="hidden" name="p_t17" id="P31_BORROWER" value=""><input type="hidden" name="p_arg_names" value="537401069256894440"><input type="hidden" name="p_t18" id="P31_PLEDGER1" value=""><input type="hidden" name="p_arg_names" value="569275505475388209"><input type="hidden" name="p_t19" id="P31_PLEDGER2" value=""><input type="hidden" name="p_arg_names" value="569276384995388217"><input type="hidden" name="p_t20" id="P31_PLEDGER3" value=""><input type="hidden" name="p_arg_names" value="569278822158388242"><input type="hidden" name="p_t21" id="P31_PLEDGER4" value=""><input type="hidden" name="p_arg_names" value="569279351727388247"><input type="hidden" name="p_t22" id="P31_PLEDGER5" value=""><input type="hidden" name="p_arg_names" value="7383237145118102"><input type="hidden" name="p_t23" id="P31_INSURER" value=""><input type="hidden" name="p_arg_checksums" value="7383237145118102_Wui8kbUFyEeNEMIcg-8_1ORMEoM"></td></tr><tr><td align="right"><label for="P31_VAL_USLOVIYA" id="P31_VAL_USLOVIYA_LABEL" class="uRequired">Валютные условия: <img src="/i/f_spacer.gif" alt="Обязательное значение" class="uAsterisk"></label></td><td colspan="7" align="left"><input type="hidden" name="p_arg_names" value="7384060085118102"><select id="P31_VAL_USLOVIYA" name="p_t24" required="" aria-required="true" class="selectlist" style="width: 536px;" size="1"><option value=""></option>
+<option value="1" selected="selected">1.Страховые обязательства в сумах, страховая премия в сумах (включая случаи, когда страховая премия и страховая сумма рассчитываются с иностранной валюты по фиксированному курсу)</option>
+<option value="2">2.Страховые обязательства в иностранной валюте, страховая премия в иностранной валюте</option>
+<option value="3">3.Страховые обязательства в сумах в пересчете с иностранной валюты на день оплаты страхового возмещения, страховая премия в сумах в пересчете с иностранной валюты на день оплаты</option>
+<option value="4">4.Страховые обязательства в иностранной валюте, страховая премия в сумах в пересчете с иностранной валюты на день оплаты</option>
+<option value="5">5.Страховые обязательства в сумах в пересчете с иностранной валюты на день оплаты, страховая премия в иностранной валюте</option>
+</select><input type="hidden" name="p_arg_names" value="13617254788504007"><input type="hidden" name="p_t25" id="P31_VU" value="1"></td></tr><tr style="display: none;"><td align="right"><label for="P31_VALTYPE_LBL" id="P31_VALTYPE_LBL_LABEL" class="uOptional">Валютные условия:</label></td><td colspan="3" style="max-width: 600px;" align="left" valign="middle"><span id="P31_VALTYPE_LBL" class="display_only"></span></td></tr><tr style="display: none;"><td align="right"><label for="P31_VAL_LBL" id="P31_VAL_LBL_LABEL" class="uRequired">Валюта <img src="/i/f_spacer.gif" alt="Обязательное значение" class="uAsterisk"></label></td><td align="left"><input type="hidden" name="p_arg_names" value="4549030256189899"><select id="P31_VAL_LBL" name="p_t26" class="selectlist" size="1"><option value=""></option>
+<option value="2">Американский доллар</option>
+<option value="3">ЕВРО</option>
+<option value="4">Российский рубль</option>
+<option value="5">Дирхам ОАЭ</option>
+<option value="6">Австралийский доллаp</option>
+<option value="7">Канадский доллар</option>
+<option value="8">Швейцарский франк</option>
+<option value="9">Юань ренминби</option>
+<option value="10">Датская крона</option>
+<option value="11">Египетский фунт</option>
+<option value="12">Фунт стерлингов</option>
+<option value="13">Исландская крона</option>
+<option value="13">Новая турецкая лира</option>
+<option value="14">Йена</option>
+<option value="15">Вона</option>
+<option value="16">Кувейтский динар</option>
+<option value="17">Ливанский фунт</option>
+<option value="18">Малайзийский ринггит</option>
+<option value="19">Норвежская крона</option>
+<option value="20">Злотый</option>
+<option value="21">Шведская крона</option>
+<option value="22">Сингапурский доллар</option>
+<option value="24">Гривна</option>
+</select></td><td align="right"><label for="P31_VAL_KURS" id="P31_VAL_KURS_LABEL" class="uOptional">Курс ЦБ:</label></td><td align="left"><input type="hidden" name="p_arg_names" value="7382259928118101"><input type="text" id="P31_VAL_KURS" name="p_t27" class="number_field" value="" size="7" maxlength="7" style="text-align:right"></td></tr><tr><td align="right"><label for="P31_INS_COUNTRY" id="P31_INS_COUNTRY_LABEL" class="uOptional">Географическая зона:</label></td><td colspan="7" align="left"><input type="hidden" name="p_arg_names" value="7383652197118102"><input type="text" id="P31_INS_COUNTRY" name="p_t28" class="text_field" value="РЕСПУБЛИКА УЗБЕКИСТАН" size="100" maxlength="255" style="text-transform: uppercase;"><span class="uNoLabel">Country</span><input type="hidden" name="p_arg_names" value="12568948982256812"><input type="hidden" name="p_t29" id="P31_COUNTRY_HIDDENVALUE" value=""><fieldset id="P31_COUNTRY_fieldset" class="lov" tabindex="-1"><table role="presentation" border="0" cellpadding="0" cellspacing="0" class="lov" id="P31_COUNTRY_holder"><tbody><tr><td class="lov"><input type="text" id="P31_COUNTRY" class="popup_lov" style="display:none;" size="30" maxlength="4000" value="" disabled="disabled" onfocus="this.blur()"></td><td><a href="#"><img src="/i/f_spacer.gif" alt="Всплывающий список значений: Country." title="Всплывающий список значений: Country." class="uPopupLOVIcon"></a></td></tr></tbody></table></fieldset></td></tr><tr><td align="right"><label for="P31_ISTOCHNIK" id="P31_ISTOCHNIK_LABEL" class="uOptional">Источник оплаты:</label></td><td colspan="7" align="left"><input type="hidden" name="p_arg_names" value="7384258457118102"><fieldset tabindex="-1" id="P31_ISTOCHNIK" aria-labelledby="P31_ISTOCHNIK_LABEL" class="radio_group">
+<table role="presentation" class="radio_group">
+<tbody><tr>
+<td nowrap="nowrap">
+<input type="radio" id="P31_ISTOCHNIK_0" name="p_t30" value="0" checked="checked"><label for="P31_ISTOCHNIK_0">Собственные средства</label></td>
+<td nowrap="nowrap">
+<input type="radio" id="P31_ISTOCHNIK_1" name="p_t30" value="1"><label for="P31_ISTOCHNIK_1">Бюджетные средства</label></td>
+</tr></tbody></table></fieldset>
+<input type="hidden" name="p_arg_names" value="7904738894959601"><input type="hidden" name="p_t31" id="P31_PAGE" value=""><input type="hidden" name="p_arg_names" value="4050640240431382"><input type="hidden" name="p_t32" id="P31_VALTYPE" value=""><input type="hidden" name="p_arg_names" value="4050833770434395"><input type="hidden" name="p_t33" id="P31_USLOPL" value=""><input type="hidden" name="p_arg_names" value="4407160022348610"><input type="hidden" name="p_t34" id="P31_STAT" value="-1"><input type="hidden" name="p_arg_names" value="12534551144585043"><input type="hidden" name="p_t35" id="P31_INS_PROGRESS" value=""></td></tr><tr><td align="right"><label for="P31_INS_DOGNUM" id="P31_INS_DOGNUM_LABEL" class="uRequired">Рег.номер: <img src="/i/f_spacer.gif" alt="Обязательное значение" class="uAsterisk"></label></td><td align="left" valign="middle"><span id="L_P31_INS_DOGNUM">10//</span><input type="hidden" name="p_arg_names" value="13616042152403503"><input type="text" id="P31_INS_DOGNUM" name="p_t36" class="text_field" value="1000" size="5" maxlength="5" style="text-transform: uppercase;"></td></tr><tr><td align="right"><label for="P31_OLD_DOGNUM" id="P31_OLD_DOGNUM_LABEL" class="uOptional">Старый номер договора:</label></td><td align="left" valign="middle"><input type="hidden" name="p_arg_names" value="6652246433062982"><input type="text" id="P31_OLD_DOGNUM" name="p_t37" class="text_field" value="" size="32" maxlength="4000" style="text-transform: uppercase;"><input type="hidden" name="p_arg_names" value="20595045186497174"><input type="hidden" name="p_t38" id="P31_INS_CHECK" value=""><input type="hidden" name="p_arg_names" value="20595233972502371"><input type="hidden" name="p_t39" id="P31_BNF_CHECK" value=""><input type="hidden" name="p_arg_names" value="608764580607307306"><input type="hidden" name="p_t40" id="P31_BORR_CHECK" value=""><input type="hidden" name="p_arg_names" value="537401244054894442"><input type="hidden" name="p_t41" id="P31_PLED_CHECK" value=""></td></tr></tbody></table>
+</section>
+    </div>
+    <div class="clear"></div>
+</div>
+
+</div><section class="uRegion uBorderlessRegion clearfix" id="R8011137496290443">
+    <input type="hidden" name="p_arg_names" value="8011643864292595"><input type="hidden" name="p_t42" id="P0_JUMP" value=""><input type="hidden" name="p_arg_names" value="8012945872473984"><input type="hidden" name="p_t43" id="P0_CACHE" value=""><input type="hidden" name="p_arg_names" value="80362947238482193"><input type="hidden" name="p_t44" id="FSP_LANGUAGE_PREFERENCE" value="ru">
+</section><footer id="uFooter">
+  <div class="uFooterContent">
+    <div id="customize"></div>
+    
+    <span class="uFooterVersion">
+      версия 1.1
+    </span>
+  </div>
+  <div class="uFooterBG">
+    <div class="uLeft"></div>
+    <div class="uRight"></div>
+  </div>
+</footer>
+</div>
+<input type="hidden" name="p_md5_checksum" value=""><input type="hidden" name="p_page_checksum" value="orGTdcyLrUoIExGtVW2declKfU8" id="pPageChecksum">
+
+<script type="text/javascript">
+apex.da.initDaEventList = function(){
+apex.da.gEventList = [
+{"triggeringElementType":"ITEM","triggeringElement":"P31_INSDAY,P31_INS_DATEF","bindType":"bind","bindEventType":"change",actionList:[{"eventResult":true,"executeOnPageInit":false,"stopExecutionOnError":true,javascriptFunction:function (){ var interval = $v('P31_INSDAY');
+var arr = $v('P31_INS_DATEF').split('.');
+var from_date=new Date(arr[2],arr[1]-1,arr[0]); 
+var to_date=new Date(from_date.setDate(from_date.getDate()+parseInt(interval)-1));
+var kun=to_date.getDate();
+var oy=(to_date.getMonth()+1);
+var yil=to_date.getFullYear();
+if (isNaN(kun)||isNaN(oy)||isNaN(yil)) str=''; else
+ str = ((kun.toString().length<2)?'0':'')+ kun + '.' + ((oy.toString().length<2)?'0':'') + oy + '.' + yil;
+html_GetElement('P31_INS_DATET').value = str;
+},"action":"NATIVE_JAVASCRIPT_CODE"}]},
+{"triggeringElementType":"ITEM","triggeringElement":"P31_INS_DATET","bindType":"bind","bindEventType":"change",actionList:[{"eventResult":true,"executeOnPageInit":false,"stopExecutionOnError":true,javascriptFunction:function (){ var oneDay = 24*60*60*1000; // hours*minutes*seconds*milliseconds
+var arr1 = $v('P31_INS_DATEF').split('.');
+var arr2 = $v('P31_INS_DATET').split('.');
+var from_date=new Date(arr1[2],arr1[1]-1,arr1[0]); 
+var to_date=new Date(arr2[2],arr2[1]-1,arr2[0]); 
+var diffDays = Math.round(Math.abs((to_date.getTime() - from_date.getTime())/(oneDay)))+1;
+if (!isNaN(diffDays)) html_GetElement('P31_INSDAY').value=diffDays;
+
+},"action":"NATIVE_JAVASCRIPT_CODE"}]},
+{"triggeringElementType":"ITEM","triggeringElement":"P31_VALTYPE","triggeringConditionType":"JAVASCRIPT_EXPRESSION","triggeringExpression": function() {
+return (Number($v('P31_STAT'))<0 && Number($v('P31_VALTYPE'))!=''
+); },"bindType":"bind","bindEventType":"change",actionList:[{"eventResult":true,"executeOnPageInit":false,"stopExecutionOnError":true,"affectedElementsType":"ITEM","affectedElements":"P31_VAL_USLOVIYA",javascriptFunction:apex.da.hide,"attribute01":"Y","action":"NATIVE_HIDE"},{"eventResult":false,"executeOnPageInit":false,"stopExecutionOnError":true,"affectedElementsType":"ITEM","affectedElements":"P31_VAL_USLOVIYA",javascriptFunction:apex.da.show,"attribute01":"Y","action":"NATIVE_SHOW"},{"eventResult":true,"executeOnPageInit":false,"stopExecutionOnError":true,"waitForResult":true,"affectedElementsType":"ITEM","affectedElements":"P31_VALTYPE_LBL",javascriptFunction:apex.da.setValue,"ajaxIdentifier":"4A8A8E76EB7937983B7D93E2990466E22EF7140642A7BBA6B9DA1B397252AA5A","attribute01":"SQL_STATEMENT","attribute04":"#P31_VALTYPE","attribute09":"N","action":"NATIVE_SET_VALUE"},{"eventResult":true,"executeOnPageInit":false,"stopExecutionOnError":true,"waitForResult":true,"affectedElementsType":"ITEM","affectedElements":"P31_VAL_USLOVIYA",javascriptFunction:apex.da.setValue,"ajaxIdentifier":"BB0564E4414B64726A48D53D88C3B02D581D61739CA9B7CA995045ABE54EB5C6","attribute01":"PLSQL_EXPRESSION","attribute04":"#P31_VALTYPE","attribute09":"N","action":"NATIVE_SET_VALUE"},{"eventResult":true,"executeOnPageInit":false,"stopExecutionOnError":true,"waitForResult":true,"affectedElementsType":"ITEM","affectedElements":"P31_VAL_TYPE",javascriptFunction:apex.da.setValue,"ajaxIdentifier":"40C5595B6864EEEA37AD47AA84450770966FD576A3768235D0755C9A7413D8CA","attribute01":"SQL_STATEMENT","attribute04":"#P31_VALTYPE","attribute09":"N","action":"NATIVE_SET_VALUE"},{"eventResult":false,"executeOnPageInit":false,"stopExecutionOnError":true,"affectedElementsType":"ITEM","affectedElements":"P31_VALTYPE_LBL",javascriptFunction:apex.da.hide,"attribute01":"Y","action":"NATIVE_HIDE"},{"eventResult":true,"executeOnPageInit":false,"stopExecutionOnError":true,"affectedElementsType":"ITEM","affectedElements":"P31_VALTYPE_LBL",javascriptFunction:apex.da.show,"attribute01":"Y","action":"NATIVE_SHOW"}]},
+{"triggeringElementType":"ITEM","triggeringElement":"P31_VAL_USLOVIYA","triggeringConditionType":"GREATER_THAN","triggeringExpression":"1","bindType":"bind","bindEventType":"change",actionList:[{"eventResult":true,"executeOnPageInit":true,"stopExecutionOnError":true,"affectedElementsType":"ITEM","affectedElements":"P31_VAL_LBL",javascriptFunction:apex.da.show,"attribute01":"Y","action":"NATIVE_SHOW"},{"eventResult":false,"executeOnPageInit":true,"stopExecutionOnError":true,"affectedElementsType":"ITEM","affectedElements":"P31_VAL_LBL",javascriptFunction:apex.da.hide,"attribute01":"Y","action":"NATIVE_HIDE"},{"eventResult":true,"executeOnPageInit":false,"stopExecutionOnError":true,javascriptFunction:function (){ //$s('P31_VAL_LBL','');$s('P31_VAL_KURS','');
+},"action":"NATIVE_JAVASCRIPT_CODE"},{"eventResult":false,"executeOnPageInit":false,"stopExecutionOnError":true,javascriptFunction:function (){ $s('P31_VAL_TYPE',1);$s('P31_VAL_KURS',1);
+},"action":"NATIVE_JAVASCRIPT_CODE"}]},
+{"triggeringElementType":"ITEM","triggeringElement":"P31_PTURI","bindType":"bind","bindEventType":"change",actionList:[{"eventResult":true,"executeOnPageInit":true,"stopExecutionOnError":true,"waitForResult":true,"affectedElementsType":"ITEM","affectedElements":"P31_PAGE,P31_VALTYPE,P31_USLOPL,P31_FIZYUR,P31_INS_CHECK,P31_BNF_CHECK,P31_PLED_CHECK,P31_BORR_CHECK",javascriptFunction:apex.da.setValue,"ajaxIdentifier":"1A0F8CF7F4B78F0344189B0AA2E82A64AF92B988720118CFB51B791522FBDF9C","attribute01":"SQL_STATEMENT","attribute04":"#P31_PTURI","attribute09":"N","action":"NATIVE_SET_VALUE"},{"eventResult":true,"executeOnPageInit":false,"stopExecutionOnError":true,"waitForResult":true,"affectedElementsType":"ITEM","affectedElements":"P31_PT",javascriptFunction:apex.da.setValue,"ajaxIdentifier":"0825BFE04D629423A443A46F24776242D7DC800356DEC221D807B5BBAFAE8E0E","attribute01":"SQL_STATEMENT","attribute04":"#P31_PTURI","attribute09":"N","action":"NATIVE_SET_VALUE"},{"eventResult":true,"executeOnPageInit":false,"stopExecutionOnError":true,javascriptFunction:function (){ $('#L_P31_INS_DOGNUM').text($v('P31_DIV')+'/'+$v('P31_PT')+'/')
+},"action":"NATIVE_JAVASCRIPT_CODE"}]},
+{"triggeringElementType":"ITEM","triggeringElement":"P31_PTURI","triggeringConditionType":"EQUALS","triggeringExpression":"94","bindType":"bind","bindEventType":"change",actionList:[{"eventResult":false,"executeOnPageInit":true,"stopExecutionOnError":true,"affectedElementsType":"ITEM","affectedElements":"P31_VAL_LBL",javascriptFunction:apex.da.enable,"action":"NATIVE_ENABLE"},{"eventResult":true,"executeOnPageInit":true,"stopExecutionOnError":true,"waitForResult":true,"affectedElementsType":"ITEM","affectedElements":"P31_VAL_LBL",javascriptFunction:apex.da.setValue,"ajaxIdentifier":"D6DAFF65D41FBAE752F715A32C37D027156718A385525AADD9048E09519795AA","attribute01":"STATIC_ASSIGNMENT","attribute02":"2","attribute09":"N","action":"NATIVE_SET_VALUE"},{"eventResult":true,"executeOnPageInit":true,"stopExecutionOnError":true,"affectedElementsType":"ITEM","affectedElements":"P31_VAL_LBL",javascriptFunction:apex.da.disable,"action":"NATIVE_DISABLE"},{"eventResult":true,"executeOnPageInit":true,"stopExecutionOnError":true,"waitForResult":true,"affectedElementsType":"ITEM","affectedElements":"P31_VID_DEYAT1",javascriptFunction:apex.da.setValue,"ajaxIdentifier":"3C93451CB02D91E8F05E9C36537AD266154C993E252ED2900DC1C6440DAF399F","attribute01":"STATIC_ASSIGNMENT","attribute02":"\u041F\u0430\u0441\u0441\u0430\u0436\u0438\u0440\u0441\u043A\u0438\u0435 \u043F\u0435\u0440\u0435\u0432\u043E\u0437\u043A\u0438","attribute09":"N","action":"NATIVE_SET_VALUE"},{"eventResult":true,"executeOnPageInit":false,"stopExecutionOnError":true,"waitForResult":true,"affectedElementsType":"ITEM","affectedElements":"P31_VAL_KURS",javascriptFunction:apex.da.setValue,"ajaxIdentifier":"97C7FF02877B6B38B7170C0EE536484500C9C428E600F46E24FCB5B671D3CD9D","attribute01":"STATIC_ASSIGNMENT","attribute02":"4000","attribute09":"N","action":"NATIVE_SET_VALUE"}]},
+{"triggeringElementType":"ITEM","triggeringElement":"P31_PTURI","triggeringConditionType":"EQUALS","triggeringExpression":"17","bindType":"bind","bindEventType":"change",actionList:[{"eventResult":false,"executeOnPageInit":true,"stopExecutionOnError":true,"affectedElementsType":"ITEM","affectedElements":"P31_INS_COUNTRY,P31_ISTOCHNIK",javascriptFunction:apex.da.show,"attribute01":"Y","action":"NATIVE_SHOW"},{"eventResult":true,"executeOnPageInit":true,"stopExecutionOnError":true,"affectedElementsType":"ITEM","affectedElements":"P31_INS_COUNTRY,P31_ISTOCHNIK",javascriptFunction:apex.da.hide,"attribute01":"Y","action":"NATIVE_HIDE"},{"eventResult":true,"executeOnPageInit":false,"stopExecutionOnError":true,"waitForResult":true,"affectedElementsType":"ITEM","affectedElements":"P31_INSDAY",javascriptFunction:apex.da.setValue,"ajaxIdentifier":"94EEDBB60C0B926AB870211DF3B1477E85FFE470E57A3DB5AA64D9A4D19B8381","attribute01":"STATIC_ASSIGNMENT","attribute02":"15","attribute09":"N","action":"NATIVE_SET_VALUE"}]},
+{"triggeringElementType":"JQUERY_SELECTOR","triggeringElement":"a.gocopy","triggeringConditionType":"JAVASCRIPT_EXPRESSION","triggeringExpression": function() {
+return (Number($v('P31_STAT'))<1
+); },"bindType":"bind","bindEventType":"click",actionList:[{"eventResult":true,"executeOnPageInit":false,"stopExecutionOnError":true,"waitForResult":true,"affectedElementsType":"ITEM","affectedElements":"P31_BENEFICIARY",javascriptFunction:apex.da.setValue,"ajaxIdentifier":"504D7091D53043D9C7E08661B1ABA4F7DCF0BC64C553D7D611C5CCBA2248D423","attribute01":"JAVASCRIPT_EXPRESSION",attribute05:function(){return ($v('P31_OWNER')
+)},"attribute09":"N","action":"NATIVE_SET_VALUE"}]},
+{"triggeringElementType":"JQUERY_SELECTOR","triggeringElement":"a.gocopy1","triggeringConditionType":"JAVASCRIPT_EXPRESSION","triggeringExpression": function() {
+return (Number($v('P31_STAT'))<1
+); },"bindType":"bind","bindEventType":"click",actionList:[{"eventResult":true,"executeOnPageInit":false,"stopExecutionOnError":true,"waitForResult":true,"affectedElementsType":"ITEM","affectedElements":"P31_PLEDGER1",javascriptFunction:apex.da.setValue,"ajaxIdentifier":"0D521CEA2DEB5B8B0CB188B4FEE5F0F0FA151D14B2891AFBA7AA7BFFBEAA1BFD","attribute01":"JAVASCRIPT_EXPRESSION",attribute05:function(){return ($v('P31_OWNER')
+)},"attribute09":"N","action":"NATIVE_SET_VALUE"}]},
+{"triggeringElementType":"JQUERY_SELECTOR","triggeringElement":"a.gocopy2","triggeringConditionType":"JAVASCRIPT_EXPRESSION","triggeringExpression": function() {
+return (Number($v('P31_STAT'))<1
+); },"bindType":"bind","bindEventType":"click",actionList:[{"eventResult":true,"executeOnPageInit":false,"stopExecutionOnError":true,"waitForResult":true,"affectedElementsType":"ITEM","affectedElements":"P31_BORROWER",javascriptFunction:apex.da.setValue,"ajaxIdentifier":"24C946BF0915908319D3733F8C645D4002B8EDCB520B28C68C02D0154126D4F9","attribute01":"JAVASCRIPT_EXPRESSION",attribute05:function(){return ($v('P31_OWNER')
+)},"attribute09":"N","action":"NATIVE_SET_VALUE"}]},
+{"triggeringElementType":"JQUERY_SELECTOR","triggeringElement":".prbtn","bindType":"bind","bindEventType":"click",actionList:[{"eventResult":true,"executeOnPageInit":false,"stopExecutionOnError":true,javascriptFunction:function(){
+   if (this.browserEvent !== 'load'){
+      apex.jQuery(document).apex_modal_page('openPageFromApexThis', this);
+   }
+},"attribute02":"STATIC","attribute03":"f?p=100:99:5395629248331:::99:::","attribute05":"data-url","attribute06":"div#success-message","attribute07":"STATIC_\u0025","attribute08":"90","attribute09":"90","action":"PLUGIN_COM_SKILLBUILDERS_MODAL_PAGE"}]},
+{"triggeringElementType":"JQUERY_SELECTOR","triggeringElement":"a.goopen","triggeringConditionType":"JAVASCRIPT_EXPRESSION","triggeringExpression": function() {
+return (Number($v('P31_STAT'))<1 && Number($v('P31_FIZYUR'))==2
+); },"bindType":"bind","bindEventType":"click",actionList:[{"eventResult":true,"executeOnPageInit":false,"stopExecutionOnError":true,javascriptFunction:function(){
+   if (this.browserEvent !== 'load'){
+      apex.jQuery(document).apex_modal_page('openPageFromApexThis', this);
+   }
+},"attribute01":"\u0421\u0442\u0440\u0430\u0445\u043E\u0432\u0430\u0442\u0435\u043B\u044C","attribute02":"STATIC","attribute03":"f?p=100:12:5395629248331:::CIR,12:P12_USER:P31_OWNER:","attribute05":"data-url","attribute06":"div#success-message","attribute07":"AUTO","action":"PLUGIN_COM_SKILLBUILDERS_MODAL_PAGE"}]},
+{"triggeringElementType":"JQUERY_SELECTOR","triggeringElement":"a.goopen","triggeringConditionType":"JAVASCRIPT_EXPRESSION","triggeringExpression": function() {
+return (Number($v('P31_STAT'))<1 && Number($v('P31_FIZYUR'))==1
+); },"bindType":"bind","bindEventType":"click",actionList:[{"eventResult":true,"executeOnPageInit":false,"stopExecutionOnError":true,javascriptFunction:function(){
+   if (this.browserEvent !== 'load'){
+      apex.jQuery(document).apex_modal_page('openPageFromApexThis', this);
+   }
+},"attribute01":"\u0421\u0442\u0440\u0430\u0445\u043E\u0432\u0430\u0442\u0435\u043B\u044C","attribute02":"STATIC","attribute03":"f?p=100:12:5395629248331:::CIR,12:P12_USER,P12_FY,P12_FIZYUR:P31_OWNER,0,1:","attribute05":"data-url","attribute06":"div#success-message","attribute07":"AUTO","action":"PLUGIN_COM_SKILLBUILDERS_MODAL_PAGE"}]},
+{"triggeringElementType":"JQUERY_SELECTOR","triggeringElement":"a.goopen","triggeringConditionType":"JAVASCRIPT_EXPRESSION","triggeringExpression": function() {
+return (Number($v('P31_STAT'))<1 && Number($v('P31_FIZYUR'))==0
+); },"bindType":"bind","bindEventType":"click",actionList:[{"eventResult":true,"executeOnPageInit":false,"stopExecutionOnError":true,javascriptFunction:function(){
+   if (this.browserEvent !== 'load'){
+      apex.jQuery(document).apex_modal_page('openPageFromApexThis', this);
+   }
+},"attribute01":"\u0421\u0442\u0440\u0430\u0445\u043E\u0432\u0430\u0442\u0435\u043B\u044C","attribute02":"STATIC","attribute03":"f?p=100:12:5395629248331:::CIR,12:P12_USER,P12_FY,P12_FIZYUR:P31_OWNER,0,0:","attribute05":"data-url","attribute06":"div#success-message","attribute07":"AUTO","action":"PLUGIN_COM_SKILLBUILDERS_MODAL_PAGE"}]},
+{"triggeringElementType":"JQUERY_SELECTOR","triggeringElement":"a.goclient","triggeringConditionType":"JAVASCRIPT_EXPRESSION","triggeringExpression": function() {
+return ($v('P31_OWNER')!=''
+); },"bindType":"bind","bindEventType":"click",actionList:[{"eventResult":true,"executeOnPageInit":false,"stopExecutionOnError":true,javascriptFunction:function(){
+   if (this.browserEvent !== 'load'){
+      apex.jQuery(document).apex_modal_page('openPageFromApexThis', this);
+   }
+},"attribute02":"TRIG_ELEMENT_ATTR","attribute05":"shref","attribute06":"div#success-message","attribute07":"AUTO","action":"PLUGIN_COM_SKILLBUILDERS_MODAL_PAGE"}]},
+{"triggeringElementType":"ITEM","triggeringElement":"P31_OWNER","bindType":"bind","bindEventType":"change",actionList:[{"eventResult":true,"executeOnPageInit":true,"stopExecutionOnError":true,javascriptFunction:function (){ $('a.goclient').attr('shref','f?p=100:79:5395629248331:::79:P79_TB_ID,P79_EDIT:'+$v('P31_OWNER')+',0:')
+},"action":"NATIVE_JAVASCRIPT_CODE"},{"eventResult":true,"executeOnPageInit":true,"stopExecutionOnError":true,"waitForResult":true,"affectedElementsType":"ITEM","affectedElements":"P31_OWNERNAME",javascriptFunction:apex.da.setValue,"ajaxIdentifier":"DD54874DE4D9B6DBA3DA67A36F92DA41579E1CA550755915FFCE8E52F30416F5","attribute01":"PLSQL_EXPRESSION","attribute04":"#P31_OWNER","attribute09":"N","action":"NATIVE_SET_VALUE"},{"eventResult":true,"executeOnPageInit":true,"stopExecutionOnError":true,"waitForResult":true,"affectedElementsType":"ITEM","affectedElements":"P31_VID_DEYAT",javascriptFunction:apex.da.setValue,"ajaxIdentifier":"733BF918CB9A2248BF89A930510F08B22236789DB43FC26A05225D59784A5062","attribute01":"SQL_STATEMENT","attribute04":"#P31_OWNER","attribute09":"N","action":"NATIVE_SET_VALUE"}]},
+{"triggeringElementType":"JQUERY_SELECTOR","triggeringElement":"a.goopen1","triggeringConditionType":"JAVASCRIPT_EXPRESSION","triggeringExpression": function() {
+return (Number($v('P31_STAT'))<1
+); },"bindType":"bind","bindEventType":"click",actionList:[{"eventResult":true,"executeOnPageInit":false,"stopExecutionOnError":true,javascriptFunction:function(){
+   if (this.browserEvent !== 'load'){
+      apex.jQuery(document).apex_modal_page('openPageFromApexThis', this);
+   }
+},"attribute01":"\u0421\u0442\u0440\u0430\u0445\u043E\u0432\u0430\u0442\u0435\u043B\u044C","attribute02":"STATIC","attribute03":"f?p=100:12:5395629248331:::CIR,12:P12_USER:P31_BENEFICIARY:","attribute05":"data-url","attribute06":"div#success-message","attribute07":"AUTO","action":"PLUGIN_COM_SKILLBUILDERS_MODAL_PAGE"}]},
+{"triggeringElementType":"JQUERY_SELECTOR","triggeringElement":"a.goopen7","triggeringConditionType":"JAVASCRIPT_EXPRESSION","triggeringExpression": function() {
+return (Number($v('P31_STAT'))<1
+); },"bindType":"bind","bindEventType":"click",actionList:[{"eventResult":true,"executeOnPageInit":false,"stopExecutionOnError":true,javascriptFunction:function(){
+   if (this.browserEvent !== 'load'){
+      apex.jQuery(document).apex_modal_page('openPageFromApexThis', this);
+   }
+},"attribute01":"\u0421\u0442\u0440\u0430\u0445\u043E\u0432\u0430\u0442\u0435\u043B\u044C","attribute02":"STATIC","attribute03":"f?p=100:12:5395629248331:::CIR,12:P12_USER:P31_BORROWER:","attribute05":"data-url","attribute06":"div#success-message","attribute07":"AUTO","action":"PLUGIN_COM_SKILLBUILDERS_MODAL_PAGE"}]},
+{"triggeringElementType":"JQUERY_SELECTOR","triggeringElement":"a.goopen2","triggeringConditionType":"JAVASCRIPT_EXPRESSION","triggeringExpression": function() {
+return (Number($v('P31_STAT'))<1
+); },"bindType":"bind","bindEventType":"click",actionList:[{"eventResult":true,"executeOnPageInit":false,"stopExecutionOnError":true,javascriptFunction:function(){
+   if (this.browserEvent !== 'load'){
+      apex.jQuery(document).apex_modal_page('openPageFromApexThis', this);
+   }
+},"attribute01":"\u0421\u0442\u0440\u0430\u0445\u043E\u0432\u0430\u0442\u0435\u043B\u044C","attribute02":"STATIC","attribute03":"f?p=100:12:5395629248331:::CIR,12:P12_USER:P31_PLEDGER1:","attribute05":"data-url","attribute06":"div#success-message","attribute07":"AUTO","action":"PLUGIN_COM_SKILLBUILDERS_MODAL_PAGE"}]},
+{"triggeringElementType":"JQUERY_SELECTOR","triggeringElement":"a.goopen3","triggeringConditionType":"JAVASCRIPT_EXPRESSION","triggeringExpression": function() {
+return (Number($v('P31_STAT'))<1
+); },"bindType":"bind","bindEventType":"click",actionList:[{"eventResult":true,"executeOnPageInit":false,"stopExecutionOnError":true,javascriptFunction:function(){
+   if (this.browserEvent !== 'load'){
+      apex.jQuery(document).apex_modal_page('openPageFromApexThis', this);
+   }
+},"attribute01":"\u0421\u0442\u0440\u0430\u0445\u043E\u0432\u0430\u0442\u0435\u043B\u044C","attribute02":"STATIC","attribute03":"f?p=100:12:5395629248331:::CIR,12:P12_USER:P31_PLEDGER2:","attribute05":"data-url","attribute06":"div#success-message","attribute07":"AUTO","action":"PLUGIN_COM_SKILLBUILDERS_MODAL_PAGE"}]},
+{"triggeringElementType":"JQUERY_SELECTOR","triggeringElement":"a.goopen4","triggeringConditionType":"JAVASCRIPT_EXPRESSION","triggeringExpression": function() {
+return (Number($v('P31_STAT'))<1
+); },"bindType":"bind","bindEventType":"click",actionList:[{"eventResult":true,"executeOnPageInit":false,"stopExecutionOnError":true,javascriptFunction:function(){
+   if (this.browserEvent !== 'load'){
+      apex.jQuery(document).apex_modal_page('openPageFromApexThis', this);
+   }
+},"attribute01":"\u0421\u0442\u0440\u0430\u0445\u043E\u0432\u0430\u0442\u0435\u043B\u044C","attribute02":"STATIC","attribute03":"f?p=100:12:5395629248331:::CIR,12:P12_USER:P31_PLEDGER3:","attribute05":"data-url","attribute06":"div#success-message","attribute07":"AUTO","action":"PLUGIN_COM_SKILLBUILDERS_MODAL_PAGE"}]},
+{"triggeringElementType":"JQUERY_SELECTOR","triggeringElement":"a.goopen5","triggeringConditionType":"JAVASCRIPT_EXPRESSION","triggeringExpression": function() {
+return (Number($v('P31_STAT'))<1
+); },"bindType":"bind","bindEventType":"click",actionList:[{"eventResult":true,"executeOnPageInit":false,"stopExecutionOnError":true,javascriptFunction:function(){
+   if (this.browserEvent !== 'load'){
+      apex.jQuery(document).apex_modal_page('openPageFromApexThis', this);
+   }
+},"attribute01":"\u0421\u0442\u0440\u0430\u0445\u043E\u0432\u0430\u0442\u0435\u043B\u044C","attribute02":"STATIC","attribute03":"f?p=100:12:5395629248331:::CIR,12:P12_USER:P31_PLEDGER4:","attribute05":"data-url","attribute06":"div#success-message","attribute07":"AUTO","action":"PLUGIN_COM_SKILLBUILDERS_MODAL_PAGE"}]},
+{"triggeringElementType":"JQUERY_SELECTOR","triggeringElement":"a.goopen6","triggeringConditionType":"JAVASCRIPT_EXPRESSION","triggeringExpression": function() {
+return (Number($v('P31_STAT'))<1
+); },"bindType":"bind","bindEventType":"click",actionList:[{"eventResult":true,"executeOnPageInit":false,"stopExecutionOnError":true,javascriptFunction:function(){
+   if (this.browserEvent !== 'load'){
+      apex.jQuery(document).apex_modal_page('openPageFromApexThis', this);
+   }
+},"attribute01":"\u0421\u0442\u0440\u0430\u0445\u043E\u0432\u0430\u0442\u0435\u043B\u044C","attribute02":"STATIC","attribute03":"f?p=100:12:5395629248331:::CIR,12:P12_USER:P31_PLEDGER5:","attribute05":"data-url","attribute06":"div#success-message","attribute07":"AUTO","action":"PLUGIN_COM_SKILLBUILDERS_MODAL_PAGE"}]},
+{"triggeringElementType":"JQUERY_SELECTOR","triggeringElement":"a.goclient1","triggeringConditionType":"JAVASCRIPT_EXPRESSION","triggeringExpression": function() {
+return ($v('P31_BENEFICIARY')!=''
+); },"bindType":"bind","bindEventType":"click",actionList:[{"eventResult":true,"executeOnPageInit":false,"stopExecutionOnError":true,javascriptFunction:function(){
+   if (this.browserEvent !== 'load'){
+      apex.jQuery(document).apex_modal_page('openPageFromApexThis', this);
+   }
+},"attribute02":"TRIG_ELEMENT_ATTR","attribute05":"shref","attribute06":"div#success-message","attribute07":"AUTO","action":"PLUGIN_COM_SKILLBUILDERS_MODAL_PAGE"}]},
+{"triggeringElementType":"JQUERY_SELECTOR","triggeringElement":"a.goclient7","triggeringConditionType":"JAVASCRIPT_EXPRESSION","triggeringExpression": function() {
+return ($v('P31_BORROWER')!=''
+); },"bindType":"bind","bindEventType":"click",actionList:[{"eventResult":true,"executeOnPageInit":false,"stopExecutionOnError":true,javascriptFunction:function(){
+   if (this.browserEvent !== 'load'){
+      apex.jQuery(document).apex_modal_page('openPageFromApexThis', this);
+   }
+},"attribute02":"TRIG_ELEMENT_ATTR","attribute05":"shref","attribute06":"div#success-message","attribute07":"AUTO","action":"PLUGIN_COM_SKILLBUILDERS_MODAL_PAGE"}]},
+{"triggeringElementType":"JQUERY_SELECTOR","triggeringElement":"a.goclient2","triggeringConditionType":"JAVASCRIPT_EXPRESSION","triggeringExpression": function() {
+return ($v('P31_PLEDGER1')!=''
+); },"bindType":"bind","bindEventType":"click",actionList:[{"eventResult":true,"executeOnPageInit":false,"stopExecutionOnError":true,javascriptFunction:function(){
+   if (this.browserEvent !== 'load'){
+      apex.jQuery(document).apex_modal_page('openPageFromApexThis', this);
+   }
+},"attribute02":"TRIG_ELEMENT_ATTR","attribute05":"shref","attribute06":"div#success-message","attribute07":"AUTO","action":"PLUGIN_COM_SKILLBUILDERS_MODAL_PAGE"}]},
+{"triggeringElementType":"JQUERY_SELECTOR","triggeringElement":"a.goclient3","triggeringConditionType":"JAVASCRIPT_EXPRESSION","triggeringExpression": function() {
+return ($v('P31_PLEDGER2')!=''
+); },"bindType":"bind","bindEventType":"click",actionList:[{"eventResult":true,"executeOnPageInit":false,"stopExecutionOnError":true,javascriptFunction:function(){
+   if (this.browserEvent !== 'load'){
+      apex.jQuery(document).apex_modal_page('openPageFromApexThis', this);
+   }
+},"attribute02":"TRIG_ELEMENT_ATTR","attribute05":"shref","attribute06":"div#success-message","attribute07":"AUTO","action":"PLUGIN_COM_SKILLBUILDERS_MODAL_PAGE"}]},
+{"triggeringElementType":"JQUERY_SELECTOR","triggeringElement":"a.goclient4","triggeringConditionType":"JAVASCRIPT_EXPRESSION","triggeringExpression": function() {
+return ($v('P31_PLEDGER3')!=''
+); },"bindType":"bind","bindEventType":"click",actionList:[{"eventResult":true,"executeOnPageInit":false,"stopExecutionOnError":true,javascriptFunction:function(){
+   if (this.browserEvent !== 'load'){
+      apex.jQuery(document).apex_modal_page('openPageFromApexThis', this);
+   }
+},"attribute02":"TRIG_ELEMENT_ATTR","attribute05":"shref","attribute06":"div#success-message","attribute07":"AUTO","action":"PLUGIN_COM_SKILLBUILDERS_MODAL_PAGE"}]},
+{"triggeringElementType":"JQUERY_SELECTOR","triggeringElement":"a.goclient5","triggeringConditionType":"JAVASCRIPT_EXPRESSION","triggeringExpression": function() {
+return ($v('P31_PLEDGER4')!=''
+); },"bindType":"bind","bindEventType":"click",actionList:[{"eventResult":true,"executeOnPageInit":false,"stopExecutionOnError":true,javascriptFunction:function(){
+   if (this.browserEvent !== 'load'){
+      apex.jQuery(document).apex_modal_page('openPageFromApexThis', this);
+   }
+},"attribute02":"TRIG_ELEMENT_ATTR","attribute05":"shref","attribute06":"div#success-message","attribute07":"AUTO","action":"PLUGIN_COM_SKILLBUILDERS_MODAL_PAGE"}]},
+{"triggeringElementType":"JQUERY_SELECTOR","triggeringElement":"a.goclient6","triggeringConditionType":"JAVASCRIPT_EXPRESSION","triggeringExpression": function() {
+return ($v('P31_PLEDGER5')!=''
+); },"bindType":"bind","bindEventType":"click",actionList:[{"eventResult":true,"executeOnPageInit":false,"stopExecutionOnError":true,javascriptFunction:function(){
+   if (this.browserEvent !== 'load'){
+      apex.jQuery(document).apex_modal_page('openPageFromApexThis', this);
+   }
+},"attribute02":"TRIG_ELEMENT_ATTR","attribute05":"shref","attribute06":"div#success-message","attribute07":"AUTO","action":"PLUGIN_COM_SKILLBUILDERS_MODAL_PAGE"}]},
+{"triggeringElementType":"ITEM","triggeringElement":"P31_BENEFICIARY","bindType":"bind","bindEventType":"change",actionList:[{"eventResult":true,"executeOnPageInit":true,"stopExecutionOnError":true,javascriptFunction:function (){ $('a.goclient1').attr('shref','f?p=100:79:5395629248331:::79:P79_TB_ID,P79_EDIT:'+$v('P31_BENEFICIARY')+',0:')
+},"action":"NATIVE_JAVASCRIPT_CODE"},{"eventResult":true,"executeOnPageInit":true,"stopExecutionOnError":true,"waitForResult":true,"affectedElementsType":"ITEM","affectedElements":"P31_BENEFNAME",javascriptFunction:apex.da.setValue,"ajaxIdentifier":"1ECF69C513CC9254C0D36AF2F60688C11B2CE378E5EF5DDF2F639CC07004A005","attribute01":"PLSQL_EXPRESSION","attribute04":"#P31_BENEFICIARY","attribute09":"N","action":"NATIVE_SET_VALUE"}]},
+{"triggeringElementType":"JAVASCRIPT_EXPRESSION","triggeringElement": function() {
+return (document
+); },"triggeringConditionType":"JAVASCRIPT_EXPRESSION","triggeringExpression": function() {
+return (this.data && this.data.modalPageCloseValue.length != 0
+); },"bindType":"bind","bindEventType":"modalpagemanualclose.COM_SKILLBUILDERS_MODAL_PAGE",actionList:[{"eventResult":true,"executeOnPageInit":true,"stopExecutionOnError":true,javascriptFunction:function (){ var lReturn = this.data.modalPageCloseValue;
+
+if(lReturn.length>0) $s(lReturn[0],lReturn[1]);
+
+},"action":"NATIVE_JAVASCRIPT_CODE"}]},
+{"triggeringElementType":"ITEM","triggeringElement":"P31_VAL_LBL","triggeringConditionType":"JAVASCRIPT_EXPRESSION","triggeringExpression": function() {
+return (Number($v('P31_STAT'))<1
+); },"bindType":"bind","bindEventType":"change",actionList:[{"eventResult":true,"executeOnPageInit":false,"stopExecutionOnError":true,javascriptFunction:function (){ $s('P31_VAL_TYPE',$v('P31_VAL_LBL'));
+},"action":"NATIVE_JAVASCRIPT_CODE"},{"eventResult":true,"executeOnPageInit":false,"stopExecutionOnError":true,"waitForResult":true,"affectedElementsType":"ITEM","affectedElements":"P31_VAL_KURS",javascriptFunction:apex.da.setValue,"ajaxIdentifier":"CB2D8F111FD7ADB3619C3C5EC2BE1A878DB92B2214C475FDDD6601DA5D920D36","attribute01":"PLSQL_EXPRESSION","attribute04":"#P31_VAL_LBL,#P31_INS_DATE","attribute09":"N","action":"NATIVE_SET_VALUE"}]},
+{"triggeringElementType":"ITEM","triggeringElement":"P31_INS_DATE","triggeringConditionType":"JAVASCRIPT_EXPRESSION","triggeringExpression": function() {
+return ($v('P31_VAL_TYPE')>1 && Number($v('P31_STAT'))<1 &&
+$('#P31_INS_DATE').val().length===10 && 
+$v('P31_PTURI')!=94
+); },"bindType":"bind","bindEventType":"change",actionList:[{"eventResult":true,"executeOnPageInit":false,"stopExecutionOnError":true,"waitForResult":true,"affectedElementsType":"ITEM","affectedElements":"P31_VAL_KURS",javascriptFunction:apex.da.setValue,"ajaxIdentifier":"2819FE47C71FD7D9C599108D85FA8FE7A2E2144837DE7755B1C00C18E6EA5393","attribute01":"PLSQL_EXPRESSION","attribute04":"#P31_VAL_TYPE,#P31_INS_DATE","attribute09":"N","action":"NATIVE_SET_VALUE"}]},
+{"triggeringElementType":"ITEM","triggeringElement":"P31_INS_DATE_OSGOR","triggeringConditionType":"JAVASCRIPT_EXPRESSION","triggeringExpression": function() {
+return ($v('P31_VAL_TYPE')>1 && Number($v('P31_STAT'))<1 &&
+$('#P31_INS_DATE_OSGOR').val().length===10 && 
+$v('P31_PTURI')==94
+); },"bindType":"bind","bindEventType":"change",actionList:[{"eventResult":true,"executeOnPageInit":false,"stopExecutionOnError":true,"waitForResult":true,"affectedElementsType":"ITEM","affectedElements":"P31_VAL_KURS",javascriptFunction:apex.da.setValue,"ajaxIdentifier":"8551F93E301F7294467279010C8BCC3BB4B7F95A027BD76EA635EA00DE7649C4","attribute01":"PLSQL_EXPRESSION","attribute04":"#P31_INS_DATE_OSGOR","attribute09":"N","action":"NATIVE_SET_VALUE"}]},
+{"triggeringElementType":"ITEM","triggeringElement":"P31_PAGE","triggeringConditionType":"EQUALS","triggeringExpression":"38","bindType":"bind","bindEventType":"change",actionList:[{"eventResult":true,"executeOnPageInit":true,"stopExecutionOnError":true,"waitForResult":true,"affectedElementsType":"ITEM","affectedElements":"P31_INS_PROGRESS",javascriptFunction:apex.da.setValue,"ajaxIdentifier":"5F6FC8B2688C9581488585A6BB331783E8D6817C66A83F78E35F42BA75D08AD0","attribute01":"STATIC_ASSIGNMENT","attribute02":"2","attribute09":"N","action":"NATIVE_SET_VALUE"}]},
+{"triggeringElementType":"ITEM","triggeringElement":"P31_COUNTRY","triggeringConditionType":"NOT_NULL","bindType":"bind","bindEventType":"change",actionList:[{"eventResult":true,"executeOnPageInit":false,"stopExecutionOnError":true,javascriptFunction:function (){ var old_cntr = $v('P31_INS_COUNTRY');
+var new_cntr = $v('P31_COUNTRY');
+ if (old_cntr) {
+   if (old_cntr.indexOf(new_cntr)===-1) old_cntr+=', '+new_cntr; }
+else old_cntr=new_cntr;
+
+$s('P31_INS_COUNTRY',old_cntr);
+},"action":"NATIVE_JAVASCRIPT_CODE"}]},
+{"triggeringElementType":"ITEM","triggeringElement":"P31_INS_DATE","triggeringConditionType":"JAVASCRIPT_EXPRESSION","triggeringExpression": function() {
+return ($('#P31_INS_DATE').val().length===10
+); },"bindType":"bind","bindEventType":"change",actionList:[{"eventResult":true,"executeOnPageInit":false,"stopExecutionOnError":true,"waitForResult":true,"affectedElementsType":"ITEM","affectedElements":"P31_YEAR",javascriptFunction:apex.da.setValue,"ajaxIdentifier":"D30C6A17EE97167798C2153F27ED621A41BE15BF8327979119A94CA4FECFC011","attribute01":"PLSQL_EXPRESSION","attribute04":"#P31_INS_DATE","attribute09":"N","action":"NATIVE_SET_VALUE"},{"eventResult":true,"executeOnPageInit":false,"stopExecutionOnError":true,javascriptFunction:function (){ $('#L_P31_INS_DOGNUM').text($v('P31_DIV')+'/'+$v('P31_PT')+'/'+$v('P31_VU')+'/'+$v('P31_YEAR'))
+},"action":"NATIVE_JAVASCRIPT_CODE"}]},
+{"triggeringElementType":"ITEM","triggeringElement":"P31_VAL_USLOVIYA","bindType":"bind","bindEventType":"change",actionList:[{"eventResult":true,"executeOnPageInit":false,"stopExecutionOnError":true,"waitForResult":true,"affectedElementsType":"ITEM","affectedElements":"P31_VU",javascriptFunction:apex.da.setValue,"ajaxIdentifier":"6100A043465426D8A154A4E49AC38B1062542D3FE24EF37BD72F37DFCD222D53","attribute01":"SQL_STATEMENT","attribute04":"#P31_VAL_USLOVIYA","attribute09":"N","action":"NATIVE_SET_VALUE"},{"eventResult":true,"executeOnPageInit":false,"stopExecutionOnError":true,javascriptFunction:function (){ $('#L_P31_INS_DOGNUM').text($v('P31_DIV')+'/'+$v('P31_PT')+'/'+$v('P31_VU')+'/'+$v('P31_YEAR'))
+},"action":"NATIVE_JAVASCRIPT_CODE"}]},
+{"triggeringElementType":"ITEM","triggeringElement":"P31_INS_CHECK","triggeringConditionType":"EQUALS","triggeringExpression":"1","bindType":"bind","bindEventType":"change",actionList:[{"eventResult":true,"executeOnPageInit":true,"stopExecutionOnError":true,"affectedElementsType":"ITEM","affectedElements":"P31_OWNERNAME",javascriptFunction:apex.da.hide,"attribute01":"Y","action":"NATIVE_HIDE"},{"eventResult":false,"executeOnPageInit":true,"stopExecutionOnError":true,"affectedElementsType":"ITEM","affectedElements":"P31_OWNERNAME",javascriptFunction:apex.da.show,"attribute01":"Y","action":"NATIVE_SHOW"}]},
+{"triggeringElementType":"ITEM","triggeringElement":"P31_BNF_CHECK","triggeringConditionType":"EQUALS","triggeringExpression":"1","bindType":"bind","bindEventType":"change",actionList:[{"eventResult":true,"executeOnPageInit":true,"stopExecutionOnError":true,"affectedElementsType":"ITEM","affectedElements":"P31_BENEFNAME",javascriptFunction:apex.da.hide,"attribute01":"Y","action":"NATIVE_HIDE"},{"eventResult":false,"executeOnPageInit":true,"stopExecutionOnError":true,"affectedElementsType":"ITEM","affectedElements":"P31_BENEFNAME",javascriptFunction:apex.da.show,"attribute01":"Y","action":"NATIVE_SHOW"}]},
+{"triggeringElementType":"ITEM","triggeringElement":"P31_INS_DATE","triggeringConditionType":"JAVASCRIPT_EXPRESSION","triggeringExpression": function() {
+return ($('#P31_INS_DATE').val().length===10
+); },"bindType":"bind","bindEventType":"change",actionList:[{"eventResult":true,"executeOnPageInit":false,"stopExecutionOnError":true,javascriptFunction:function (){ $s('P31_INS_DATEF',$v('P31_INS_DATE'));
+$s('P31_INS_DATE_OSGOR',$v('P31_INS_DATE'));
+},"action":"NATIVE_JAVASCRIPT_CODE"}]},
+{"triggeringElementType":"ITEM","triggeringElement":"P31_PTURI","triggeringConditionType":"IN_LIST","triggeringExpression":"4,94","bindType":"bind","bindEventType":"change",actionList:[{"eventResult":true,"executeOnPageInit":true,"stopExecutionOnError":true,"affectedElementsType":"ITEM","affectedElements":"P31_INS_DATE_OSGOR",javascriptFunction:apex.da.show,"attribute01":"Y","action":"NATIVE_SHOW"},{"eventResult":false,"executeOnPageInit":true,"stopExecutionOnError":true,"affectedElementsType":"ITEM","affectedElements":"P31_INS_DATE_OSGOR",javascriptFunction:apex.da.hide,"attribute01":"Y","action":"NATIVE_HIDE"},{"eventResult":true,"executeOnPageInit":true,"stopExecutionOnError":true,javascriptFunction:function (){ $('[for="P31_INS_DATE"]').text('Дата расчёта: ').append('<img src="/i/f_spacer.gif" alt="Необходимо указать значение" class="uAsterisk">')
+},"action":"NATIVE_JAVASCRIPT_CODE"},{"eventResult":false,"executeOnPageInit":true,"stopExecutionOnError":true,javascriptFunction:function (){ $('[for="P31_INS_DATE"]').text('Дата заключения: ').append('<img src="/i/f_spacer.gif" alt="Необходимо указать значение" class="uAsterisk">')
+},"action":"NATIVE_JAVASCRIPT_CODE"}]},
+{"triggeringElementType":"ITEM","triggeringElement":"P31_PLED_CHECK","triggeringConditionType":"EQUALS","triggeringExpression":"1","bindType":"bind","bindEventType":"change",actionList:[{"eventResult":false,"executeOnPageInit":true,"stopExecutionOnError":true,"affectedElementsType":"ITEM","affectedElements":"P31_PLED1,P31_PLED2,P31_PLED3,P31_PLED4,P31_PLED5",javascriptFunction:apex.da.hide,"attribute01":"Y","action":"NATIVE_HIDE"},{"eventResult":true,"executeOnPageInit":true,"stopExecutionOnError":true,"affectedElementsType":"ITEM","affectedElements":"P31_PLED1,P31_PLED2,P31_PLED3,P31_PLED4,P31_PLED5",javascriptFunction:apex.da.show,"attribute01":"Y","action":"NATIVE_SHOW"}]},
+{"triggeringElementType":"ITEM","triggeringElement":"P31_PLEDGER1","bindType":"bind","bindEventType":"change",actionList:[{"eventResult":true,"executeOnPageInit":true,"stopExecutionOnError":true,javascriptFunction:function (){ $('a.goclient2').attr('shref','f?p=100:79:5395629248331:::79:P79_TB_ID,P79_EDIT:'+$v('P31_PLEDGER1')+',0:')
+},"action":"NATIVE_JAVASCRIPT_CODE"},{"eventResult":true,"executeOnPageInit":true,"stopExecutionOnError":true,"waitForResult":true,"affectedElementsType":"ITEM","affectedElements":"P31_PLED1",javascriptFunction:apex.da.setValue,"ajaxIdentifier":"B19790B6C477605190EF9C375D95BC2296D2B3B7528D228C2C75CE5424B1FDB1","attribute01":"PLSQL_EXPRESSION","attribute04":"#P31_PLEDGER1","attribute09":"N","action":"NATIVE_SET_VALUE"}]},
+{"triggeringElementType":"ITEM","triggeringElement":"P31_PLEDGER2","bindType":"bind","bindEventType":"change",actionList:[{"eventResult":true,"executeOnPageInit":true,"stopExecutionOnError":true,javascriptFunction:function (){ $('a.goclient3').attr('shref','f?p=100:79:5395629248331:::79:P79_TB_ID,P79_EDIT:'+$v('P31_PLEDGER2')+',0:')
+},"action":"NATIVE_JAVASCRIPT_CODE"},{"eventResult":true,"executeOnPageInit":true,"stopExecutionOnError":true,"waitForResult":true,"affectedElementsType":"ITEM","affectedElements":"P31_PLED2",javascriptFunction:apex.da.setValue,"ajaxIdentifier":"27FC3D48A48310C9AB2508EB51123B56B475E7732DC5CD259A562A35C256C43E","attribute01":"PLSQL_EXPRESSION","attribute04":"#P31_PLEDGER2","attribute09":"N","action":"NATIVE_SET_VALUE"}]},
+{"triggeringElementType":"ITEM","triggeringElement":"P31_PLEDGER3","bindType":"bind","bindEventType":"change",actionList:[{"eventResult":true,"executeOnPageInit":true,"stopExecutionOnError":true,javascriptFunction:function (){ $('a.goclient4').attr('shref','f?p=100:79:5395629248331:::79:P79_TB_ID,P79_EDIT:'+$v('P31_PLEDGER3')+',0:')
+},"action":"NATIVE_JAVASCRIPT_CODE"},{"eventResult":true,"executeOnPageInit":true,"stopExecutionOnError":true,"waitForResult":true,"affectedElementsType":"ITEM","affectedElements":"P31_PLED3",javascriptFunction:apex.da.setValue,"ajaxIdentifier":"723E74E68C7FCD8AE5082E0A91BB20731A9D036510E252382954924D33702CB5","attribute01":"PLSQL_EXPRESSION","attribute04":"#P31_PLEDGER3","attribute09":"N","action":"NATIVE_SET_VALUE"}]},
+{"triggeringElementType":"ITEM","triggeringElement":"P31_PLEDGER4","bindType":"bind","bindEventType":"change",actionList:[{"eventResult":true,"executeOnPageInit":true,"stopExecutionOnError":true,javascriptFunction:function (){ $('a.goclient5').attr('shref','f?p=100:79:5395629248331:::79:P79_TB_ID,P79_EDIT:'+$v('P31_PLEDGER4')+',0:')
+},"action":"NATIVE_JAVASCRIPT_CODE"},{"eventResult":true,"executeOnPageInit":true,"stopExecutionOnError":true,"waitForResult":true,"affectedElementsType":"ITEM","affectedElements":"P31_PLED4",javascriptFunction:apex.da.setValue,"ajaxIdentifier":"E1FB5A139E0C7F16F63239E8FE6548F905563CCFB0C14B1FDDAF99CC6EB71DD3","attribute01":"PLSQL_EXPRESSION","attribute04":"#P31_PLEDGER4","attribute09":"N","action":"NATIVE_SET_VALUE"}]},
+{"triggeringElementType":"ITEM","triggeringElement":"P31_PLEDGER5","bindType":"bind","bindEventType":"change",actionList:[{"eventResult":true,"executeOnPageInit":true,"stopExecutionOnError":true,javascriptFunction:function (){ $('a.goclient6').attr('shref','f?p=100:79:5395629248331:::79:P79_TB_ID,P79_EDIT:'+$v('P31_PLEDGER5')+',0:')
+},"action":"NATIVE_JAVASCRIPT_CODE"},{"eventResult":true,"executeOnPageInit":true,"stopExecutionOnError":true,"waitForResult":true,"affectedElementsType":"ITEM","affectedElements":"P31_PLED5",javascriptFunction:apex.da.setValue,"ajaxIdentifier":"4A5D5A6470293B68FE9A67E235B6C71D511D814826B0E103348C48B04662AB74","attribute01":"PLSQL_EXPRESSION","attribute04":"#P31_PLEDGER5","attribute09":"N","action":"NATIVE_SET_VALUE"}]},
+{"triggeringElementType":"ITEM","triggeringElement":"P31_BORR_CHECK","triggeringConditionType":"EQUALS","triggeringExpression":"1","bindType":"bind","bindEventType":"change",actionList:[{"eventResult":false,"executeOnPageInit":true,"stopExecutionOnError":true,"affectedElementsType":"ITEM","affectedElements":"P31_BORRNAME",javascriptFunction:apex.da.hide,"attribute01":"Y","action":"NATIVE_HIDE"},{"eventResult":true,"executeOnPageInit":true,"stopExecutionOnError":true,"affectedElementsType":"ITEM","affectedElements":"P31_BORRNAME",javascriptFunction:apex.da.show,"attribute01":"Y","action":"NATIVE_SHOW"}]},
+{"triggeringElementType":"ITEM","triggeringElement":"P31_BORROWER","bindType":"bind","bindEventType":"change",actionList:[{"eventResult":true,"executeOnPageInit":true,"stopExecutionOnError":true,javascriptFunction:function (){ $('a.goclient1').attr('shref','f?p=100:79:5395629248331:::79:P79_TB_ID,P79_EDIT:'+$v('P31_BORROWER')+',0:')
+},"action":"NATIVE_JAVASCRIPT_CODE"},{"eventResult":true,"executeOnPageInit":true,"stopExecutionOnError":true,"waitForResult":true,"affectedElementsType":"ITEM","affectedElements":"P31_BORRNAME",javascriptFunction:apex.da.setValue,"ajaxIdentifier":"1177785E27E5A167341D42841DDC11122AC4F205BE4F165E85226848E835BF75","attribute01":"PLSQL_EXPRESSION","attribute04":"#P31_BORROWER","attribute09":"N","action":"NATIVE_SET_VALUE"}]}];
+}
+</script>
+<link rel="stylesheet" href="ins/r/100/files/plugin/175398846065931654/v1/select2.css" type="text/css">
+<link rel="stylesheet" href="ins/r/100/files/plugin/175398846065931654/v1/select2-bootstrap.css" type="text/css">
+<link rel="stylesheet" href="ins/r/100/files/plugin/34421548955662924972/v1/t5colorbox.css" type="text/css">
+
+<script type="text/javascript" src="/i/libraries/jquery-ui/1.10.4/ui/i18n/oracle/jquery.ui.datepicker-ru.js?v=5.0.4.00.12"></script>
+<script type="text/javascript" src="/i/libraries/apex/minified/widget.datepicker.min.js?v=5.0.4.00.12"></script>
+<script type="text/javascript" src="ins/r/100/files/plugin/175398846065931654/v1/select2.min.js"></script>
+<script type="text/javascript" src="ins/r/100/files/plugin/175398846065931654/v1/select2-apex.js"></script>
+<script type="text/javascript" src="ins/r/100/files/plugin/34421548955662924972/v1/jquery.colorbox-min.js"></script>
+<script type="text/javascript" src="ins/r/100/files/plugin/34421548955662924972/v1/apex_modal_page.min.js"></script>
+<script type="text/javascript">
+apex.jQuery( document ).ready( function() {
+(function(){apex.widget.datepicker("#P31_INS_DATE",{"buttonImageOnly":false,"buttonText":"\u003Cspan class=\u0022a-Icon icon-calendar\u0022\u003E\u003C\u002Fspan\u003E\u003Cspan class=\u0022u-VisuallyHidden\u0022\u003E\u0412\u0441\u043F\u043B\u044B\u0432\u0430\u044E\u0449\u0438\u0439 \u043A\u0430\u043B\u0435\u043D\u0434\u0430\u0440\u044C: \u0414\u0430\u0442\u0430 \u0437\u0430\u043A\u043B\u044E\u0447\u0435\u043D\u0438\u044F:\u003Cspan\u003E","minDate":new Date(2000,11,25),"maxDate":new Date(2021,0,2),"showTime":false,"defaultDate":new Date(2020,11,26),"showOn":"button","showOtherMonths":true,numberOfMonths:[2,3],"changeMonth":true,"changeYear":true},"dd.mm.yy","ru"); $('#P31_INS_DATE').next('button').addClass('a-Button a-Button--calendar');})();
+(function(){apex.widget.datepicker("#P31_INS_DATE_OSGOR",{"buttonImageOnly":false,"buttonText":"\u003Cspan class=\u0022a-Icon icon-calendar\u0022\u003E\u003C\u002Fspan\u003E\u003Cspan class=\u0022u-VisuallyHidden\u0022\u003E\u0412\u0441\u043F\u043B\u044B\u0432\u0430\u044E\u0449\u0438\u0439 \u043A\u0430\u043B\u0435\u043D\u0434\u0430\u0440\u044C: \u0414\u0430\u0442\u0430 \u0437\u0430\u043A\u043B\u044E\u0447\u0435\u043D\u0438\u044F:\u003Cspan\u003E","minDate":new Date(2000,11,25),"maxDate":new Date(2021,0,2),"showTime":false,"defaultDate":new Date(2020,11,26),"showOn":"button","showOtherMonths":true,numberOfMonths:[2,3],"changeMonth":true,"changeYear":true},"dd.mm.yy","ru"); $('#P31_INS_DATE_OSGOR').next('button').addClass('a-Button a-Button--calendar');})();
+(function(){
+      $("#P31_PTURI").select2({
+        width: "537px",
+        placeholder: " ",
+        allowClear: true,
+        selectOnBlur: true,
+        formatNoMatches: function(term) {
+                           var msg = "нет данных";
+                           msg = msg.replace("#TERM#", term);
+                           return msg;
+                         },
+        separator: ":"
+      });
+      beCtbSelect2.events.bind("#P31_PTURI");})();
+(function(){apex.widget.datepicker("#P31_INS_DATEF",{"buttonImageOnly":false,"buttonText":"\u003Cspan class=\u0022a-Icon icon-calendar\u0022\u003E\u003C\u002Fspan\u003E\u003Cspan class=\u0022u-VisuallyHidden\u0022\u003E\u0412\u0441\u043F\u043B\u044B\u0432\u0430\u044E\u0449\u0438\u0439 \u043A\u0430\u043B\u0435\u043D\u0434\u0430\u0440\u044C: \u041F\u0440\u0435\u0434\u0432\u0430\u0440\u0438\u0442\u0435\u043B\u044C\u043D\u044B\u0439 \u043F\u0435\u0440\u0438\u043E\u0434: \u003Cspan\u003E","maxDate":new Date(2027,2,15),"showTime":false,"defaultDate":new Date(2020,11,26),"showOn":"both","showOtherMonths":true,"changeMonth":true,"changeYear":true},"dd.mm.yy","ru"); $('#P31_INS_DATEF').next('button').addClass('a-Button a-Button--calendar');})();
+(function(){apex.widget.datepicker("#P31_INS_DATET",{"buttonImageOnly":false,"buttonText":"\u003Cspan class=\u0022a-Icon icon-calendar\u0022\u003E\u003C\u002Fspan\u003E\u003Cspan class=\u0022u-VisuallyHidden\u0022\u003E\u0412\u0441\u043F\u043B\u044B\u0432\u0430\u044E\u0449\u0438\u0439 \u043A\u0430\u043B\u0435\u043D\u0434\u0430\u0440\u044C: Ins Datet\u003Cspan\u003E","minDate":new Date(2020,11,26),"showTime":false,"defaultDate":new Date(2021,11,25),"showOn":"both","showOtherMonths":true,"changeMonth":true,"changeYear":true},"dd.mm.yy","ru"); $('#P31_INS_DATET').next('button').addClass('a-Button a-Button--calendar');})();
+(function(){apex.widget.selectList("#P31_VAL_USLOVIYA",{"nullValue":"","ajaxIdentifier":"4CAE07FF1CACEAFC7D6B89B5EEE887424924B249FE9DFB215F45066623FADE37"});})();
+(function(){apex.widget.selectList("#P31_VAL_LBL",{"nullValue":"","ajaxIdentifier":"013234232170BCEC336303915CA0FD0EF2B1C6B119C530CD456324D0CF9CC79F"});})();
+(function(){apex.widget.popupLov("#P31_COUNTRY",{"ajaxIdentifier":"E255DF6998ABA52A10E2826D22801F06120E62006B611D0B1C4477D4DA0972FA","optimizeRefresh":true,"filterWithValue":false,"windowParameters":"Scrollbars=1,resizable=1,width=400,height=450","inputField":"NOT_ENTERABLE"});})();
+(function(){apex.widget.checkboxAndRadio("#P31_ISTOCHNIK","radio",{"ajaxIdentifier":"E87F29A0CD91E455C6EB7EDDBBFC93C512AEEFFA4BC29179D22CA9D1982C28D9","optimizeRefresh":true,"inputName":"p_t30"});})();
+(function(){apex.jQuery(document).apex_modal_page({
+   "transition":"elastic",
+   "draggable":false,
+   "initialHeight":100,
+   "initialWidth":300,
+   "overlayOpacity":0.5,
+   "scrolling":false,
+   "loadingImageSrc":""
+});})();
+(function(){apex.jQuery(document).apex_modal_page({
+   "transition":"elastic",
+   "draggable":false,
+   "initialHeight":100,
+   "initialWidth":300,
+   "overlayOpacity":0.5,
+   "scrolling":false,
+   "loadingImageSrc":""
+});})();
+(function(){apex.jQuery(document).apex_modal_page({
+   "transition":"elastic",
+   "draggable":false,
+   "initialHeight":100,
+   "initialWidth":300,
+   "overlayOpacity":0.5,
+   "scrolling":false,
+   "loadingImageSrc":""
+});})();
+(function(){apex.jQuery(document).apex_modal_page({
+   "transition":"elastic",
+   "draggable":false,
+   "initialHeight":100,
+   "initialWidth":300,
+   "overlayOpacity":0.5,
+   "scrolling":false,
+   "loadingImageSrc":""
+});})();
+(function(){apex.jQuery(document).apex_modal_page({
+   "transition":"elastic",
+   "draggable":false,
+   "initialHeight":100,
+   "initialWidth":300,
+   "overlayOpacity":0.5,
+   "scrolling":false,
+   "loadingImageSrc":""
+});})();
+(function(){apex.jQuery(document).apex_modal_page({
+   "transition":"elastic",
+   "draggable":false,
+   "initialHeight":100,
+   "initialWidth":300,
+   "overlayOpacity":0.5,
+   "scrolling":false,
+   "loadingImageSrc":""
+});})();
+(function(){apex.jQuery(document).apex_modal_page({
+   "transition":"elastic",
+   "draggable":false,
+   "initialHeight":100,
+   "initialWidth":300,
+   "overlayOpacity":0.5,
+   "scrolling":false,
+   "loadingImageSrc":""
+});})();
+(function(){apex.jQuery(document).apex_modal_page({
+   "transition":"elastic",
+   "draggable":false,
+   "initialHeight":100,
+   "initialWidth":300,
+   "overlayOpacity":0.5,
+   "scrolling":false,
+   "loadingImageSrc":""
+});})();
+(function(){apex.jQuery(document).apex_modal_page({
+   "transition":"elastic",
+   "draggable":false,
+   "initialHeight":100,
+   "initialWidth":300,
+   "overlayOpacity":0.5,
+   "scrolling":false,
+   "loadingImageSrc":""
+});})();
+(function(){apex.jQuery(document).apex_modal_page({
+   "transition":"elastic",
+   "draggable":false,
+   "initialHeight":100,
+   "initialWidth":300,
+   "overlayOpacity":0.5,
+   "scrolling":false,
+   "loadingImageSrc":""
+});})();
+(function(){apex.jQuery(document).apex_modal_page({
+   "transition":"elastic",
+   "draggable":false,
+   "initialHeight":100,
+   "initialWidth":300,
+   "overlayOpacity":0.5,
+   "scrolling":false,
+   "loadingImageSrc":""
+});})();
+(function(){apex.jQuery(document).apex_modal_page({
+   "transition":"elastic",
+   "draggable":false,
+   "initialHeight":100,
+   "initialWidth":300,
+   "overlayOpacity":0.5,
+   "scrolling":false,
+   "loadingImageSrc":""
+});})();
+(function(){apex.jQuery(document).apex_modal_page({
+   "transition":"elastic",
+   "draggable":false,
+   "initialHeight":100,
+   "initialWidth":300,
+   "overlayOpacity":0.5,
+   "scrolling":false,
+   "loadingImageSrc":""
+});})();
+(function(){apex.jQuery(document).apex_modal_page({
+   "transition":"elastic",
+   "draggable":false,
+   "initialHeight":100,
+   "initialWidth":300,
+   "overlayOpacity":0.5,
+   "scrolling":false,
+   "loadingImageSrc":""
+});})();
+(function(){apex.jQuery(document).apex_modal_page({
+   "transition":"elastic",
+   "draggable":false,
+   "initialHeight":100,
+   "initialWidth":300,
+   "overlayOpacity":0.5,
+   "scrolling":false,
+   "loadingImageSrc":""
+});})();
+(function(){apex.jQuery(document).apex_modal_page({
+   "transition":"elastic",
+   "draggable":false,
+   "initialHeight":100,
+   "initialWidth":300,
+   "overlayOpacity":0.5,
+   "scrolling":false,
+   "loadingImageSrc":""
+});})();
+(function(){apex.jQuery(document).apex_modal_page({
+   "transition":"elastic",
+   "draggable":false,
+   "initialHeight":100,
+   "initialWidth":300,
+   "overlayOpacity":0.5,
+   "scrolling":false,
+   "loadingImageSrc":""
+});})();
+(function(){apex.jQuery(document).apex_modal_page({
+   "transition":"elastic",
+   "draggable":false,
+   "initialHeight":100,
+   "initialWidth":300,
+   "overlayOpacity":0.5,
+   "scrolling":false,
+   "loadingImageSrc":""
+});})();
+(function(){apex.jQuery(document).apex_modal_page({
+   "transition":"elastic",
+   "draggable":false,
+   "initialHeight":100,
+   "initialWidth":300,
+   "overlayOpacity":0.5,
+   "scrolling":false,
+   "loadingImageSrc":""
+});})();
+(function(){apex.da.initDaEventList();})();
+(function(){apex.da.init();})();
+
+
+});</script>
+
+
+</div></form>

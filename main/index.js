@@ -1,4 +1,5 @@
-const { app, BrowserWindow, ipcMain} = require('electron')
+const { app, BrowserWindow, ipcMain} = require('electron');
+const { beneficiar_create } = require('./controllers/beneficiar_controller.js');
 const {login,set_local_password,local_password_init, check_local_pass} = require('./controllers/user_controller.js');
 
 var mainWindow;
@@ -12,7 +13,9 @@ async function createWindow() {
   })
   win.maximize();
   // win.removeMenu()
+
   win.loadFile("renderer/create_contract.html")
+
   mainWindow=win;
 }
 
@@ -48,3 +51,9 @@ ipcMain.on('check_local_pass', (event, credentials) => {
   check_local_pass(event, credentials, mainWindow);
 });
 
+
+// Shoh functions
+ipcMain.on('beneficiar_create', (event, came) => {
+  beneficiar_create(event, came)
+});
+// Shoh functions

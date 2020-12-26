@@ -1,0 +1,44 @@
+<div class="uRegionContent clearfix">
+    <div id="report_8605760382266021_catch"><table class="uReportContainer" id="report_R8605760382266021" summary="">
+<tbody class="uReportPagination">
+<tr><td></td></tr>
+</tbody>
+<tbody class="uReportBody">
+<tr><td>
+<table summary="Страховые покрытия" class="uReport uReportHorizontal">
+<tbody><tr><td colspan="16" id="AVTO" class="apex_report_break"><b>ALFA ROMEO 146 ti (2020 | 123123)</b></td></tr>
+</tbody><thead><tr><th align="center" id="LINK_000">Вид страхования</th><th align="right" id="MAJBURIYAT_000">Страховая сумма</th><th align="right" id="MUKOFOT_F_000">Премия %</th><th align="right" id="MUKOFOT_000">Премия</th><th align="right" id="OBEKT_SONI_000">Кол-во объектов</th><th align="center" id="FRAN_000">Франшиза</th><th align="center" id="FRAN_CS_000">Фр.условная</th><th align="right" id="FRAN_PR_000">Франшиза %</th><th align="right" id="FRAN_SM_000">Фр.сумма </th></tr></thead>
+<tbody>
+
+<tr><td headers="LINK_000">Страхование транспортных средств, выставляемых в залог</td><td align="right" headers="MAJBURIYAT_000"><label for="f02_0001" id="f02_0001_LABEL" class="u-VisuallyHidden">Страховая сумма</label><input type="text" name="f02" size="16" maxlength="2000" value="" class="u-TF-item u-TF-item--text numflt" style="text-align: right;" onchange="calculateTotal(this);objectCount(this);" id="f02_0001" autocomplete="off"></td><td headers="MUKOFOT_F_000"><label for="f03_0001" id="f03_0001_LABEL" class="u-VisuallyHidden">Премия %</label><input type="text" name="f03" size="5" maxlength="2000" value="" class="u-TF-item u-TF-item--text numflt" style="text-align: right;" onchange="calculateTotal(this);objectCount(this);" id="f03_0001" autocomplete="off"></td><td headers="MUKOFOT_000"><label for="f04_0001" id="f04_0001_LABEL" class="u-VisuallyHidden">Премия</label><input type="text" name="f04" size="16" maxlength="2000" value="" class="u-TF-item u-TF-item--text numflt" style="text-align: right;" onchange="objectCount(this);calculatePerc(this);" id="f04_0001" autocomplete="off"></td><td headers="OBEKT_SONI_000"><label for="f05_0001" id="f05_0001_LABEL" class="u-VisuallyHidden">Кол-во объектов</label><input type="text" name="f05" size="5" maxlength="2000" value="" class="u-TF-item u-TF-item--text " style="text-align: right;" id="f05_0001" autocomplete="off"><input type="hidden" name="f01" value="766681" class="u-TF-item u-TF-item--hidden " id="f01_0001" autocomplete="off"><input type="hidden" id="fcs_0001" name="fcs" value="B34A818E7FF25B96F1A5CE7D46BA267B35B4C808" autocomplete="off"><input type="hidden" id="frowid_0001" name="frowid" value="AAAWt9AAOAACUihAAF" autocomplete="off"><input type="hidden" id="fcud_0001" name="fcud" value="U" autocomplete="off"></td><td align="center" headers="FRAN_000"><label for="f06_0001" id="f06_0001_LABEL" class="u-VisuallyHidden">Франшиза</label><input type="checkbox" name="f06_NOSUBMIT" value="1" class="u-TF-item u-TF-item--checkbox " onchange="franshizaClear(this);" id="f06_0001" onclick="if (this.checked) {apex.jQuery('#f06_0001_01').val('1');} else {apex.jQuery('#f06_0001_01').val('0');}" autocomplete="off"><input type="hidden" name="f06" value="0" class="u-TF-item u-TF-item--checkbox " onchange="franshizaClear(this);" id="f06_0001_01" autocomplete="off"></td><td align="center" headers="FRAN_CS_000"><label for="f07_0001" id="f07_0001_LABEL" class="u-VisuallyHidden">Фр.условная</label><input type="checkbox" name="f07_NOSUBMIT" value="1" class="u-TF-item u-TF-item--checkbox " id="f07_0001" onclick="if (this.checked) {apex.jQuery('#f07_0001_01').val('1');} else {apex.jQuery('#f07_0001_01').val('0');}" autocomplete="off"><input type="hidden" name="f07" value="0" class="u-TF-item u-TF-item--checkbox " id="f07_0001_01" autocomplete="off"></td><td headers="FRAN_PR_000"><label for="f08_0001" id="f08_0001_LABEL" class="u-VisuallyHidden">Франшиза %</label><input type="text" name="f08" size="5" maxlength="2000" value="" class="u-TF-item u-TF-item--text numflt" style="text-align:right;" onchange="franshizaCheck(this);franshizaFoiz(this);" id="f08_0001" autocomplete="off"></td><td headers="FRAN_SM_000"><label for="f09_0001" id="f09_0001_LABEL" class="u-VisuallyHidden">Фр.сумма</label><input type="text" name="f09" size="15" maxlength="2000" value="" class="u-TF-item u-TF-item--text numflt" style="text-align:right;" onchange="franshizaCheck(this);" id="f09_0001" autocomplete="off"></td></tr>
+<tr><td style="text-align:right;"><b>&nbsp;</b></td><td style="text-align:right;"><b>                   0,00</b></td><td style="text-align:right;"><b>&nbsp;</b></td><td style="text-align:right;"><b>                   0,00</b></td><td style="text-align:right;"><b>0</b></td><td style="text-align:right;"><b>&nbsp;</b></td><td style="text-align:right;"><b>&nbsp;</b></td><td style="text-align:right;"><b>&nbsp;</b></td><td style="text-align:right;"><b>                   0,00</b></td></tr>
+<tr><td style="text-align:right;"><b>&nbsp;</b></td><td style="text-align:right;"><b>0,00</b></td><td style="text-align:right;"><b>&nbsp;</b></td><td style="text-align:right;"><b>0,00</b></td><td style="text-align:right;"><b>0</b></td><td style="text-align:right;"><b>&nbsp;</b></td><td style="text-align:right;"><b>&nbsp;</b></td><td style="text-align:right;"><b>&nbsp;</b></td><td style="text-align:right;"><b>0,00</b></td></tr>
+</tbody>
+</table>
+</td>
+</tr>
+</tbody>
+<tbody class="uReportPagination">
+<tr><td colspan="16"><table role="presentation"><tbody><tr><td class="pagination"></td><td class="pagination"></td><td nowrap="nowrap" class="pagination"><span class="fielddata">1 - 1</span></td><td class="pagination"></td><td class="pagination"></td></tr></tbody></table></td></tr>
+</tbody>
+</table>
+<div class="uReportDownloadLinks"></div><input type="hidden" name="fmap" value="INS_ID" id="fmap_001">
+<input type="hidden" name="fhdr" value="Ins Id" id="fhdr_001">
+<input type="hidden" name="fmap" value="MAJBURIYAT" id="fmap_002">
+<input type="hidden" name="fhdr" value="Страховая сумма" id="fhdr_002">
+<input type="hidden" name="fmap" value="MUKOFOT_F" id="fmap_003">
+<input type="hidden" name="fhdr" value="Премия %" id="fhdr_003">
+<input type="hidden" name="fmap" value="MUKOFOT" id="fmap_004">
+<input type="hidden" name="fhdr" value="Премия" id="fhdr_004">
+<input type="hidden" name="fmap" value="OBEKT_SONI" id="fmap_005">
+<input type="hidden" name="fhdr" value="Кол-во объектов" id="fhdr_005">
+<input type="hidden" name="fmap" value="FRAN" id="fmap_006">
+<input type="hidden" name="fhdr" value="Франшиза" id="fhdr_006">
+<input type="hidden" name="fmap" value="FRAN_CS" id="fmap_007">
+<input type="hidden" name="fhdr" value="Фр.условная" id="fhdr_007">
+<input type="hidden" name="fmap" value="FRAN_PR" id="fmap_008">
+<input type="hidden" name="fhdr" value="Франшиза %" id="fhdr_008">
+<input type="hidden" name="fmap" value="FRAN_SM" id="fmap_009">
+<input type="hidden" name="fhdr" value="Фр.сумма" id="fhdr_009">
+</div>
+  </div>

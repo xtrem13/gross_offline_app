@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <form action="#" method="POST">
+        <div style="display: flex; flex-direction: column;">
+            <label for="">TB_REZIDENT</label>
+            <input id="TB_REZIDENT" name="TB_REZIDENT" type="text">
+            <label for="">TB_ORGINN</label>
+            <input id="TB_ORGINN" name="TB_ORGINN" type="text">
+            <label for="">TB_KOD_OKONX</label>
+            <input id="TB_KOD_OKONX" name="TB_KOD_OKONX" type="text">
+            <label for="">TB_KOD_OKED</label>
+            <input id="TB_KOD_OKED" name="TB_KOD_OKED" type="text">
+            <label for="">TB_ORGMFO</label>
+            <input id="TB_ORGMFO" name="TB_ORGMFO" type="text">
+            <label for="">TB_ORGBANK</label>
+            <input id="TB_ORGBANK" name="TB_ORGBANK" type="text">
+            <label for="">TB_ORGSCHET</label>
+            <input id="TB_ORGSCHET" name="TB_ORGSCHET" type="text">
+            <label for="">TB_KOD_OKPO</label>
+            <input id="TB_KOD_OKPO" name="TB_KOD_OKPO" type="text">
+            <label for="">TB_KOD_SOATO</label>
+            <input id="TB_KOD_SOATO" name="TB_KOD_SOATO" type="text">
+            <label for="">TB_DIREKTOR</label>
+            <input id="TB_DIREKTOR" name="TB_DIREKTOR" type="text">
+            <label for="">TB_BUHGALTER</label>
+            <input id="TB_BUHGALTER" name="TB_BUHGALTER" type="text">
+            <label for="">TB_BASIS</label>
+            <input id="TB_BASIS" name="TB_BASIS" type="text">
+            <label for="">TB_ISBANK</label>
+            <input id="TB_ISBANK" name="TB_ISBANK" type="text">
+            <label for="">TB_COUNTRY</label>
+            <input id="TB_COUNTRY" name="TB_COUNTRY" type="text">
+            <label for="">TB_OBLAST</label>
+            <input id="TB_OBLAST" name="TB_OBLAST" type="text">
+            <label for="">TB_RAYON</label>
+            <input id="TB_RAYON" name="TB_RAYON" type="text">
+            <label for="">TB_ULICA</label>
+            <input id="TB_ULICA" name="TB_ULICA" type="text">
+            <label for="">TB_DOM</label>
+            <input id="TB_DOM" name="TB_DOM" type="text">
+            <label for="">TB_KV</label>
+            <input id="TB_KV" name="TB_KV" type="text">
+            <label for="">TB_EMAIL</label>
+            <input id="TB_EMAIL" name="TB_EMAIL" type="text">
+            <label for="">TB_SITE</label>
+            <input id="TB_SITE" name="TB_SITE" type="text">
+            <label for="">TB_POCHTA</label>
+            <input id="TB_POCHTA" name="TB_POCHTA" type="text">
+            <label for="">TB_PHONE1</label>
+            <input id="TB_PHONE1" name="TB_PHONE1" type="text">
+            <label for="">TB_PHONE2</label>
+            <input id="TB_PHONE2" name="TB_PHONE2" type="text">
+            <label for="">TB_FAX</label>
+            <input id="TB_FAX" name="TB_FAX" type="text">
+            <button type="submit" onclick="getFormData(event, this)">Saqlash</button>
+        </div>
+    </form>
+    <script>
+        const { ipcRenderer } = require('electron');
+        //const myform = document.querySelector('form')
+        const online_login = document.getElementById("onlinelogin");
+        const local_password = document.getElementById("set-local-login");
+        var user_id;
+        function getFormData(e, st){
+            e.preventDefault()
+            const myform = new FormData(document.querySelector('form'))
+            var object = {};
+            myform.forEach(function(value, key){
+                object[key] = value;
+            });
+            var sended = JSON.stringify(object);
+            ipcRenderer.send("beneficiar_create", sended)
+        }        
+        /*myform.addEventListener('submit', (e) => {
+            e.preventDefault()
+            const formData = new FormData(e.target);
+            // Now you can use formData.get('foo'), for example.
+            console.log(formData)
+            // Don't forget e.preventDefault() if you want to stop normal form .submission
+        });*/
+        function auth() {
+            const login = document.getElementById('login').value;
+            const password = document.getElementById('password').value;
+            ipcRenderer.send("login", { login, password })
+        }
+
+        function enter(event) {
+            if (event.keyCode == 13) {
+                auth();
+            }
+        }
+
+        function set_local_password(event, elem) {
+            if (event.keyCode == 13) {
+                ipcRenderer.send("set_local_password", user_id, elem.value)
+            }
+        }
+
+        ipcRenderer.on('successfull_login', function (event, id) {
+            user_id = id;
+            online_login.style.display = "none";
+            local_password.style.display = "block";
+        });
+
+        ipcRenderer.on('local_password_saved', function (event, id) {
+            window.location.assign("../index.html");
+        });
+    </script>
+</body>
+
+</html>
