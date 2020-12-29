@@ -1,0 +1,112 @@
+<div>
+	<div class="row form-group">
+		<div class="col-md-4">
+			<span>Дата заключения:</span>
+		</div>
+		<div class="col-md-8">
+			<input type="date" class="form-control" style="width:initial">
+		</div>
+	</div>
+	<div class="row  form-group">
+		<div class="col-md-4">
+			<span>Вид страхования:</span>
+		</div>
+		<div class="col-md-8">
+
+			<span>21.Страхование транспортных средств, выставляемых в залог</span>
+		</div>
+	</div>
+	<div class="row  form-group">
+		<div class="col-md-4">
+			<span>Предварительный период:</span>
+		</div>
+
+		<div class="col-md-8">
+			<span>с</span>
+			<input type="date" class="form-control" id="DATEF">
+			<span>г.</span><br>
+			<input type="number" value="365" class="form-control" id="DAY">
+			<span>дня(ей) по</span><br>
+			<input type="date" class="form-control" id="DATET">
+			<span>г.</span>
+		</div>
+	</div>
+	<div class="row  form-group">
+		<div class="col-md-4">
+			<span>Страхователь:</span>
+		</div>
+		<div class="col-md-8">
+			<button class="btn btn-info">MANNAPOV  BATIR  EGAMBERDIYEVICH</button>
+		</div>
+	</div>
+	<div class="row  form-group">
+		<div class="col-md-4">
+			<span>Бенефициар:</span>
+		</div>
+		<div class="col-md-8">
+			<button class="btn btn-info">ХАМКОРБАНК АКЦ.ТИЖ.БАНК</button>
+		</div>
+	</div>
+	<div class="row  form-group">
+		<div class="col-md-4">
+			<span>Географическая зона:</span>
+		</div>
+		<div class="col-md-8">
+			<select name="" id="" class="form-control">
+				<option value="">РЕСПУБЛИКА УЗБЕКИСТАН</option>
+			</select>
+		</div>
+	</div>
+	<div class="row  form-group">
+
+		<div class="col-md-4">
+			<span>Источник оплаты:</span>
+		</div>
+		<div class="col-md-8">
+			<input type="radio" name="smth" data-color = 'purple' >
+			<label for="">Собственные средства</label>
+
+			<input type="radio" name="smth" data-color = 'purple' >
+			<label for="">Бюджетные средства</label>
+		</div>
+	</div>
+	<div class="row  form-group">
+		<div class="col-md-4">
+			<span>Рег.номер: </span>
+		</div>
+		<div class="col-md-8">
+			<span>10/21/</span>
+			<input type="text" class="form-control">
+		</div>
+	</div>
+	<div class="row  form-group">
+		<div class="col-md-4">
+			<span>Старый номер договора:</span>
+		</div>
+		<div class="col-md-8">
+			<input type="text" class="form-control">
+		</div>
+	</div>
+</div>
+<script>
+	const datef=document.getElementById("DATEF");
+	const day=document.getElementById("DAY");
+	const datet=document.getElementById("DATET");
+	
+	datef.addEventListener("change",function(){
+		sync_dates();	
+	});
+
+	function sync_dates(){
+		console.log(datef.value);
+		console.log(datet.value);
+		console.log(day.value);
+		console.log(addDays(datef.value, day.value));
+	}
+
+	function addDays(date, days) {
+		var result = new Date(date);
+		result.setDate(result.getDate() + days);
+		return result;
+	}
+</script>
