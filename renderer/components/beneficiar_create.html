@@ -1,136 +1,134 @@
 <form action="#" method="POST">
-    <div style="display: flex; flex-direction: column;">
-        <div class="row form-group">
-            <div class="col-12">
-                <label for="">Резидент</label>
-                <input type="radio" id="yes" name="TB_REZIDENT" value="1">
-                <label for="yes">Да</label><br>
-                <input type="radio" id="no" name="TB_REZIDENT" value="0">
-                <label for="no">Нет</label><br>
-            </div>
+    <div class="row form-group">
+        <div class="col-12">
+            <label for="">Резидент</label>
+            <input type="radio" id="yes" name="TB_REZIDENT" value="1">
+            <label for="yes">Да</label><br>
+            <input type="radio" id="no" name="TB_REZIDENT" value="0">
+            <label for="no">Нет</label><br>
         </div>
-        <div class="row form-group">
-            <div class="col-4">
-                <label for="">ИНН</label>
-                <input id="TB_ORGINN" name="TB_ORGINN" type="text">
-            </div>
-            <div class="col-8">
-                <label for="">Наименование организации</label>
-                <input id="TB_ORGNAME" name="TB_ORGNAME" type="text">
-            </div>
-        </div>
-        <div class="row form-group">
-            <div class="col-6">
-                <label for="">ОКОНХ</label>
-                <input id="TB_KOD_OKONX" name="TB_KOD_OKONX" type="text">
-            </div>
-            <div class="col-6">
-                <label for="">ОКЕД</label>
-                <input id="TB_KOD_OKED" name="TB_KOD_OKED" type="text">
-            </div>
-        </div>
-        <div class="row form-group">
-            <div class="col-3">
-                <label for="">МФО</label>
-                <input id="TB_ORGMFO" name="TB_ORGMFO" type="text">
-            </div>
-            <div class="col-6">
-                <label for="">Банк</label>
-                <input id="TB_ORGBANK" name="TB_ORGBANK" type="text">
-            </div>
-            <div class="col-3">
-                <label for="">Расчётный счёт</label>
-                <input id="TB_ORGSCHET" name="TB_ORGSCHET" type="text">
-            </div>
-        </div>
-        <div class="row form-group">
-            <div class="col-6">
-                <label for="">ОКПО</label>
-                <input id="TB_KOD_OKPO" name="TB_KOD_OKPO" type="text">
-            </div>
-            <div class="col-6">
-                <label for="">СОАТО</label>
-                <input id="TB_KOD_SOATO" name="TB_KOD_SOATO" type="text">
-            </div>
-        </div>
-        <div class="row from-group">
-            <div class="col-6">
-                <label for="">Директор</label>
-                <input id="TB_DIREKTOR" name="TB_DIREKTOR" type="text">
-            </div>
-            <div class="col-6">
-                <label for="">Бухгалтер</label>
-                <input id="TB_BUHGALTER" name="TB_BUHGALTER" type="text">
-            </div>
-        </div>
-        <div class="row form-group">
-            <div class="col-9">
-                <label for="TB_BASIS">Действует на основании</label>
-                <input id="TB_BASIS" name="TB_BASIS" type="text">
-            </div>
-            <div class="col-3">
-                <label for="">Банк</label>
-                <input type="checkbox" id="TB_ISBANK" name="TB_ISBANK" value="1">
-                <input id="TB_ISBANK" name="" type="text">
-            </div>
-        </div>
-        <div class="row form-group">
-            <div class="col-3">
-                <label for="">Страна</label>
-                <input id="TB_COUNTRY" name="TB_COUNTRY" type="text">
-            </div>
-            <div class="col-3">
-                <label for="">Область</label>
-                <input id="TB_OBLAST" name="TB_OBLAST" type="text">
-            </div>
-            <div class="col-3">
-                <label for="">Район/город</label>
-                <input id="TB_RAYON" name="TB_RAYON" type="text">
-            </div>
-            <div class="col-3">
-                <label for="">Улица/Квартал</label>
-                <input id="TB_ULICA" name="TB_ULICA" type="text">
-            </div>
-        </div>
-        <div class="row form-group">
-            <div class="col-2">
-                <label for="">TB_DOM</label>
-                <input id="TB_DOM" name="TB_DOM" type="text">
-            </div>
-            <div class="col-3">
-                <label for="">TB_KV</label>
-                <input id="TB_KV" name="TB_KV" type="text">
-            </div>
-            <div class="col-4">
-                <label for="">TB_EMAIL</label>
-                <input id="TB_EMAIL" name="TB_EMAIL" type="text">
-            </div>
-            <div class="col-3">
-                <label for="">TB_SITE</label>
-                <input id="TB_SITE" name="TB_SITE" type="text">
-            </div>
-        </div>
-        <div class="row form-row">
-            <div class="col-3">
-                <label for="">TB_POCHTA</label>
-                <input id="TB_POCHTA" name="TB_POCHTA" type="text">
-            </div>
-            <div class="col-3">
-                <label for="">TB_PHONE1</label>
-                <input id="TB_PHONE1" name="TB_PHONE1" type="text">
-            </div>
-            <div class="col-3">
-                <label for="">TB_PHONE2</label>
-                <input id="TB_PHONE2" name="TB_PHONE2" type="text">
-            </div>
-            <div class="col-3">
-                <label for="">TB_FAX</label>
-                <input id="TB_FAX" name="TB_FAX" type="text">
-            </div>
-        </div>
-        <button type="submit" onclick="getFormData(event, this)">Saqlash</button>
     </div>
+    <div class="row form-group">
+        <div class="col-4">
+            <label for="">ИНН</label>
+            <input id="TB_ORGINN" name="TB_ORGINN" type="text">
+        </div>
+        <div class="col-8">
+            <label for="">Наименование организации</label>
+            <input id="TB_ORGNAME" name="TB_ORGNAME" type="text">
+        </div>
+    </div>
+    <div class="row form-group">
+        <div class="col-6">
+            <label for="">ОКОНХ</label>
+            <input id="TB_KOD_OKONX" name="TB_KOD_OKONX" type="text">
+        </div>
+        <div class="col-6">
+            <label for="">ОКЕД</label>
+            <input id="TB_KOD_OKED" name="TB_KOD_OKED" type="text">
+        </div>
+    </div>
+    <div class="row form-group">
+        <div class="col-3">
+            <label for="">МФО</label>
+            <input id="TB_ORGMFO" name="TB_ORGMFO" type="text">
+        </div>
+        <div class="col-6">
+            <label for="">Банк</label>
+            <input id="TB_ORGBANK" name="TB_ORGBANK" type="text">
+        </div>
+        <div class="col-3">
+            <label for="">Расчётный счёт</label>
+            <input id="TB_ORGSCHET" name="TB_ORGSCHET" type="text">
+        </div>
+    </div>
+    <div class="row form-group">
+        <div class="col-6">
+            <label for="">ОКПО</label>
+            <input id="TB_KOD_OKPO" name="TB_KOD_OKPO" type="text">
+        </div>
+        <div class="col-6">
+            <label for="">СОАТО</label>
+            <input id="TB_KOD_SOATO" name="TB_KOD_SOATO" type="text">
+        </div>
+    </div>
+    <div class="row from-group">
+        <div class="col-6">
+            <label for="">Директор</label>
+            <input id="TB_DIREKTOR" name="TB_DIREKTOR" type="text">
+        </div>
+        <div class="col-6">
+            <label for="">Бухгалтер</label>
+            <input id="TB_BUHGALTER" name="TB_BUHGALTER" type="text">
+        </div>
+    </div>
+    <div class="row form-group">
+        <div class="col-9">
+            <label for="TB_BASIS">Действует на основании</label>
+            <input id="TB_BASIS" name="TB_BASIS" type="text">
+        </div>
+        <div class="col-3">
+            <label for="">Банк</label>
+            <input type="checkbox" id="TB_ISBANK" name="TB_ISBANK" value="1">
+            <input id="TB_ISBANK" name="" type="text">
+        </div>
+    </div>
+    <div class="row form-group">
+        <div class="col-3">
+            <label for="">Страна</label>
+            <input id="TB_COUNTRY" name="TB_COUNTRY" type="text">
+        </div>
+        <div class="col-3">
+            <label for="">Область</label>
+            <input id="TB_OBLAST" name="TB_OBLAST" type="text">
+        </div>
+        <div class="col-3">
+            <label for="">Район/город</label>
+            <input id="TB_RAYON" name="TB_RAYON" type="text">
+        </div>
+        <div class="col-3">
+            <label for="">Улица/Квартал</label>
+            <input id="TB_ULICA" name="TB_ULICA" type="text">
+        </div>
+    </div>
+    <div class="row form-group">
+        <div class="col-2">
+            <label for="">Дом</label>
+            <input id="TB_DOM" name="TB_DOM" type="text">
+        </div>
+        <div class="col-3">
+            <label for="">Квартира</label>
+            <input id="TB_KV" name="TB_KV" type="text">
+        </div>
+        <div class="col-4">
+            <label for="">E-mail</label>
+            <input id="TB_EMAIL" name="TB_EMAIL" type="text">
+        </div>
+        <div class="col-3">
+            <label for="">Сайт</label>
+            <input id="TB_SITE" name="TB_SITE" type="text">
+        </div>
+    </div>
+    <div class="row form-row">
+        <div class="col-3">
+            <label for="">Почтовый индекс</label>
+            <input id="TB_POCHTA" name="TB_POCHTA" type="text">
+        </div>
+        <div class="col-3">
+            <label for="">Телефон 1</label>
+            <input id="TB_PHONE1" name="TB_PHONE1" type="text">
+        </div>
+        <div class="col-3">
+            <label for="">Телефон 2</label>
+            <input id="TB_PHONE2" name="TB_PHONE2" type="text">
+        </div>
+        <div class="col-3">
+            <label for="">Факс</label>
+            <input id="TB_FAX" name="TB_FAX" type="text">
+        </div>
+    </div>
+    <button type="submit" onclick="getFormData(event, this)">Saqlash</button>
 </form>
 <script>
-    
+
 </script>
