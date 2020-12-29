@@ -13,52 +13,13 @@
 <body>
 	<div class="container-fluid">
 		<div class="wrapper">
-			<div class="sidebar">
-				<div class="glogo">
-					<div>
-						<img src="../assets/images/glogo.png" alt="logo">
-						<span>OFFLINE</span>
-					</div>
-				</div>
-				<ul>
-					<li>
-						<a href="#">
-							Создать договор
-						</a>
-					</li>
-					<li>
-						<a href="#">Не отправленные договора</a>
-					</li>
-					<li>
-						<a href="#">Отправленные договора</a>
-					</li>
-				</ul>
+			<div id="sidebar">
+				<!-- sidebar.html component -->
 			</div>
 
 			<div class="main">
-				<div class="top">
-					<div id="full_toggler">
-						<
-					</div>
-					<div class="lang-drop">
-						
-						<!-- <span id="active-lang">Uzbek</span>
-						<ul id="lang-options">
-							<li>Russian</li>
-						</ul> -->
-					</div>
-					<div class="right">
-						<div class="sync">
-							Последняя синхронизация: 2020-12-01 12:04 
-						</div>
-						<div class="name-cont">
-							<span id="name">Салимов Салим</span>
-							<ul id="logout">
-								<li>Выйти</li>
-								<li>Забыть</li>
-							</ul>
-						</div>
-					</div>
+				<div id="top">
+					<!-- top.html -->
 				</div>
 				<div class="content">
 					<div class="card" id="root">
@@ -293,6 +254,8 @@
 		//include elements
 		
 		include("./components/common.html","common");
+		include("./components/sidebar.html","sidebar");
+		include("./components/top.html","top");
 		
 
 		// const active_lang=document.getElementById('active-lang');

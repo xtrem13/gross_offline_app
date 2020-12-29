@@ -7,7 +7,7 @@ async function include(path, elementId){
 	.then(content=>{
 		const tree=document.createElement("div");
 		tree.innerHTML=content;
-		root.appendChild(tree.children[0].cloneNode(true));
+		root.parentNode.replaceChild(tree.children[0].cloneNode(true), root);
 		eval(tree.children[1].innerHTML);
 	})
 }
