@@ -6,11 +6,12 @@ const md5 = require('md5');
 
 const beneficiar_controller = () => {
 
-    const create = async (win, arg) => {
-
+    const create = async (arg, win) => {
+        console.log(win);
         try {
-            const user = await Beneficiar.create(arg)
-            console.log(user)
+            const beneficiar = await Beneficiar.create(arg);
+            
+            win.webContents.send('beneficiar_saved',beneficiar);
         }
         catch(e) {
             console.log(e)

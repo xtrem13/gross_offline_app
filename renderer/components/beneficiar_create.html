@@ -146,7 +146,6 @@
         myform.forEach(function (value, key) {
             object[key] = value;
         });
-        console.log(object)
         ipcRenderer.send("beneficiar_create", object)
         $("#beneficiar_modal").modal('hide');
     }

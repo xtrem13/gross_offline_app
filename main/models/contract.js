@@ -1,5 +1,5 @@
 const { Sequelize, DataTypes } = require('sequelize');
-
+const Beneficiar=require('./Beneficiar.js');
 const sequelize = new Sequelize({
     dialect: 'sqlite',
     storage: './database.sqlite3'
@@ -65,6 +65,9 @@ const Contract = sequelize.define('Contract', {
     allowNull: false
   }
 });
+
+Contract.belongsTo(Beneficiar);
+Beneficiar.hasMany(Contract);
 
 Contract.sync({force: true});
 

@@ -43,7 +43,8 @@
 			<span>Бенефициар:</span>
 		</div>
 		<div class="col-md-8">
-			<button class="btn btn-info" type="button" data-toggle="modal" data-target="#beneficiar_modal">Выбрат</button>
+			<button class="btn btn-info" id="beneficiar_label" type="button" data-toggle="modal" data-target="#beneficiar_modal">Выбрат</button>
+			<input type="hidden" id="beneficiar_input" name="BENEFID">
 		</div>
 	</div>
 	<div class="row  form-group">
@@ -171,8 +172,14 @@
 
 	// listeners
 
-	ipcRenderer.on('contract_saved',function(event,id){
+	ipcRenderer.on('contract_saved',function(event){
 		save_button.style.display="none";
 		alert("Contract saved");
+	});
+	ipcRenderer.on('beneficiar_saved',function(event, beneficiar){
+		console.log(beneficiar)
+		alert("Beneficiar saved");
+		document.getElementById("beneficiar_input").value=beneficiar.dataValues.id;
+		document.getElementById("beneficiar_label").innerHTML=beneficiar.dataValues.TB_ORGNAME;
 	});
 </script>
