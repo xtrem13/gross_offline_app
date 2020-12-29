@@ -255,29 +255,43 @@
 	<div class="modal" id="beneficiar_modal">
 		<div class="modal-dialog modal-lg">
 			<div class="modal-content">
-
 				<!-- Modal Header -->
 				<div class="modal-header">
 					<h4 class="modal-title">Бенефициар</h4>
 					<button type="button" class="close" data-dismiss="modal">&times;</button>
 				</div>
-
 				<!-- Modal body -->
 				<div class="modal-body">
 					<div id="beneficiar_create">
-
 					</div>
 				</div>
-
 				<!-- Modal footer -->
 				<div class="modal-footer">
 					<button type="button" class="btn btn-danger" data-dismiss="modal">Закрыт</button>
 				</div>
-
 			</div>
 		</div>
 	</div>
-	<<<<<<< HEAD
+	<div class="modal" id="insurant_modal">
+		<div class="modal-dialog modal-lg">
+			<div class="modal-content">
+				<!-- Modal Header -->
+				<div class="modal-header">
+					<h4 class="modal-title">Страхователь</h4>
+					<button type="button" class="close" data-dismiss="modal">&times;</button>
+				</div>
+				<!-- Modal body -->
+				<div class="modal-body">
+					<div id="insurant_create">
+					</div>
+				</div>
+				<!-- Modal footer -->
+				<div class="modal-footer">
+					<button type="button" class="btn btn-danger" data-dismiss="modal">Закрыт</button>
+				</div>
+			</div>
+		</div>
+	</div>
 
 	<!-- Insert this line above script imports  -->
 	<script>if (typeof module === 'object') {window.module = module; module = undefined;}</script>
@@ -300,6 +314,7 @@
 			await include("./components/sidebar.html","sidebar");
 			await include("./components/top.html","top");
 			await include("./components/beneficiar_create.html", "beneficiar_create");
+			await include("./components/insurant_create.html", "insurant_create");
 
 			const inputs=document.getElementsByTagName("input");
 			for (var i = 0; i < inputs.length; i++) {
@@ -326,7 +341,6 @@
 		// nextBtn.addEventListener("click", function(){
 		// 	stepSaver();
 		// });
-
 		full_toggler.addEventListener("click", function (event){
 			toggle_full_width(event);
 		})
