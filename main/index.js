@@ -53,7 +53,7 @@ ipcMain.on('check_local_pass', (event, credentials) => {
 
 
 // Shoh functions
-ipcMain.on('beneficiar_create', (event, came) => {
-  beneficiar_create(event, came)
+ipcMain.on('beneficiar_create', (came, mainWindow) => {
+  beneficiar_create(came, mainWindow)
 });
 // Shoh functions

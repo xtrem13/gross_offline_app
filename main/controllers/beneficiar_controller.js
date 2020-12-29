@@ -6,7 +6,7 @@ const md5 = require('md5');
 
 const beneficiar_controller = () => {
 
-    const create = async (arg, win) => {
+    const create = async (win, arg) => {
 
         try {
             const user = await Beneficiar.create(arg)
