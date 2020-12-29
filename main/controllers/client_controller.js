@@ -4,7 +4,7 @@ const Beneficiar = require('../models/beneficiar.js');
 const axios = require('axios');
 const md5 = require('md5');
 
-const beneficiar_controller = () => {
+const client_controller = () => {
 
     const create = async (win, arg) => {
 
@@ -21,4 +21,4 @@ const beneficiar_controller = () => {
         beneficiar_create: create
     }
 }
-module.exports = beneficiar_controller();
+module.exports = client_controller();
