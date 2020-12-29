@@ -58,7 +58,7 @@ ipcMain.on('contract_create', (event, payload) => {
 
 
 // Shoh functions
-ipcMain.on('beneficiar_create', (event, came) => {
-  beneficiar_create(event, came)
+ipcMain.on('beneficiar_create', (came, mainWindow) => {
+  beneficiar_create(came, mainWindow)
 });
 // Shoh functions

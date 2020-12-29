@@ -1,5 +1,6 @@
 <!doctype html>
 <html lang="en">
+
 <head>
 
 	<meta charset="utf-8">
@@ -10,6 +11,7 @@
 	<link rel="stylesheet" href="../assets/css/main.css">
 	<title>GROSS OFFLINE</title>
 </head>
+
 <body>
 	<div class="container-fluid">
 		<div class="wrapper">
@@ -41,7 +43,8 @@
 												<ul>
 													<li><a href="#commonTab" data-toggle="tab">Общие сведения</a></li>
 													<li><a href="#object" data-toggle="tab">Объект</a></li>
-													<li><a href="#contract" data-toggle="tab">Договор страхования</a></li>
+													<li><a href="#contract" data-toggle="tab">Договор страхования</a>
+													</li>
 													<li><a href="#payment" data-toggle="tab">Оплата</a></li>
 													<li><a href="#polis" data-toggle="tab">Полис</a></li>
 												</ul>
@@ -50,7 +53,7 @@
 											<div class="tab-content">
 												<div class="tab-pane"  id="commonTab">
 													<div id="common">
-													<!-- common.html -->
+														<!-- common.html -->
 													</div>
 												</div>
 												<div class="tab-pane" id="object">
@@ -76,188 +79,227 @@
 												<div class="tab-pane" id="contract">
 													<ul>
 														<li>
-															Номер договора:10/21/1000		
+															Номер договора:10/21/1000
 														</li>
-														<li>Дата подписания:	26.12.2020г.</span>
-															<li>
-																Период страхования:	с 26.12.2020г.  по 25.12.2021г.
-															</li>
-															<li>
-																Срок действия:	365 дня(ей)
-															</li>
-														</ul>
-														<table class="table">
-															<thead>
-																<th>
-																Страхование транспортных средств, выставляемых в залог</th>
-																<th>Страховая сумма</th>
-																<th>Премия, %</th>
-																<th>Премия</th>
-																<th>Кол-во объектов</th>
-																<th>Франшиза</th>
-																<th>Фр.условная</th>
-																<th>Франшиза %</th>
-																<th>Фр.сумма</th>
-															</thead>
-														</table>
+														<li>Дата подписания: 26.12.2020г.</li>
+														<li>
+															Период страхования: с 26.12.2020г. по 25.12.2021г.
+														</li>
+														<li>
+															Срок действия: 365 дня(ей)
+														</li>
+													</ul>
+													<table class="table">
+														<thead>
+															<th>
+																Страхование транспортных средств, выставляемых в залог
+															</th>
+															<th>Страховая сумма</th>
+															<th>Премия, %</th>
+															<th>Премия</th>
+															<th>Кол-во объектов</th>
+															<th>Франшиза</th>
+															<th>Фр.условная</th>
+															<th>Франшиза %</th>
+															<th>Фр.сумма</th>
+														</thead>
+													</table>
+												</div>
+												<div class="tab-pane" id="payment">
+													<div class="form-group">
+														<span>Условие оплаты: </span>
+														<input type="radio" name="smth2" id="smth22">
+														<label for="smth22">Единовременная оплата</label>
+														<input type="radio" name="smth2" id="smth23">
+														<label for="smth23">Оплата траншами</label>
 													</div>
-													<div class="tab-pane" id="payment">
-														<div class="form-group">
-															<span>Условие оплаты: </span>
-															<input type="radio" name="smth2" id="smth22">
-															<label for="smth22">Единовременная оплата</label>
-															<input type="radio" name="smth2" id="smth23">
-															<label for="smth23">Оплата траншами</label>
-														</div>
-														<div class="form-group">
-															<span>Страховая сумма:	<strong>1 200,00</strong></span>
-															<span>Премия:	<strong>12,01</strong></span>
-															<span>Учет:	<strong>Узбекский сум</strong></span>
-															<span>Оплата:	<strong>Узбекский сум</strong></span>
-														</div>
-														<div class="form-group">
-															<span>Оплата: <strong>Оплата не произведена</strong></span>
-														</div>
-														<div class="form-group">
-															<span>Остаток:	<strong>12,01</strong></span>
-														</div>
-														<div class="payment-info">
-															<h4>Детали оплаты</h4>	
-															<div class="row">
-																<div class="col-md-3">
-																	<span>Дата:</span>
-																	<input type="date" class="form-control">
-																</div>
-																<div class=" col-md-3">
-																	<span>Сумма оплаты:</span>
-																	<input type="number" class="form-control" min="0"> UZS
-																</div>
-																<div class="col-md-3">
-																	<span>Вид оплаты: </span>
-																	<select name="" id="" class="form-control">
-																		<option value="">Apelsin</option>
-																		<option value="">Click</option>
-																		<option value="">Payme</option>
-																	</select>
-																</div>
-																<div class="col-md-3">
-																	<span>№ плат.документа / Примечание</span>
-																	<input type="text" class="form-control">
-																</div>
-															</div>
-															<button class="btn btn-success pull-right">Платить</button>
-														</div>
+													<div class="form-group">
+														<span>Страховая сумма: <strong>1 200,00</strong></span>
+														<span>Премия: <strong>12,01</strong></span>
+														<span>Учет: <strong>Узбекский сум</strong></span>
+														<span>Оплата: <strong>Узбекский сум</strong></span>
 													</div>
-													<div class="tab-pane" id="polis">
+													<div class="form-group">
+														<span>Оплата: <strong>Оплата не произведена</strong></span>
+													</div>
+													<div class="form-group">
+														<span>Остаток: <strong>12,01</strong></span>
+													</div>
+													<div class="payment-info">
+														<h4>Детали оплаты</h4>
 														<div class="row">
-															<div class="col-md-4">
-																<ul>
-																	<li>
-																		<span>
-																			Страхователь: 
-																		</span>
-																		<strong>
-																			MANNAPOV BATIR EGAMBERDIYEVICH
-																		</strong>
-																	</li>
-																	<li>
-																		<span>
-																			Географическая зона: 
-																		</span>
-																		<strong>
-																			РЕСПУБЛИКА УЗБЕКИСТАН
-																		</strong>
-																	</li>
-																	<li>
-																		<span>
-																			Договор страхования: 
-																		</span>
-																		<strong>
-																			10/21/1000 от26.12.2020г.
-																		</strong>
-																	</li>
-																	<li>
-																		<span>
-																			Общая страховая премия: 
-																		</span>
-																		<strong>
-																			12,01
-																		</strong>
-																	</li>
-																	<li>
-																		<span>
-																			Валюта: 
-																		</span>
-																		<strong>
-																			Узбекский сум
-																		</strong>
-																	</li>
-																</ul>
+															<div class="col-md-3">
+																<span>Дата:</span>
+																<input type="date" class="form-control">
 															</div>
-															<div class="col-md-4">
-																<ul>
-																	<li>
-																		<span>Объект страхования:</span>
-																		<strong>1.ALFA ROMEO 146 ti (2020 | 123123)</strong>
-																	</li>
-																</ul>
+															<div class=" col-md-3">
+																<span>Сумма оплаты:</span>
+																<input type="number" class="form-control" min="0"> UZS
 															</div>
-															<div class="col-md-4">
-																<span>
-																	Платеж(и):
-																</span>
-																<ul>
-																	<li>нет данных</li>
-																</ul>
+															<div class="col-md-3">
+																<span>Вид оплаты: </span>
+																<select name="" id="" class="form-control">
+																	<option value="">Apelsin</option>
+																	<option value="">Click</option>
+																	<option value="">Payme</option>
+																</select>
+															</div>
+															<div class="col-md-3">
+																<span>№ плат.документа / Примечание</span>
+																<input type="text" class="form-control">
 															</div>
 														</div>
+														<button class="btn btn-success pull-right">Платить</button>
 													</div>
 												</div>
-												<div class="wizard-footer">
-													<div class="pull-right">
-														<input type='button' class='btn btn-next btn-fill btn-success btn-wd' name='next' id="nextBtn" value='Следующий'/>
-														<input type='button' class='btn btn-finish btn-fill btn-success btn-wd' name='finish' value='Сохранить' />
-													</div>
+												<div class="tab-pane" id="polis">
+													<div class="row">
+														<div class="col-md-4">
+															<ul>
+																<li>
+																	<span>
+																		Страхователь:
+																	</span>
+																	<strong>
+																		MANNAPOV BATIR EGAMBERDIYEVICH
+																	</strong>
+																</li>
+																<li>
+																	<span>
+																		Географическая зона:
+																	</span>
+																	<strong>
+																		РЕСПУБЛИКА УЗБЕКИСТАН
+																	</strong>
+																</li>
+																<li>
+																	<span>
+																		Договор страхования:
+																	</span>
+																	<strong>
+																		10/21/1000 от26.12.2020г.
+																	</strong>
+																</li>
+																<li>
+																	<span>
+																		Общая страховая премия:
+																	</span>
+																	<strong>
+																		12,01
+																	</strong>
+																</li>
+																<li>
+																	<span>
+																		Валюта:
+																	</span>
+																	<strong>
+																		Узбекский сум
+																	</strong>
+																</li>
+															</ul>
+														</div>
+														<div class="col-md-4">
+															<ul>
+																<li>
+																	<span>Объект страхования:</span>
+																	<strong>1.ALFA ROMEO 146 ti (2020 | 123123)</strong>
+																</li>
+															</ul>
+														</div>
+														<div class="col-md-4">
+															<span>
+																Платеж(и):
+															</span>
+															<ul>
+																<li>нет данных</li>
+															</ul>
+														</div>
 
-													<div class="pull-left">
-														<input type='button' class='btn btn-previous btn-fill btn-default btn-wd' name='previous' value='Предыдущий' />
 													</div>
-													<div class="clearfix"></div>
 												</div>
 											</div>
+
 										</div>
 
-									</div>
-								</div><!-- end row -->
+										<div class="wizard-footer">
+											<div class="pull-right">
+												<input type='button'
+												class='btn btn-next btn-fill btn-success btn-wd' name='next'
+												value='Следующий' />
+												<input type='button'
+												class='btn btn-finish btn-fill btn-success btn-wd' name='finish'
+												value='Сохранить' />
+											</div>
 
+
+											<div class="pull-left">
+												<input type='button'
+												class='btn btn-previous btn-fill btn-default btn-wd'
+												name='previous' value='Предыдущий' />
+											</div>
+											<div class="clearfix"></div>
+										</div>
+									</div>
+								</div>
 
 							</div>
-							<img src="../assets/images/pattern.png" class="pattern">
-						</div>
+						</div><!-- end row -->
+
+
 					</div>
+					<img src="../assets/images/pattern.png" class="pattern">
 				</div>
 			</div>
-			
-			<!-- Insert this line above script imports  -->
-			<script>if (typeof module === 'object') {window.module = module; module = undefined;}</script>
+		</div>
+	</div>
+	<div class="modal" id="beneficiar_modal">
+		<div class="modal-dialog modal-lg">
+			<div class="modal-content">
 
-			<script src="../assets/stepper/js/jquery-2.2.4.min.js" type="text/javascript"></script>
-			<script src="../assets/stepper/js/bootstrap.min.js" type="text/javascript"></script>
-			<script src="../assets/stepper/js/jquery.bootstrap.js" type="text/javascript"></script>
+				<!-- Modal Header -->
+				<div class="modal-header">
+					<h4 class="modal-title">Бенефициар</h4>
+					<button type="button" class="close" data-dismiss="modal">&times;</button>
+				</div>
 
-			<!--  Plugin for the Wizard -->
-			<script src="../assets/stepper/js/material-bootstrap-wizard.js"></script>
+				<!-- Modal body -->
+				<div class="modal-body">
+					<div id="beneficiar_create">
 
-			<!--  More information about jquery.validate here: http://jqueryvalidation.org/	 -->
-			<script src="../assets/stepper/js/jquery.validate.min.js"></script>
-			<script src="../helpers.js"></script>
-			<script>
+					</div>
+				</div>
+
+				<!-- Modal footer -->
+				<div class="modal-footer">
+					<button type="button" class="btn btn-danger" data-dismiss="modal">Закрыт</button>
+				</div>
+
+			</div>
+		</div>
+	</div>
+	<<<<<<< HEAD
+
+	<!-- Insert this line above script imports  -->
+	<script>if (typeof module === 'object') {window.module = module; module = undefined;}</script>
+
+	<script src="../assets/stepper/js/jquery-2.2.4.min.js" type="text/javascript"></script>
+	<script src="../assets/stepper/js/bootstrap.min.js" type="text/javascript"></script>
+	<script src="../assets/stepper/js/jquery.bootstrap.js" type="text/javascript"></script>
+
+	<!--  Plugin for the Wizard -->
+	<script src="../assets/stepper/js/material-bootstrap-wizard.js"></script>
+
+	<!--  More information about jquery.validate here: http://jqueryvalidation.org/	 -->
+	<script src="../assets/stepper/js/jquery.validate.min.js"></script>
+	<script src="../helpers.js"></script>
+	<script>
 
 		//include elements
 		(async ()=>{
 			await include("./components/common.html","common");
 			await include("./components/sidebar.html","sidebar");
 			await include("./components/top.html","top");
+			await include("./components/beneficiar_create.html", "beneficiar_create");
 
 			const inputs=document.getElementsByTagName("input");
 			for (var i = 0; i < inputs.length; i++) {
@@ -268,7 +310,7 @@
 					}
 				})
 			}
-		
+
 
 		// const active_lang=document.getElementById('active-lang');
 		const nextBtn=document.getElementById("nextBtn");
@@ -367,7 +409,9 @@
 		function adopt(){
 			
 		}
-		})()	
-	</script>
+	})()	
+</script>
+
 </body>
+
 </html>
