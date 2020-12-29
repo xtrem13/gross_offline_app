@@ -17,6 +17,13 @@ const Beneficiar = sequelize.define('Beneficiar', {
         type: DataTypes.BIGINT(9),
         allowNull: false
     },
+    //not correct
+    TB_ORGNAME:{
+        type: DataTypes.STRING,
+        allowNull: false
+    },
+    //not correct
+
     TB_KOD_OKONX: {
         type: DataTypes.INTEGER(5),
         allowNull: false,

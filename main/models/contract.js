@@ -25,38 +25,30 @@ const Contract = sequelize.define('Contract', {
     type: DataTypes.date,
     allowNull: false
   },
-  INS_DATE: {
-    type: DataTypes.date,
-    allowNull: false
-  },
-  INS_DATE: {
-    type: DataTypes.date,
-    allowNull: false
-  },
   OWNERID:{
     type: DataTypes.INTEGER,
     allowNull: false
   },
-  BENEFNAME:{
+  BENEFID:{
     type: DataTypes.INTEGER,
     allowNull: false
   },
-  VAL_USLOVIYA:{
-    type: DataTypes.INTEGER,
-    allowNull: false
-  },
-  VAL_USLOVIYA:{
-    type: DataTypes.INTEGER,
-    allowNull: false
-  },
-  VAL_LBL:{
-    type: DataTypes.INTEGER,
-    allowNull: false
-  },
-  VAL_KURS:{
-    type: DataTypes.DECIMAL(10,2),
-    allowNull: false
-  },
+  // VAL_USLOVIYA:{
+  //   type: DataTypes.INTEGER,
+  //   allowNull: false
+  // },
+  // VAL_USLOVIYA:{
+  //   type: DataTypes.INTEGER,
+  //   allowNull: false
+  // },
+  // VAL_LBL:{
+  //   type: DataTypes.INTEGER,
+  //   allowNull: false
+  // },
+  // VAL_KURS:{
+  //   type: DataTypes.DECIMAL(10,2),
+  //   allowNull: false
+  // },
   INS_COUNTRY:{
     type: DataTypes.DECIMAL(10,2),
     allowNull: false
@@ -72,13 +64,7 @@ const Contract = sequelize.define('Contract', {
   OLD_DOGNUM:{
     type: DataTypes.STRING,
     allowNull: false
-  },
-  INSURANCE_PREMIYA_ID:{
-    type: DataTypes.INTEGER,
-    allowNull: false
-  },
-
-
+  }
 });
 
 Contract.belongsTo(Transport, { foreignKey: 'CONTRACT_ID' });
