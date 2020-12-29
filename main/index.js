@@ -13,7 +13,9 @@ async function createWindow() {
   })
   win.maximize();
   // win.removeMenu()
-  win.loadFile("renderer/beneficiar/create.html")
+
+  win.loadFile("renderer/create_contract.html")
+
   mainWindow=win;
 }
 

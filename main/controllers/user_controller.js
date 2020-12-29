@@ -40,13 +40,18 @@ const users_controller=()=>{
 		let users=await User.findAll();
 		win.webContents.send('users_loaded', users);
 	}
-	const check_local_pass=async (event, credentials, win)=>{
+	const check_local_pass = async (event, credentials, win)=>{
 		const user=await User.findOne({where:{
 				id:credentials.id,
 				LOCAL_PASSWORD_HASH:md5(credentials.password)
 			}
 		});
-		console.log(user);
+
+		if(user){
+			win.webContents.send('check_local_pass', true);
+		}else{
+			win.webContents.send('check_local_pass', false);
+		}
 	}
 	return {
 		login:login,
