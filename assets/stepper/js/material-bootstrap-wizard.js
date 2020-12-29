@@ -172,7 +172,6 @@ function readURL(input) {
 $(window).resize(function(){
     $('.wizard-card').each(function(){
         $wizard = $(this);
-
         index = $wizard.bootstrapWizard('currentIndex');
         refreshAnimation($wizard, index);
 
