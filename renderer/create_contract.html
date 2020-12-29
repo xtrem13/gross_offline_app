@@ -28,7 +28,7 @@
 								<!--      Wizard container        -->
 								<div class="wizard-container">
 									<div class="card wizard-card" data-color="green" id="wizardProfile">
-										<form action="" method="">
+										<div>
 											<!--        You can switch " data-color="purple" "  with one of the next bright colors: "green", "orange", "red", "blue"       -->
 
 											<div class="wizard-header">
@@ -39,7 +39,7 @@
 											</div>
 											<div class="wizard-navigation">
 												<ul>
-													<li><a href="#common" data-toggle="tab">Общие сведения</a></li>
+													<li><a href="#commonTab" data-toggle="tab">Общие сведения</a></li>
 													<li><a href="#object" data-toggle="tab">Объект</a></li>
 													<li><a href="#contract" data-toggle="tab">Договор страхования</a></li>
 													<li><a href="#payment" data-toggle="tab">Оплата</a></li>
@@ -48,8 +48,10 @@
 											</div>
 
 											<div class="tab-content">
-												<div class="tab-pane" id="common">
+												<div class="tab-pane"  id="commonTab">
+													<div id="common">
 													<!-- common.html -->
+													</div>
 												</div>
 												<div class="tab-pane" id="object">
 													<h3>
@@ -213,7 +215,7 @@
 												</div>
 												<div class="wizard-footer">
 													<div class="pull-right">
-														<input type='button' class='btn btn-next btn-fill btn-success btn-wd' name='next' value='Следующий' />
+														<input type='button' class='btn btn-next btn-fill btn-success btn-wd' name='next' id="nextBtn" value='Следующий'/>
 														<input type='button' class='btn btn-finish btn-fill btn-success btn-wd' name='finish' value='Сохранить' />
 													</div>
 
@@ -222,7 +224,7 @@
 													</div>
 													<div class="clearfix"></div>
 												</div>
-											</form>
+											</div>
 										</div>
 
 									</div>
@@ -252,13 +254,25 @@
 			<script>
 
 		//include elements
-		
-		include("./components/common.html","common");
-		include("./components/sidebar.html","sidebar");
-		include("./components/top.html","top");
+		(async ()=>{
+			await include("./components/common.html","common");
+			await include("./components/sidebar.html","sidebar");
+			await include("./components/top.html","top");
+
+			const inputs=document.getElementsByTagName("input");
+			for (var i = 0; i < inputs.length; i++) {
+				inputs[i].addEventListener("keydown", function(event){
+					if(event.keyCode == 13) {
+						event.preventDefault();
+						return false;
+					}
+				})
+			}
 		
 
 		// const active_lang=document.getElementById('active-lang');
+		const nextBtn=document.getElementById("nextBtn");
+		const tabPanes=document.getElementsByClassName("tab-pane");
 		const lang_options=document.getElementById('lang-options');
 		const body=document.getElementsByTagName('body')[0];
 		const name=document.getElementById('name');
@@ -266,6 +280,10 @@
 		const loginPageUrl="./login/login.html";
 		const full_toggler=document.getElementById("full_toggler");
 		const wrapper=document.getElementsByClassName("wrapper")[0];
+
+		// nextBtn.addEventListener("click", function(){
+		// 	stepSaver();
+		// });
 
 		full_toggler.addEventListener("click", function (event){
 			toggle_full_width(event);
@@ -288,6 +306,21 @@
 			logout();
 		})
 
+		// function stepSaver(){
+		// 	let active_pane;
+		// 	for(let i=0;i<tabPanes.length;i++){
+		// 		if(tabPanes[i].classList.contains('active')){
+		// 			active_pane=tabPanes[i];
+		// 			break;
+		// 		}
+		// 	}
+		// 	console.log(active_pane);
+		// 	switch(active_pane.id){
+		// 		case 'commonTab':
+		// 			console.log("working");
+		// 			break;
+		// 	}
+		// }
 		function toggle_lang_options(event){
 			event.stopPropagation();
 			if(lang_options.style.display=='block'){
@@ -334,6 +367,7 @@
 		function adopt(){
 			
 		}
+		})()	
 	</script>
 </body>
 </html>

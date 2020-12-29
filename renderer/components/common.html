@@ -1,10 +1,10 @@
-<div>
+<form id="contract_form">
 	<div class="row form-group">
 		<div class="col-md-4">
 			<span>Дата заключения:</span>
 		</div>
 		<div class="col-md-8">
-			<input type="date" class="form-control" style="width:initial">
+			<input type="date" name="INS_DATE" class="form-control" >
 		</div>
 	</div>
 	<div class="row  form-group">
@@ -12,7 +12,6 @@
 			<span>Вид страхования:</span>
 		</div>
 		<div class="col-md-8">
-
 			<span>21.Страхование транспортных средств, выставляемых в залог</span>
 		</div>
 	</div>
@@ -23,11 +22,11 @@
 
 		<div class="col-md-8">
 			<span>с</span>
-			<input type="date" class="form-control" id="DATEF">
+			<input type="date" class="form-control" id="DATEF" name="INS_DATEF">
 			<span>г.</span><br>
-			<input type="number" value="365" class="form-control" id="DAY">
+			<input type="number" value="365" class="form-control" id="DAY" name="INS_DAY">
 			<span>дня(ей) по</span><br>
-			<input type="date" class="form-control" id="DATET">
+			<input type="date" class="form-control" id="DATET" name="INS_DATET">
 			<span>г.</span>
 		</div>
 	</div>
@@ -36,7 +35,7 @@
 			<span>Страхователь:</span>
 		</div>
 		<div class="col-md-8">
-			<button class="btn btn-info">MANNAPOV  BATIR  EGAMBERDIYEVICH</button>
+			<button class="btn btn-info" type="button">MANNAPOV  BATIR  EGAMBERDIYEVICH</button>
 		</div>
 	</div>
 	<div class="row  form-group">
@@ -44,7 +43,7 @@
 			<span>Бенефициар:</span>
 		</div>
 		<div class="col-md-8">
-			<button class="btn btn-info">ХАМКОРБАНК АКЦ.ТИЖ.БАНК</button>
+			<button class="btn btn-info"  type="button">ХАМКОРБАНК АКЦ.ТИЖ.БАНК</button>
 		</div>
 	</div>
 	<div class="row  form-group">
@@ -52,8 +51,12 @@
 			<span>Географическая зона:</span>
 		</div>
 		<div class="col-md-8">
-			<select name="" id="" class="form-control">
-				<option value="">РЕСПУБЛИКА УЗБЕКИСТАН</option>
+			<select name="INS_COUNTRY" id="" class="form-control">
+				<option value="0">РЕСПУБЛИКА УЗБЕКИСТАН</option>
+				<option value="1">РЕСПУБЛИКА КАЗАХСТАН</option>
+				<option value="2">РЕСПУБЛИКА ТАДЖИКИСТАН</option>
+				<option value="3">РЕСПУБЛИКА КЫРГИЗИСТАН</option>
+				<option value="4">РЕСПУБЛИКА ТУРКМЕНИСТАН</option>
 			</select>
 		</div>
 	</div>
@@ -63,11 +66,11 @@
 			<span>Источник оплаты:</span>
 		</div>
 		<div class="col-md-8">
-			<input type="radio" name="smth" data-color = 'purple' >
-			<label for="">Собственные средства</label>
+			<input type="radio" name="ISTOCHNIK_O" data-color = 'purple' id="ISTOCHNIK_O_S" value="s">
+			<label for="ISTOCHNIK_O_S">Собственные средства</label>
 
-			<input type="radio" name="smth" data-color = 'purple' >
-			<label for="">Бюджетные средства</label>
+			<input type="radio" name="ISTOCHNIK_O" data-color = 'purple' id="ISTOCHNIK_O_B" value="b">
+			<label for="ISTOCHNIK_O_B">Бюджетные средства</label>
 		</div>
 	</div>
 	<div class="row  form-group">
@@ -76,7 +79,7 @@
 		</div>
 		<div class="col-md-8">
 			<span>10/21/</span>
-			<input type="text" class="form-control">
+			<input type="text" class="form-control" name="INS_DOGNUM">
 		</div>
 	</div>
 	<div class="row  form-group">
@@ -84,29 +87,92 @@
 			<span>Старый номер договора:</span>
 		</div>
 		<div class="col-md-8">
-			<input type="text" class="form-control">
+			<input type="text" class="form-control" name="OLD_DOGNUM">
 		</div>
 	</div>
-</div>
+	<div class="form-group row">
+		<div class="offset-md-6">
+			<button class="btn btn-success" type="button" id="save">
+				Сохранить
+			</button>
+		</div>
+	</div>
+</form>
 <script>
+	const {ipcRenderer}=require('electron')
 	const datef=document.getElementById("DATEF");
 	const day=document.getElementById("DAY");
 	const datet=document.getElementById("DATET");
+	const save_button=document.getElementById("save");
+	const contract_form=document.getElementById("contract_form");
 	
-	datef.addEventListener("change",function(){
-		sync_dates();	
+	datef.addEventListener("change",function(event){
+		sync_dates(event);	
+	});
+	datet.addEventListener("change",function(event){
+		sync_dates(event);	
+	});
+	day.addEventListener("keyup",function(event){
+		sync_dates(event);	
 	});
 
-	function sync_dates(){
-		console.log(datef.value);
-		console.log(datet.value);
-		console.log(day.value);
-		console.log(addDays(datef.value, day.value));
+	save_button.addEventListener("click",function(event){
+		save_contract(event);	
+	});
+
+
+	const save_contract=()=>{
+		const myform = new FormData(contract_form)
+		var object = {};
+		myform.forEach(function (value, key) {
+			object[key] = value;
+		});
+		var sended = JSON.stringify(object);
+		console.log(sended);
+		ipcRenderer.send("contract_create", sended)
+	}
+
+	function sync_dates(event){
+		switch(event.target){
+			case datef:
+			let datet_value=addDays(datef.value, day.value);
+			datet.value= datet_value.getFullYear()+ '-'
+			+ ('0' + (datet_value.getMonth()+1)).slice(-2) + '-'
+			+ ('0' + datet_value.getDate()).slice(-2);
+
+			break;
+			case datet:
+			let datef_value=subtractDays(datet.value, day.value);
+			datef.value= datef_value.getFullYear()+ '-'
+			+ ('0' + (datef_value.getMonth()+1)).slice(-2) + '-'
+			+ ('0' + datef_value.getDate()).slice(-2);
+			break;
+			case day:
+			if(datef.value!==""&&day.value!==""){
+				let datet_value=addDays(datef.value, day.value);
+				datet.value= datet_value.getFullYear()+ '-'
+				+ ('0' + (datet_value.getMonth()+1)).slice(-2) + '-'
+				+ ('0' + datet_value.getDate()).slice(-2);
+			}
+			break;
+		}
 	}
 
 	function addDays(date, days) {
 		var result = new Date(date);
-		result.setDate(result.getDate() + days);
+		result.setDate(result.getDate() + parseInt(days));
 		return result;
 	}
+	function subtractDays(date, days) {
+		var result = new Date(date);
+		result.setDate(result.getDate() - parseInt(days));
+		return result;
+	}
+
+	// listeners
+
+	ipcRenderer.on('contract_saved',function(event,id){
+		save_button.style.display="none";
+		alert("Contract saved");
+	});
 </script>
