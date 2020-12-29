@@ -1,5 +1,4 @@
 const { Sequelize, DataTypes } = require('sequelize');
-const Transport = require('./transport');
 
 const sequelize = new Sequelize({
     dialect: 'sqlite',
@@ -10,28 +9,28 @@ const sequelize = new Sequelize({
 const Contract = sequelize.define('Contract', {
  
   INS_DATE: {
-    type: DataTypes.date,
+    type: DataTypes.DATE,
     allowNull: false
   },
   INS_DATEF: {
-    type: DataTypes.date,
+    type: DataTypes.DATE,
     allowNull: false
   },
   INS_DAY: {
-    type: DataTypes.date,
+    type: DataTypes.DATE,
     allowNull: false
   },
   INS_DATET: {
-    type: DataTypes.date,
+    type: DataTypes.DATE,
     allowNull: false
   },
   OWNERID:{
     type: DataTypes.INTEGER,
-    allowNull: false
+    allowNull: true
   },
   BENEFID:{
     type: DataTypes.INTEGER,
-    allowNull: false
+    allowNull: true
   },
   // VAL_USLOVIYA:{
   //   type: DataTypes.INTEGER,
@@ -67,7 +66,6 @@ const Contract = sequelize.define('Contract', {
   }
 });
 
-Contract.belongsTo(Transport, { foreignKey: 'CONTRACT_ID' });
 Contract.sync({force: true});
 
 

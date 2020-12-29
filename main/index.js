@@ -1,6 +1,7 @@
 const { app, BrowserWindow, ipcMain} = require('electron');
 const { beneficiar_create } = require('./controllers/beneficiar_controller.js');
 const {login,set_local_password,local_password_init, check_local_pass} = require('./controllers/user_controller.js');
+const {create}=require("./controllers/contract_controller.js");
 
 var mainWindow;
 async function createWindow() {
@@ -33,7 +34,7 @@ app.on('activate', () => {
   }
 })
 
-//listener
+//listener abdumalik
 
 ipcMain.on('login', (event, arg) => {
   login(arg, mainWindow);
@@ -49,6 +50,10 @@ ipcMain.on('local_password_init', (event) => {
 
 ipcMain.on('check_local_pass', (event, credentials) => {
   check_local_pass(event, credentials, mainWindow);
+});
+
+ipcMain.on('contract_create', (event, payload) => {
+  create(event, payload, mainWindow);
 });
 
 

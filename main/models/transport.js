@@ -65,7 +65,7 @@ const Transport = sequelize.define('Transport', {
         allowNull: false
     },
     TB_TEXPDATE: {
-        type: DataTypes.date,
+        type: DataTypes.DATE,
         allowNull: false
     },
     TB_COMMENT: {
