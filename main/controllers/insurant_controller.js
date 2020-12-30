@@ -6,11 +6,12 @@ const md5 = require('md5');
 
 const insurant_controller = () => {
 
-    const create = async (win, arg) => {
+    const create = async (arg, win) => {
 
         try {
-            const user = await Insurant.create(arg)
-            console.log(user)
+            const insurant = await Insurant.create(arg)
+            console.log(win);
+            win.webContents.send('insurant_saved',insurant);
         }
         catch (e) {
             console.log(e)

@@ -1,0 +1,215 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+
+	<meta charset="utf-8">
+	<link href="../assets/stepper/css/bootstrap.min.css" rel="stylesheet" />
+	<link href="../assets/stepper/css/demo.css" rel="stylesheet" />
+	<link href="../assets/stepper/css/material-bootstrap-wizard.css" rel="stylesheet" />
+	<link rel="stylesheet" href="../node_modules/bootstrap/dist/css/bootstrap.css">
+	<link rel="stylesheet" href="../assets/css/main.css">
+	<title>GROSS OFFLINE</title>
+</head>
+
+<body>
+	<div class="container-fluid">
+		<div class="wrapper">
+			<div id="sidebar">
+				<!-- sidebar.html component -->
+			</div>
+
+			<div class="main">
+				<div id="top">
+					<!-- top.html -->
+				</div>
+				<div class="content">
+					<div class="card" id="root">
+						<div id="table"></div>
+					</div>
+					<img src="../assets/images/pattern.png" class="pattern">
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="modal" id="beneficiar_modal">
+		<div class="modal-dialog modal-xl">
+			<div class="modal-content">
+				<!-- Modal Header -->
+				<div class="modal-header">
+					<h4 class="modal-title">Бенефициар</h4>
+					<button type="button" class="close" data-dismiss="modal">&times;</button>
+				</div>
+				<!-- Modal body -->
+				<div class="modal-body">
+					<div id="beneficiar_create">
+					</div>
+				</div>
+				<!-- Modal footer -->
+				<div class="modal-footer">
+					<button type="button" class="btn btn-danger" data-dismiss="modal">Закрыт</button>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="modal" id="insurant_modal">
+		<div class="modal-dialog modal-xl">
+			<div class="modal-content">
+				<!-- Modal Header -->
+				<div class="modal-header">
+					<h4 class="modal-title">Страхователь</h4>
+					<button type="button" class="close" data-dismiss="modal">&times;</button>
+				</div>
+				<!-- Modal body -->
+				<div class="modal-body">
+					<div id="insurant_create">
+					</div>
+				</div>
+				<!-- Modal footer -->
+				<div class="modal-footer">
+					<button type="button" class="btn btn-danger" data-dismiss="modal">Закрыт</button>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<!-- Insert this line above script imports  -->
+	<script>if (typeof module === 'object') {window.module = module; module = undefined;}</script>
+
+	<script src="../assets/stepper/js/jquery-2.2.4.min.js" type="text/javascript"></script>
+	<script src="../assets/stepper/js/bootstrap.min.js" type="text/javascript"></script>
+	<script src="../assets/stepper/js/jquery.bootstrap.js" type="text/javascript"></script>
+
+	<!--  Plugin for the Wizard -->
+	<script src="../assets/stepper/js/material-bootstrap-wizard.js"></script>
+
+	<!--  More information about jquery.validate here: http://jqueryvalidation.org/	 -->
+	<script src="../assets/stepper/js/jquery.validate.min.js"></script>
+	<script src="../helpers.js"></script>
+	<script>
+
+		//include elements
+		(async ()=>{
+			
+			await include("./components/sidebar.html","sidebar");
+			await include("./components/top.html","top");
+			await include("./components/sent.html","table");
+			
+			const inputs=document.getElementsByTagName("input");
+			for (var i = 0; i < inputs.length; i++) {
+				inputs[i].addEventListener("keydown", function(event){
+					if(event.keyCode == 13) {
+						event.preventDefault();
+						return false;
+					}
+				})
+			}
+		var numberToString = require('number-to-cyrillic');
+
+		// const active_lang=document.getElementById('active-lang');
+		const nextBtn=document.getElementById("nextBtn");
+		const tabPanes=document.getElementsByClassName("tab-pane");
+		const lang_options=document.getElementById('lang-options');
+		const body=document.getElementsByTagName('body')[0];
+		const name=document.getElementById('name');
+		const logoutButton=document.getElementById('logout');
+		const loginPageUrl="./login/local_password.html";
+		const full_toggler=document.getElementById("full_toggler");
+		const wrapper=document.getElementsByClassName("wrapper")[0];
+		const amount=document.getElementById("amount");
+		// nextBtn.addEventListener("click", function(){
+		// 	stepSaver();
+		// });
+		full_toggler.addEventListener("click", function (event){
+			toggle_full_width(event);
+		});
+		
+		// active_lang.addEventListener('click', function(event){
+		// 	toggle_lang_options(event);
+		// })
+		
+		body.addEventListener('click', function(){
+			// close_lang();
+			close_logout();
+		})
+
+		name.addEventListener('click', function(event){
+			toggle_logout(event);
+		})
+
+		logoutButton.addEventListener('click', function(){
+			logout();
+		})
+
+		amount.addEventListener("keyup", function(){
+			document.getElementById("amount_words").innerHTML=numberToString.convert(amount.value,{
+				language:'ru'
+			}).convertedInteger;
+		})
+		// function stepSaver(){
+		// 	let active_pane;
+		// 	for(let i=0;i<tabPanes.length;i++){
+		// 		if(tabPanes[i].classList.contains('active')){
+		// 			active_pane=tabPanes[i];
+		// 			break;
+		// 		}
+		// 	}
+		// 	console.log(active_pane);
+		// 	switch(active_pane.id){
+		// 		case 'commonTab':
+		// 			console.log("working");
+		// 			break;
+		// 	}
+		// }
+		function toggle_lang_options(event){
+			event.stopPropagation();
+			if(lang_options.style.display=='block'){
+				lang_options.style.display="none";
+				return;
+			}
+			lang_options.style.display="block";
+			return;
+		}
+
+		function close_lang(event){
+			lang_options.style.display="none";
+			return;
+		}
+
+		function toggle_logout(event){
+			event.stopPropagation(event);
+			if(logoutButton.style.display=='block'){
+				logoutButton.style.display="none";
+				return;
+			}
+			logoutButton.style.display="block";
+			return;
+		}
+
+		function close_logout(event){
+			logoutButton.style.display="none";
+			return;
+		}
+
+		function logout(){
+			window.location.assign(loginPageUrl);
+		}
+		function toggle_full_width(event){
+			if(wrapper.classList.contains('closed')){
+				wrapper.classList.remove("closed");
+				full_toggler.innerHTML="<"
+			}else{
+				wrapper.classList.add("closed");
+				full_toggler.innerHTML=">"
+			}
+			adopt();
+		}
+		function adopt(){
+			
+		}
+	})()	
+</script>
+
+</body>
+
+</html>

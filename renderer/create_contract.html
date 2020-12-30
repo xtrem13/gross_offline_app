@@ -134,7 +134,10 @@
 															</div>
 															<div class=" col-md-3">
 																<span>Сумма оплаты:</span>
-																<input type="number" class="form-control" min="0"> UZS
+																<input type="number" class="form-control" min="0" id="amount">
+																<br>
+																<span id="amount_words" style="text-align: left"></span>
+																 UZS
 															</div>
 															<div class="col-md-3">
 																<span>Вид оплаты: </span>
@@ -230,8 +233,6 @@
 												class='btn btn-finish btn-fill btn-success btn-wd' name='finish'
 												value='Сохранить' />
 											</div>
-
-
 											<div class="pull-left">
 												<input type='button'
 												class='btn btn-previous btn-fill btn-default btn-wd'
@@ -244,8 +245,6 @@
 
 							</div>
 						</div><!-- end row -->
-
-
 					</div>
 					<img src="../assets/images/pattern.png" class="pattern">
 				</div>
@@ -253,7 +252,7 @@
 		</div>
 	</div>
 	<div class="modal" id="beneficiar_modal">
-		<div class="modal-dialog modal-lg">
+		<div class="modal-dialog modal-xl">
 			<div class="modal-content">
 				<!-- Modal Header -->
 				<div class="modal-header">
@@ -273,7 +272,7 @@
 		</div>
 	</div>
 	<div class="modal" id="insurant_modal">
-		<div class="modal-dialog modal-lg">
+		<div class="modal-dialog modal-xl">
 			<div class="modal-content">
 				<!-- Modal Header -->
 				<div class="modal-header">
@@ -325,7 +324,7 @@
 					}
 				})
 			}
-
+		var numberToString = require('number-to-cyrillic');
 
 		// const active_lang=document.getElementById('active-lang');
 		const nextBtn=document.getElementById("nextBtn");
@@ -334,16 +333,16 @@
 		const body=document.getElementsByTagName('body')[0];
 		const name=document.getElementById('name');
 		const logoutButton=document.getElementById('logout');
-		const loginPageUrl="./login/login.html";
+		const loginPageUrl="./login/local_password.html";
 		const full_toggler=document.getElementById("full_toggler");
 		const wrapper=document.getElementsByClassName("wrapper")[0];
-
+		const amount=document.getElementById("amount");
 		// nextBtn.addEventListener("click", function(){
 		// 	stepSaver();
 		// });
 		full_toggler.addEventListener("click", function (event){
 			toggle_full_width(event);
-		})
+		});
 		
 		// active_lang.addEventListener('click', function(event){
 		// 	toggle_lang_options(event);
@@ -362,6 +361,11 @@
 			logout();
 		})
 
+		amount.addEventListener("keyup", function(){
+			document.getElementById("amount_words").innerHTML=numberToString.convert(amount.value,{
+				language:'ru'
+			}).convertedInteger;
+		})
 		// function stepSaver(){
 		// 	let active_pane;
 		// 	for(let i=0;i<tabPanes.length;i++){

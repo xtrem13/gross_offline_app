@@ -32,6 +32,10 @@ const Contract = sequelize.define('Contract', {
     type: DataTypes.INTEGER,
     allowNull: true
   },
+  INSURANT_ID:{
+    type: DataTypes.INTEGER,
+    allowNull: true
+  },
   // VAL_USLOVIYA:{
   //   type: DataTypes.INTEGER,
   //   allowNull: false
@@ -69,7 +73,7 @@ const Contract = sequelize.define('Contract', {
 Contract.belongsTo(Beneficiar);
 Beneficiar.hasMany(Contract);
 
-Contract.sync({force: true});
+Contract.sync();
 
 
 module.exports=Contract;

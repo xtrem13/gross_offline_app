@@ -179,7 +179,7 @@
 	font-size:16px;
 	
 }
-.tab-content  .form-control{
+.form-control{
 	display: inline-block;
 	width:initial;
 	padding:5px 10px;
@@ -209,4 +209,8 @@
 	background-color:#007bff;
 	cursor: pointer;
 	transition: .2;
+}
+.modal *{
+	font-size:16px;
+	color:black;
 }

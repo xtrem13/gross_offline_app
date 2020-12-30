@@ -120,7 +120,7 @@ const Beneficiar = sequelize.define('Beneficiar', {
 });
 
 
-Beneficiar.sync({ force: true });
+Beneficiar.sync();
 
 
 module.exports = Beneficiar;

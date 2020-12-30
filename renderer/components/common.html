@@ -35,7 +35,8 @@
 			<span>Страхователь:</span>
 		</div>
 		<div class="col-md-8">
-			<button class="btn btn-info" type="button" data-toggle="modal" data-target="#insurant_modal">Выбрат</button>
+			<button class="btn btn-info" id="insurant_label" type="button" data-toggle="modal" data-target="#insurant_modal">Выбрать</button>
+			<input type="hidden" id="insurant_input" name="OWNERID">
 		</div>
 	</div>
 	<div class="row  form-group">
@@ -43,7 +44,7 @@
 			<span>Бенефициар:</span>
 		</div>
 		<div class="col-md-8">
-			<button class="btn btn-info" id="beneficiar_label" type="button" data-toggle="modal" data-target="#beneficiar_modal">Выбрат</button>
+			<button class="btn btn-info" id="beneficiar_label" type="button" data-toggle="modal" data-target="#beneficiar_modal">Выбрать</button>
 			<input type="hidden" id="beneficiar_input" name="BENEFID">
 		</div>
 	</div>
@@ -123,6 +124,9 @@
 
 
 	const save_contract=()=>{
+		if(!validate()){
+			return false;
+		}
 		const myform = new FormData(contract_form)
 		var object = {};
 		myform.forEach(function (value, key) {
@@ -174,12 +178,29 @@
 
 	ipcRenderer.on('contract_saved',function(event){
 		save_button.style.display="none";
-		alert("Contract saved");
+		alert("Контракт сохранен");
 	});
 	ipcRenderer.on('beneficiar_saved',function(event, beneficiar){
 		console.log(beneficiar)
-		alert("Beneficiar saved");
+		alert("Бенефициар сохранен");
 		document.getElementById("beneficiar_input").value=beneficiar.dataValues.id;
 		document.getElementById("beneficiar_label").innerHTML=beneficiar.dataValues.TB_ORGNAME;
 	});
+	ipcRenderer.on('insurant_saved',function(event, insurant){
+		alert("Страхователь сохранен");
+		document.getElementById("insurant_input").value=insurant.dataValues.id;
+		document.getElementById("insurant_label").innerHTML=insurant.dataValues.TB_SURNAME;
+	});
+	function validate(){
+		let form=document.getElementById("contract_form");
+		let inputs=form.getElementsByTagName("input");
+
+		for(let i=0;i<inputs.length;i++){
+			if(inputs[i].value===""){
+				alert("Пожалуйста, заполните все поля");
+				return false;
+			}
+		}
+		return true;
+	}
 </script>

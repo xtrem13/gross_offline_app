@@ -22,12 +22,14 @@ const users_controller=()=>{
 							SYSTEM_ID:data.id
 						});
 					}
-					win.webContents.send('successfull_login',data.id);
+					win.webContents.send('successfull_login',data.id, data.name);
 				})();
+			}else{
+				win.webContents.send('wrong_credentials');
 			}
 		})
 		.catch(function (error) {
-			
+			win.webContents.send('no_internet');
 		});
 	}
 	const set_local_password= async (user_id, local_password, win)=>{
@@ -48,7 +50,8 @@ const users_controller=()=>{
 		});
 
 		if(user){
-			win.webContents.send('check_local_pass', true);
+			win.webContents.send('check_local_pass', true, user.NAME);
+			return user.id;
 		}else{
 			win.webContents.send('check_local_pass', false);
 		}

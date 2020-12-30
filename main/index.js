@@ -1,8 +1,10 @@
-const { app, BrowserWindow, ipcMain} = require('electron');
+const {app, BrowserWindow, ipcMain,Notification } = require('electron');
 const { beneficiar_create } = require('./controllers/beneficiar_controller.js');
 const { insurant_create } = require('./controllers/insurant_controller.js');
 const {login,set_local_password,local_password_init, check_local_pass} = require('./controllers/user_controller.js');
 const {create}=require("./controllers/contract_controller.js");
+const dns=require('dns');
+var internet=false;
 
 var mainWindow;
 async function createWindow() {
@@ -16,7 +18,7 @@ async function createWindow() {
   win.maximize();
   // win.removeMenu()
 
-  win.loadFile("renderer/create_contract.html")
+  win.loadFile("renderer/login/login.html")
 
   mainWindow=win;
 }
@@ -62,7 +64,35 @@ ipcMain.on('contract_create', (event, payload) => {
 ipcMain.on('beneficiar_create', (event,came) => {
   beneficiar_create(came, mainWindow)
 });
-ipcMain.on('insurant_create', (came, mainWindow) => {
+ipcMain.on('insurant_create', (event, came) => {
   insurant_create(came, mainWindow)
 });
 // Shoh functions
+
+
+// check internet
+
+setInterval(check_internet, 3000);
+
+function check_internet(){
+  dns.resolve('www.google.com', function(err) {
+    if (err) {
+     if(internet){
+      const notification = {
+         title: 'GROSS: Интернет отключен',
+      }
+      new Notification(notification).show();
+      internet=false;
+    }
+  } else {
+    if(!internet){
+      const notification = {
+        title: 'GROSS: Интернет',
+        body: 'У вас есть интернет, я начинаю синхронизацию'
+      }
+      new Notification(notification).show()
+      internet=true;
+    }
+  }
+});
+}

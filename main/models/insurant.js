@@ -197,7 +197,7 @@ const Insurant = sequelize.define('Insurant', {
 });
 
 
-Insurant.sync({ force: true });
+Insurant.sync();
 
 
 module.exports = Insurant;

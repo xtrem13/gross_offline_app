@@ -14,25 +14,25 @@
 					<h3>GROSS OFFLINE</h3>
 				</div>
 				<div class="form-group">
-					<label for="login">LOGIN</label>
+					<label for="login">Логин</label>
 					<input type="text" id="login" class="form-control">
 				</div>
 				<div class="form-group">
-					<label for="password">PAROL</label>
+					<label for="password">Пароль</label>
 					<input type="password" onkeyup="enter(event)" id="password" class="form-control">
 				</div>
 				<div class="form-group">
-					<button class="btn btn-info" onclick="auth()">KIRISH</button>
+					<button class="btn btn-info" onclick="auth()">Войти</button>
 				</div>
 			</div>
 			<div id="set-local-login">
-				<p>Please set your local password</p>
+				<p>Пожалуйста, установите свой локальный пароль</p>
 				<div class="form-group">
-					<label for="password">PAROL</label>
+					<label for="password">Пароль</label>
 					<input type="password" onkeyup="set_local_password(event, this)" id="password" class="form-control">
 				</div>
 			</div>
-			<a href="local_password.html">Back to the local login</a>
+			<a href="local_password.html">Войти с локальным паролем</a>
 		</div>
 	</div>
 	<script>
@@ -58,15 +58,23 @@
 			}
 		}
 
-		ipcRenderer.on('successfull_login',function(event,id){
+		ipcRenderer.on('successfull_login',function(event,id, name){
 			user_id=id;
 			online_login.style.display="none";
 			local_password.style.display="block";
+			localStorage.setItem('name',name);
 		});
 
 		ipcRenderer.on('local_password_saved',function(event,id){
-			window.location.assign("../index.html");
+			window.location.assign("../create_contract.html");
 		});
+		ipcRenderer.on('no_internet',function(event){
+			alert("Internet tarmog\'ini tekshiring");
+		});
+		ipcRenderer.on('wrong_credentials',function(event){
+			alert("Noto\'g\'ri login yoki parol terilgan");
+		});
+		
 	</script>
 </body>
 </html>
