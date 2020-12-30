@@ -1,5 +1,6 @@
 const { app, BrowserWindow, ipcMain} = require('electron');
 const { beneficiar_create } = require('./controllers/beneficiar_controller.js');
+const { insurant_create } = require('./controllers/insurant_controller.js');
 const {login,set_local_password,local_password_init, check_local_pass} = require('./controllers/user_controller.js');
 const {create}=require("./controllers/contract_controller.js");
 
@@ -60,5 +61,8 @@ ipcMain.on('contract_create', (event, payload) => {
 // Shoh functions
 ipcMain.on('beneficiar_create', (came, mainWindow) => {
   beneficiar_create(came, mainWindow)
+});
+ipcMain.on('insurant_create', (came, mainWindow) => {
+  insurant_create(came, mainWindow)
 });
 // Shoh functions

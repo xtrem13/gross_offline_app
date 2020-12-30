@@ -4,7 +4,7 @@ const Insurant = require('../models/insurant.js');
 const axios = require('axios');
 const md5 = require('md5');
 
-const client_controller = () => {
+const insurant_controller = () => {
 
     const create = async (win, arg) => {
 
@@ -18,7 +18,7 @@ const client_controller = () => {
 
     }
     return {
-        beneficiar_create: create
+        insurant_create: create
     }
 }
-module.exports = client_controller();
+module.exports = insurant_controller();
