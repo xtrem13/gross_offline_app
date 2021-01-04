@@ -11,6 +11,11 @@
 			Срок действия: <span id="contract_day"></span> дня(ей)
 		</li>
 	</ul>
+	<div class="pull-right">
+		<div class="btn btn-success">
+			Save
+		</div>
+	</div>
 	<table class="table">
 		<thead>
 			<th>Вид страхования</th>
@@ -31,14 +36,14 @@
 		<table>
 			<tr id="premiya_row">
 				<td>Страхование транспортных средств, выставляемых в залог</td>
-				<td></td>
-				<td><input type="number" class="premiya_percent"></td>
-				<td></td>
+				<td><input type="number"><!--straxovaya summa--></td>
+				<td><input type="number" class="premiya_percent"><!--premiya percent--></td>
+				<td><!--premiya--></td>
 				<td>1</td>
-				<td></td>
-				<td></td>
-				<td></td>
-				<td></td>
+				<td><input type="checkbox"></td>
+				<td><!--franshiza usloviya--></td>
+				<td><input type="number" disabled><!--franshiza percent--></td>
+				<td><!--franshiza summa--></td>
 			</tr>
 		</table>		
 	</div>
@@ -60,19 +65,38 @@
 		const init = () =>{
 			let contract_id=window.localStorage.getItem('contract_id');
 			ipcRenderer.send('load_objects', contract_id);
+
 			ipcRenderer.on('load_objects_resp', (event, transports)=>{
+
 				transports.forEach((element, index)=>{
 					if(loaded_transports.includes(element.id)){
 						return ;
 					}
 					let tr=premiya_row.cloneNode(true);
-					tr.children[1].innerHTML=element.dataValues.TB_STOIMOST;
+					// tr.children[1].innerHTML=element.dataValues.TB_STOIMOST;
 
 					tr.children[2].children[0].addEventListener('keyup', (event)=>{
-						event.target.parentNode.parentNode.children[3].innerHTML=element.dataValues.TB_STOIMOST*event.target.value/100;
-					})
+						event.target.parentNode.parentNode.children[3].innerHTML=
+						parseFloat(event.target.parentNode.parentNode.children[1].children[0].value)*event.target.value/100;
+					});
 
-					loaded_transports.push(element.id);
+					tr.children[5].children[0].addEventListener('click', (event)=>{
+						if(event.target.checked){
+							tr.children[7].children[0].disabled=false;
+							tr.children[7].children[0].value="";
+							event.target.parentNode.parentNode.children[8].innerHTML="";
+						}else{
+							tr.children[7].children[0].disabled=true;
+						}
+					});
+
+					tr.children[7].children[0].addEventListener('keyup', (event)=>{
+						event.target.parentNode.parentNode.children[8].innerHTML=
+						parseFloat(event.target.parentNode.parentNode.children[1].children[0].value)*event.target.value/100;
+					});
+
+
+					loaded_transports.push(element.dataValues.id);
 
 					premiya_list.appendChild(tr);
 				});
