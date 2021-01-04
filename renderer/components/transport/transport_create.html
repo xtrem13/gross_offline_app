@@ -1,0 +1,155 @@
+<div>
+	<form action="#" id="transport_form">
+		<div class="row">
+			<div class="col-md-3">
+				<div class="form-group">
+					<span>Регистрационный номер</span>
+					<input type="text" name="REGNUMBER" class="form-control">
+				</div>
+			</div>
+			<div class="col-md-3">
+				<div class="form-group">
+					<span>Год</span>
+					<input type="text" name="TB_YEAR" class="form-control">
+				</div>
+			</div>
+			<div class="col-md-3">
+				<div class="form-group">
+					<span>Номер кузова</span>
+					<input type="text" name="TB_KUZOV" class="form-control">
+				</div>
+			</div>
+			<div class="col-md-3">
+				<div class="form-group">
+					<span>Номер шасси</span>
+					<input type="text" name="TB_SHASSI" class="form-control">
+				</div>
+			</div>
+			<div class="col-md-3">
+				<div class="form-group">
+					<span>Номер двигателя</span>
+					<input type="text" name="TB_DVIGATEL" class="form-control">
+				</div>
+			</div>
+			<div class="col-md-3">
+				<div class="form-group">
+					<span>Марка</span>
+					<input type="text" name="TB_MARKA" class="form-control">
+				</div>
+			</div>
+			<div class="col-md-3">
+				<div class="form-group">
+					<span>Модел</span>
+					<input type="text" name="TB_MODEL" class="form-control">
+				</div>
+			</div>
+			<div class="col-md-3">
+				<div class="form-group">
+					<span>Тип</span>
+					<input type="text" name="TB_TYPE_LABEL" class="form-control">
+				</div>
+			</div>
+			<div class="col-md-3">
+				<div class="form-group">
+					<span>Мощность</span>
+					<input type="text" name="TB_MOSCH" class="form-control">
+				</div>
+			</div>
+			<div class="col-md-3">
+				<div class="form-group">
+					<span>Стоимость</span>
+					<input type="text" name="TB_STOIMOST" class="form-control">
+				</div>
+			</div>
+			<div class="col-md-3">
+				<div class="form-group">
+					<span>Цвет</span>
+					<input type="text" name="TB_COLOR" class="form-control">
+				</div>
+			</div>
+			<div class="col-md-3">
+				<div class="form-group">
+					<span>Серия тех паспорта</span>
+					<input type="text" name="TB_TEXPSERY" class="form-control">
+				</div>
+			</div>
+			<div class="col-md-3">
+				<div class="form-group">
+					<span>Номер техпаспорта</span>
+					<input type="text" name="TB_TEXPNUMBER" class="form-control">
+				</div>
+			</div>
+			<div class="col-md-3">
+				<div class="form-group">
+					<span>Дата выдачи техпаспорта</span>
+					<input type="date" name="TB_TEXPDATE" class="form-control">
+				</div>
+			</div>
+			<div class="col-md-12">
+				<div class="form-group">
+					<span>Комментарии</span>
+					<textarea type="text" name="TB_COMMENT" class="form-control" rows="3"></textarea>
+				</div>
+			</div>
+			<div class="col-md-12">
+				<div class="form-group">
+					<span>Дефекты</span>
+					<textarea type="text" name="TB_DEFECTOPIS" class="form-control" rows="3"></textarea>
+				</div>
+			</div>
+		</div>
+		<button type="button" class="btn btn-success pull-right" id="transport_create_btn">Сохранить</button>
+	</form>
+</div>
+<script>
+	const transport_create=()=>{
+		const {ipcRenderer}=require('electron');
+		const transport_form=document.getElementById("transport_form");
+		const transport_create_btn=document.getElementById("transport_create_btn");
+
+		transport_create_btn.addEventListener("click", (event)=>{
+			if(validate()){
+				let contract_id=window.localStorage.getItem('contract_id');
+				
+				const transport_form_data = new FormData(transport_form);
+				var object = {};
+				transport_form_data.forEach(function (value, key) {
+					object[key] = value;
+				});
+				ipcRenderer.send("transport_create", object, contract_id);
+				$("#transport_modal").modal('hide');
+			}else{
+				alert("please fill all the fields")
+			}
+		});
+
+		window.addEventListener("transport_form_clear",()=>{
+			clear_form();
+		})
+
+		const clear_form=()=>{
+			let inputs=transport_form.getElementsByTagName("input");
+			for (var i = inputs.length - 1; i >= 0; i--) {
+				inputs[i].value=""
+			}
+		}
+		const validate=()=>{
+			let inputs=transport_form.getElementsByTagName("input");
+			for (var i = inputs.length - 1; i >= 0; i--) {
+				if(inputs[i].value==""){
+					return false;
+				}
+			}
+			return true;
+		}
+		
+	}
+	transport_create();
+
+
+	// ipcRenderer.send("loadTransport");
+	// ipcRenderer.on("loadTransportReply", function(event, transport){
+	// 	console.log(transport);
+	// });
+	
+</script>

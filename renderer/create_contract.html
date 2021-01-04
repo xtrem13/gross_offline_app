@@ -57,53 +57,12 @@
 													</div>
 												</div>
 												<div class="tab-pane" id="object">
-													<h3>
-														Траспортное (ые) средство (а)
-														<button class="pull-right btn btn-warning">Создать</button>
-													</h3>
-													<table class="table">
-														<thead>
-															<th>Марка и Модель</th>
-															<th>Регистр. №</th>
-															<th>Год выпуска</th>
-															<th>Цвет, № кузова (шасси)</th>
-															<th>№ двигателя</th>
-															<th>№ тех. паспорта</th>
-															<th>Стоимость ТС</th>
-															<th>Противоугонная сигнализация</th>
-															<th>Водители № доверенности, прав (категория)</th>
-															<th>Примечания (наличие повреждений)</th>
-														</thead>
-													</table>
+													<div id="transport">
+
+													</div>
 												</div>
 												<div class="tab-pane" id="contract">
-													<ul>
-														<li>
-															Номер договора:10/21/1000
-														</li>
-														<li>Дата подписания: 26.12.2020г.</li>
-														<li>
-															Период страхования: с 26.12.2020г. по 25.12.2021г.
-														</li>
-														<li>
-															Срок действия: 365 дня(ей)
-														</li>
-													</ul>
-													<table class="table">
-														<thead>
-															<th>
-																Страхование транспортных средств, выставляемых в залог
-															</th>
-															<th>Страховая сумма</th>
-															<th>Премия, %</th>
-															<th>Премия</th>
-															<th>Кол-во объектов</th>
-															<th>Франшиза</th>
-															<th>Фр.условная</th>
-															<th>Франшиза %</th>
-															<th>Фр.сумма</th>
-														</thead>
-													</table>
+													<div id="premiya"></div>
 												</div>
 												<div class="tab-pane" id="payment">
 													<div class="form-group">
@@ -137,7 +96,7 @@
 																<input type="number" class="form-control" min="0" id="amount">
 																<br>
 																<span id="amount_words" style="text-align: left"></span>
-																 UZS
+																UZS
 															</div>
 															<div class="col-md-3">
 																<span>Вид оплаты: </span>
@@ -291,6 +250,26 @@
 			</div>
 		</div>
 	</div>
+	<div class="modal" id="transport_modal">
+		<div class="modal-dialog modal-xl">
+			<div class="modal-content">
+				<!-- Modal Header -->
+				<div class="modal-header">
+					<h4 class="modal-title">Transport</h4>
+					<button type="button" class="close" data-dismiss="modal">&times;</button>
+				</div>
+				<!-- Modal body -->
+				<div class="modal-body">
+					<div id="transport_create">
+					</div>
+				</div>
+				<!-- Modal footer -->
+				<div class="modal-footer">
+					<button type="button" class="btn btn-danger" data-dismiss="modal">Закрыт</button>
+				</div>
+			</div>
+		</div>
+	</div>
 
 	<!-- Insert this line above script imports  -->
 	<script>if (typeof module === 'object') {window.module = module; module = undefined;}</script>
@@ -304,17 +283,20 @@
 
 	<!--  More information about jquery.validate here: http://jqueryvalidation.org/	 -->
 	<script src="../assets/stepper/js/jquery.validate.min.js"></script>
-	<script src="../helpers.js"></script>
+	
 	<script>
-
+		const {include}=require("../helpers.js");
 		//include elements
 		(async ()=>{
-			await include("./components/common.html","common");
-			await include("./components/sidebar.html","sidebar");
-			await include("./components/top.html","top");
-			await include("./components/beneficiar_create.html", "beneficiar_create");
-			await include("./components/insurant_create.html", "insurant_create");
-
+			await include("./components/common/common.html","common");
+			await include("./components/transport/transport.html","transport");
+			await include("./components/layout/sidebar.html","sidebar");
+			await include("./components/layout/top.html","top");
+			await include("./components/common/beneficiar/beneficiar_create.html", "beneficiar_create");
+			await include("./components/common/insurant/insurant_create.html", "insurant_create");
+			await include("./components/transport/transport_create.html", "transport_create");
+			await include("./components/premiya/premiya.html", "premiya");
+			
 			const inputs=document.getElementsByTagName("input");
 			for (var i = 0; i < inputs.length; i++) {
 				inputs[i].addEventListener("keydown", function(event){
@@ -324,7 +306,8 @@
 					}
 				})
 			}
-		var numberToString = require('number-to-cyrillic');
+
+			var numberToString = require('number-to-cyrillic');
 
 		// const active_lang=document.getElementById('active-lang');
 		const nextBtn=document.getElementById("nextBtn");
@@ -337,6 +320,8 @@
 		const full_toggler=document.getElementById("full_toggler");
 		const wrapper=document.getElementsByClassName("wrapper")[0];
 		const amount=document.getElementById("amount");
+
+
 		// nextBtn.addEventListener("click", function(){
 		// 	stepSaver();
 		// });
@@ -365,22 +350,7 @@
 			document.getElementById("amount_words").innerHTML=numberToString.convert(amount.value,{
 				language:'ru'
 			}).convertedInteger;
-		})
-		// function stepSaver(){
-		// 	let active_pane;
-		// 	for(let i=0;i<tabPanes.length;i++){
-		// 		if(tabPanes[i].classList.contains('active')){
-		// 			active_pane=tabPanes[i];
-		// 			break;
-		// 		}
-		// 	}
-		// 	console.log(active_pane);
-		// 	switch(active_pane.id){
-		// 		case 'commonTab':
-		// 			console.log("working");
-		// 			break;
-		// 	}
-		// }
+		});
 		function toggle_lang_options(event){
 			event.stopPropagation();
 			if(lang_options.style.display=='block'){

@@ -87,6 +87,13 @@ $(document).ready(function(){
         },
 
         onTabShow: function(tab, navigation, index) {
+            let tabEvent=new CustomEvent("tab_change",{
+                detail:{
+                    tab:index
+                }
+            });
+            window.dispatchEvent(tabEvent);
+
             var $total = navigation.find('li').length;
             var $current = index+1;
 

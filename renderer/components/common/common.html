@@ -133,7 +133,6 @@
 			object[key] = value;
 		});
 		var sended = JSON.stringify(object);
-		console.log(sended);
 		ipcRenderer.send("contract_create", sended)
 	}
 
@@ -176,16 +175,12 @@
 
 	// listeners
 
-	ipcRenderer.on('contract_saved',function(event){
+	ipcRenderer.on('contract_saved',function(event, id){
 		save_button.style.display="none";
 		alert("Контракт сохранен");
+		window.localStorage.setItem('contract_id', id);
 	});
-	ipcRenderer.on('beneficiar_saved',function(event, beneficiar){
-		console.log(beneficiar)
-		alert("Бенефициар сохранен");
-		document.getElementById("beneficiar_input").value=beneficiar.dataValues.id;
-		document.getElementById("beneficiar_label").innerHTML=beneficiar.dataValues.TB_ORGNAME;
-	});
+	
 	ipcRenderer.on('insurant_saved',function(event, insurant){
 		alert("Страхователь сохранен");
 		document.getElementById("insurant_input").value=insurant.dataValues.id;

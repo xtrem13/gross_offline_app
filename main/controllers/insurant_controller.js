@@ -18,8 +18,14 @@ const insurant_controller = () => {
         }
 
     }
-    return {
-        insurant_create: create
+     const list = async (event, win) => {
+        const beneficiars= await Insurant.findAll();
+        win.webContents.send('insurant_list_resp',beneficiars);
     }
+    return {
+        insurant_create: create,
+        insurant_list: list
+    }
+    
 }
 module.exports = insurant_controller();

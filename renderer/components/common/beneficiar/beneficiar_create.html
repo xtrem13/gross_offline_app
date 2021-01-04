@@ -1,0 +1,285 @@
+<div id="beneficiar">
+    <div>
+        <div class="pull-right">
+            <button class="btn btn-success" id="createBtn">CREATE</button>
+        </div>
+        <div id="list">
+            <table class="table" >
+                <thead>
+                    <th>Name</th>
+                    <th>INN</th>
+                    <th width="20%">Action</th>
+                </thead>
+                <tbody id="beneficiar_list">
+
+                </tbody>
+            </table>
+        </div>
+        <form action="javascript:void(0)" method="POST" id="ben">
+            <div class="row">
+                <div class="col-12 form-check">
+                    <label for="">Резидент</label>
+                    <label class="form-check-label">Да</label>
+                    <input type="radio" class="form-check-input" name="TB_REZIDENT" value="1">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    <label class="form-check-label">Нет</label>&nbsp;
+                    <input type="radio" class="form-check-input" name="TB_REZIDENT" value="0">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-4">
+                    <label for="">ИНН</label><br>
+                    <input class="form-control" id="TB_ORGINN" maxlength="9" name="TB_ORGINN" type="number">
+                </div>
+                <div class="col-8">
+                    <label for="">Наименование организации</label><br>
+                    <input class="form-control" id="TB_ORGNAME" name="TB_ORGNAME" type="text">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-4">
+                    <label for="">ОКОНХ</label><br>
+                    <input class="form-control" id="TB_KOD_OKONX" maxlength="5" name="TB_KOD_OKONX" type="number">
+                </div>
+                <div class="col-8">
+                    <label for="">ОКЕД</label><br>
+                    <input class="form-control" id="TB_KOD_OKED" maxlength="5" name="TB_KOD_OKED" type="number">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-4">
+                    <label for="">МФО</label><br>
+                    <input class="form-control" id="TB_ORGMFO" maxlength="5" name="TB_ORGMFO" type="number">
+                </div>
+                <div class="col-4">
+                    <label for="">Банк</label><br>
+                    <input class="form-control" id="TB_ORGBANK" name="TB_ORGBANK" type="text">
+                </div>
+                <div class="col-4">
+                    <label for="">Расчётный счёт</label><br>
+                    <input class="form-control" id="TB_ORGSCHET" name="TB_ORGSCHET" type="number">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-4">
+                    <label for="">ОКПО</label><br>
+                    <input class="form-control" id="TB_KOD_OKPO" name="TB_KOD_OKPO" type="number">
+                </div>
+                <div class="col-8">
+                    <label for="">СОАТО</label><br>
+                    <input class="form-control" id="TB_KOD_SOATO" name="TB_KOD_SOATO" type="text">
+                </div>
+            </div>
+            <div class="row from-group">
+                <div class="col-4"><br>
+                    <label for="">Директор</label><br>
+                    <input class="form-control" id="TB_DIREKTOR" name="TB_DIREKTOR" type="text">
+                </div>
+                <div class="col-8"><br>
+                    <label for="">Бухгалтер</label><br>
+                    <input class="form-control" id="TB_BUHGALTER" name="TB_BUHGALTER" type="text">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-4">
+                    <label for="TB_BASIS">Действует на основании</label>
+                    <input class="form-control" id="TB_BASIS" name="TB_BASIS" type="text">
+                </div>
+                <div class="col-8 form-check">
+                    <label class="form-check-label">Банк</label>&nbsp;
+                    <input name="TB_ISBANK" type="checkbox" class="form-check-input" value="1">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-3">
+                    <label for="">Страна</label><br>
+                    <input class="form-control" id="TB_COUNTRY" name="TB_COUNTRY" type="text">
+                </div>
+                <div class="col-3">
+                    <label for="">Область</label><br>
+                    <input class="form-control" id="TB_OBLAST" name="TB_OBLAST" type="text">
+                </div>
+                <div class="col-3">
+                    <label for="">Район/город</label><br>
+                    <input class="form-control" id="TB_RAYON" name="TB_RAYON" type="text">
+                </div>
+                <div class="col-3">
+                    <label for="">Улица/Квартал</label><br>
+                    <input class="form-control" id="TB_ULICA" name="TB_ULICA" type="text">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-3">
+                    <label for="">Дом</label><br>
+                    <input class="form-control" id="TB_DOM" name="TB_DOM" type="text">
+                </div>
+                <div class="col-3">
+                    <label for="">Квартира</label><br>
+                    <input class="form-control" id="TB_KV" name="TB_KV" type="text">
+                </div>
+                <div class="col-3">
+                    <label for="">E-mail</label><br>
+                    <input class="form-control" id="TB_EMAIL" name="TB_EMAIL" type="text">
+                </div>
+                <div class="col-3">
+                    <label for="">Сайт</label><br>
+                    <input class="form-control" id="TB_SITE" name="TB_SITE" type="text">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-3">
+                    <label for="">Почтовый индекс</label><br>
+                    <input class="form-control" id="TB_POCHTA" name="TB_POCHTA" type="text">
+                </div>
+                <div class="col-3">
+                    <label for="">Телефон 1</label><br>
+                    <input class="form-control phone" id="TB_PHONE1" name="TB_PHONE1" type="text">
+                </div>
+                <div class="col-3">
+                    <label for="">Телефон 2</label><br>
+                    <input class="form-control phone" id="TB_PHONE2" name="TB_PHONE2" type="text">
+                </div>
+                <div class="col-3">
+                    <label for="">Факс</label><br>
+                    <input class="form-control phone" id="TB_FAX" name="TB_FAX" type="text">
+                </div>
+            </div>
+            <button class="btn btn-success pull-right" type="submit" id="submit_button">Сохранить</button>
+        </form>
+    </div>
+    
+    
+    <script src="../../assets/stepper/js/jquery-2.2.4.min.js" type="text/javascript"></script>   
+</div>
+<script>
+    // event binding
+    
+
+    const beneficiar_create_component=()=> {
+        //variable const declarations
+
+        const { ipcRenderer } = require('electron');
+        const form=document.getElementById("ben");
+        const list=document.getElementById("list");
+        const createBtn=document.getElementById("createBtn");
+        const submit_button = document.getElementById("submit_button");
+        const beneficiar=document.getElementById("beneficiar");
+        const beneficiar_list=document.getElementById("beneficiar_list");
+        var user_id;
+        var formState;
+
+        
+
+
+        createBtn.addEventListener("click",function(event){
+            toggleForm(event);
+        });
+
+        submit_button.addEventListener("click", function (e) {
+            e.preventDefault()
+            getFormData()
+        });
+
+        ipcRenderer.on("beneficiar_list_resp",function(event, beneficiars){
+            for (let i = 0; i < beneficiars.length; i++) {
+                let tr=document.createElement("tr");
+                let tdName=document.createElement('td');
+                let tdINN=document.createElement('td');
+                let tdBtn=document.createElement("td");
+                let btn=document.createElement("button");
+
+                tdName.innerHTML=beneficiars[i].dataValues.TB_ORGNAME;
+                tdINN.innerHTML=beneficiars[i].dataValues.TB_ORGINN
+                tdBtn.appendChild(btn);
+                btn.classList.add("btn");
+                btn.classList.add("btn-info");
+                btn.innerHTML="Choose";
+
+                btn.addEventListener("click", function(event){
+                    choose(beneficiars[i].dataValues.id, beneficiars[i].dataValues.TB_ORGNAME);
+                });
+
+                tr.appendChild(tdName);
+                tr.appendChild(tdINN);
+                tr.appendChild(tdBtn);
+
+                beneficiar_list.appendChild(tr);
+            }   
+        });
+
+        ipcRenderer.on('beneficiar_saved',function(event, beneficiar){
+            alert("Бенефициар сохранен");
+            document.getElementById("beneficiar_input").value=beneficiar.dataValues.id;
+            document.getElementById("beneficiar_label").innerHTML=beneficiar.dataValues.TB_ORGNAME;
+        });
+
+        // functions
+
+
+        const choose = (id, name)=>{
+            document.getElementById("beneficiar_input").value=id;
+            document.getElementById("beneficiar_label").innerHTML=name;
+            $("#beneficiar_modal").modal('hide');
+        }
+        const init = () =>{
+            formState=false;
+
+            form.style.display="none";
+            ipcRenderer.send("beneficiar_list");
+        }    
+       
+        const getFormData=()=>{
+            if(!validate()){
+                return false;
+            }
+            const myform = new FormData(document.querySelector('form#ben'))
+            var object = {};
+            myform.forEach(function (value, key) {
+                object[key] = value;
+            });
+            ipcRenderer.send("beneficiar_create", object)
+            $("#beneficiar_modal").modal('hide');
+        }
+        const validate=()=>{
+            let form=document.getElementById("ben");
+            let inputs=form.getElementsByTagName("input");
+
+            for(let i=0;i<inputs.length;i++){
+                if(inputs[i].value===""){
+                    alert("Пожалуйста, заполните все поля");
+                    return false;
+                }
+            }
+            return true;
+        }
+        const phone_validate=(evt)=>{
+            var charCode = (evt.which) ? evt.which : evt.keyCode
+            if ((charCode >= 48 && charCode <= 57)||evt.key=="+")
+                return true
+            evt.preventDefault();
+        }
+        const toggleForm=(event)=>{
+            
+            if(formState){
+                formState=false;
+                event.target.innerHTML="CREATE"
+                list.style.display="block";
+                form.style.display="none";
+                return 0;
+            }
+            formState=true;
+            event.target.innerHTML="BACK TO THE LIST"
+            list.style.display="none";
+            form.style.display="block";
+            return 0;
+        }
+
+
+         init();
+    }
+
+        
+    beneficiar_create_component();
+
+    
+    
+</script>

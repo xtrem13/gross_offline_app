@@ -1,0 +1,92 @@
+<div>
+	<ul>
+		<li>
+			Номер договора:<span id="contract_number"></span>
+		</li>
+		<li>Дата подписания: <span id="contract_date"></span>г.</li>
+		<li>
+			Период страхования: с <span id="contract_datef"></span>г. по <span id="contract_datet"></span>г.
+		</li>
+		<li>
+			Срок действия: <span id="contract_day"></span> дня(ей)
+		</li>
+	</ul>
+	<table class="table">
+		<thead>
+			<th>Вид страхования</th>
+			<th>Страховая сумма</th>
+			<th>Премия, %</th>
+			<th>Премия</th>
+			<th>Кол-во объектов</th>
+			<th>Франшиза</th>
+			<th>Фр.условная</th>
+			<th>Франшиза %</th>
+			<th>Фр.сумма</th>
+		</thead>
+		<tbody id="premiya_list">
+			
+		</tbody>
+	</table>
+	<div style="display: none">
+		<table>
+			<tr id="premiya_row">
+				<td>Страхование транспортных средств, выставляемых в залог</td>
+				<td></td>
+				<td><input type="number" class="premiya_percent"></td>
+				<td></td>
+				<td>1</td>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td></td>
+			</tr>
+		</table>		
+	</div>
+</div>
+<script>
+	const premiya=()=>{
+		const get=(id)=>{
+			return document.getElementById(id);
+		}
+		const {ipcRenderer}=require('electron');
+		const contract_number=get('contract_number');
+		const contract_date=get('contract_date');
+		const contract_datef=get('contract_datef');
+		const contract_datet=get('contract_datet');
+		const contract_day=get('contract_day');
+		const premiya_row=get('premiya_row');
+		const premiya_list=get('premiya_list');
+		let loaded_transports=[];
+		const init = () =>{
+			let contract_id=window.localStorage.getItem('contract_id');
+			ipcRenderer.send('load_objects', contract_id);
+			ipcRenderer.on('load_objects_resp', (event, transports)=>{
+				transports.forEach((element, index)=>{
+					if(loaded_transports.includes(element.id)){
+						return ;
+					}
+					let tr=premiya_row.cloneNode(true);
+					tr.children[1].innerHTML=element.dataValues.TB_STOIMOST;
+
+					tr.children[2].children[0].addEventListener('keyup', (event)=>{
+						event.target.parentNode.parentNode.children[3].innerHTML=element.dataValues.TB_STOIMOST*event.target.value/100;
+					})
+
+					loaded_transports.push(element.id);
+
+					premiya_list.appendChild(tr);
+				});
+			});
+		}
+		
+
+		
+
+		window.addEventListener('tab_change', (event)=>{
+			if(event.detail.tab==2){
+				init();
+			}
+		})
+	}
+	premiya();
+</script>

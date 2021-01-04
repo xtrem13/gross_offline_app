@@ -13,7 +13,7 @@ const Insurant = sequelize.define('Insurant', {
         defaultValue: true
     },
     TB_ORGINN: {
-        type: DataTypes.BIGINT(9),
+        type: DataTypes.STRING,
         allowNull: true
     },
     TB_PINFL: {

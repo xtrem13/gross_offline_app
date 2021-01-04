@@ -1,0 +1,314 @@
+<div id="insurant">
+    <div>
+        <div class="pull-right">
+            <button class="btn btn-success" id="insCreateBtn">CREATE</button>
+        </div>
+        <div id="inslist">
+            <table class="table" >
+                <thead>
+                    <th>Name</th>
+                    <th>INN</th>
+                    <th width="20%">Action</th>
+                </thead>
+                <tbody id="insurant_list">
+
+                </tbody>
+            </table>
+        </div>
+        <form action="javascript:void(0)" method="POST" id="ins">
+            <div class="row">
+                <div class="col-12">
+                    <label for="">Резидент</label>
+                    <label class="form-check-label">Да</label>
+                    <input type="radio" class="form-check-input" name="TB_REZIDENT" value="1" id="TB_REZIDENT_ON">
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    <label class="form-check-label">Нет</label>
+                    <input type="radio" class="form-check-input" name="TB_REZIDENT" value="0" id="TB_REZIDENT_OFF">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-3">
+                    <label for="">Паспорт серия</label><br>
+                    <input class="form-control" name="TB_PASPSERY" id="TB_PASPSERY" type="text" maxlength="2" style="width:50px;display:inline;text-transform: uppercase;">
+                    <input class="form-control" name="TB_PASPNUMBER" id="TB_PASPNUMBER" type="number" maxlength="7">
+                </div>
+                <div class="col-3" id="PINFL">
+                    <label for="">ПИНФЛ</label>
+                    <input class="form-control" name="TB_PINFL" id="TB_PINFL" type="text" maxlength="14" minlength="14">
+                </div>
+                <div class="col-3">
+                    <label for="">Паспорт,кем выдан</label>
+                    <input class="form-control" name="TB_PASPVIDAN" id="TB_PASPVIDAN" type="text" >
+                </div>
+                <div class="col-3">
+                    <label for="">Когда выдан</label>
+                    <input class="form-control" name="TB_PASPDATE" id="TB_PASPDATE" type="date">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-3">
+                    <label for="">Фамилия</label><br>
+                    <input class="form-control" name="TB_SURNAME" id="TB_SURNAME" type="text">
+                </div>
+                <div class="col-3">
+                    <label for="">Имя</label><br>
+                    <input class="form-control" name="TB_NAME" id="TB_NAME" type="text">
+                </div>
+                <div class="col-3">
+                    <label for="">Отчество</label><br>
+                    <input class="form-control" name="TB_PATRONYM" id="TB_PATRONYM" type="text">
+                </div>
+                <div class="col-md-3"></div>
+            </div>
+            <div class="row">
+                <div class="col-3">
+                    <label for="">Пол</label>
+                    <select name="TB_SEX" id="TB_SEX" class="form-control">
+                        <option value="1">Муж</option>
+                        <option value="0">Жен</option>
+                    </select>
+                </div>
+                <div class="col-3">
+                    <label for="">Дата рождения</label>
+                    <input class="form-control" name="TB_DATEBIRTH" id="TB_DATEBIRTH" type="date">
+                </div>
+                <div class="col-3">
+                    <label for="">Вод. права</label><br>
+                    <input class="form-control" name="TB_PRAVA_SERY" id="TB_PRAVA_SERY" type="text" style="width:50px;display:inline-block;text-transform: uppercase;" maxlength="2">
+                    <input class="form-control" name="TB_PRAVA_NUMBER" id="TB_PRAVA_NUMBER" type="number" style="width:initial;display:inline-block;" maxlength="6">
+                </div>
+                <div class="col-3">
+                    <label for="">от</label><br>
+                    <input class="form-control" name="TB_PRAVA_DATE" id="TB_PRAVA_DATE" type="date">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-3 form-check">
+                    <label class="form-check-label">ЧП</label>
+                    &nbsp;
+                    <input name="TB_CHP" type="checkbox" class="form-check-input" value="1">
+                </div>
+                <div class="col-3">
+                    <label for="">Удоств.предп</label>
+                    <input class="form-control" name="TB_CERTIFICATE" id="TB_CERTIFICATE" type="text">
+                </div>
+                <div class="col-3">
+                    <label for="">Дата выдачи</label>
+                    <input class="form-control" name="TB_CERT_BEGIN" id="TB_CERT_BEGIN" type="date">
+                </div>
+                <div class="col-3">
+                    <label for="">Дата окончания</label>
+                    <input class="form-control" name="TB_CERT_END" id="TB_CERT_END" type="date">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-3">
+                    <label for="">Страна</label>
+                    <input class="form-control" name="TB_COUNTRY" id="TB_COUNTRY" type="text">
+                </div>
+                <div class="col-3">
+                    <label for="">Область</label>
+                    <input class="form-control" name="TB_OBLAST" id="TB_OBLAST" type="text">
+                </div>
+                <div class="col-3">
+                    <label for="">Район/Город</label>
+                    <input class="form-control" name="TB_RAYON" id="TB_RAYON" type="text">
+                </div>
+                <div class="col-3"></div>
+            </div>
+            <div class="row">
+                <div class="col-3">
+                    <label for="">Улица/квартал</label><br>
+                    <input class="form-control" name="TB_ULICA" id="TB_ULICA" type="text">
+                </div>
+                <div class="col-3">
+                    <label for="">Дом</label><br>
+                    <input class="form-control" name="TB_DOM" id="TB_DOM" type="text">
+                </div>
+                <div class="col-3">
+                    <label for="">Квартира</label><br>
+                    <input class="form-control" name="TB_KV" id="TB_KV"  type=" text">
+                </div>
+                <div class="col-3">
+                    <label for="">E-mail</label><br>
+                    <input class="form-control" name="TB_EMAIL" id="TB_EMAIL"  type="email">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-3">
+                    <label for="">Сайт</label><br>
+                    <input class="form-control" id="TB_SITE" name="TB_SITE" type="text">
+                </div>
+                <div class="col-3">
+                    <label for="">Почтовый индекс</label>
+                    <input class="form-control" id="TB_POCHTA" name="TB_POCHTA" type="text">
+                </div>
+                <div class="col-3">
+                    <label for="">Телефон 1</label>
+                    <input class="form-control phone" id="TB_PHONE1" name="TB_PHONE1" type="text" maxlength="13">
+                </div>
+                <div class="col-3">
+                    <label for="">Телефон 2</label>
+                    <input class="form-control phone" id="TB_PHONE2" name="TB_PHONE2" type="tel" maxlength="13">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12">
+                    <label for="">Факс</label><br>
+                    <input class="form-control phone" id="TB_FAX" name="TB_FAX" type="text">
+                </div>
+            </div>
+            <button class="btn btn-success pull-right" type="submit" id="submitter_button">Сохранить</button>
+        </form>
+    </div>
+    <script src="../../assets/stepper/js/jquery-2.2.4.min.js" type="text/javascript"></script>
+</div>
+<script>
+    const insurant_component=()=>{
+        const { ipcRenderer } = require('electron');
+        const submit_button = document.getElementById("submitter_button");
+        const rezident_on=document.getElementById("TB_REZIDENT_ON");
+        const rezident_off=document.getElementById("TB_REZIDENT_OFF");
+        const TB_PASPSERY=document.getElementById("TB_PASPSERY");
+        const TB_PASPNUMBER=document.getElementById("TB_PASPNUMBER");
+        const TB_PRAVA_SERY=document.getElementById("TB_PRAVA_SERY");
+        const TB_PRAVA_NUMBER=document.getElementById("TB_PRAVA_NUMBER");
+        const phones=document.getElementsByClassName("phone");
+       
+        const insurant=document.getElementById("insurant");
+        const insurant_list=document.getElementById("insurant_list");
+        const insCreateBtn=document.getElementById("insCreateBtn");
+        var user_id;
+        var formState;
+
+
+
+        const list=document.getElementById("inslist");
+        const form=document.getElementById("ins");
+        
+
+        insCreateBtn.addEventListener("click",(event)=>{
+            toggleForm(event);
+        });
+
+        for(let i=0;i<phones.length;i++){
+            phones[i].addEventListener("keypress", (event)=>{
+                return phone_validate(event);
+            })
+        }
+        rezident_on.addEventListener("change", (e)=>{
+            document.getElementById("PINFL").style.display="block";
+            document.getElementById("TB_PINFL").style.display="block";
+        });
+        rezident_off.addEventListener("change", (e)=>{
+            document.getElementById("PINFL").style.display="none";
+            document.getElementById("TB_PINFL").style.display="none";
+        })
+
+        submit_button.addEventListener("click",  (e)=> {
+            e.preventDefault()
+            getFormData()
+        });
+
+        TB_PASPSERY.addEventListener("keyup", ()=>{
+            if(TB_PASPSERY.value.length==2){
+                TB_PASPNUMBER.focus();
+            }
+        });
+        TB_PRAVA_SERY.addEventListener("keyup", ()=>{
+            if(TB_PRAVA_SERY.value.length==2){
+                TB_PRAVA_NUMBER.focus();
+            }
+        });
+
+        ipcRenderer.on("insurant_list_resp",function(event, insurants){
+            
+            for (let i = 0; i < insurants.length; i++) {
+                let tr=document.createElement("tr");
+                let tdName=document.createElement('td');
+                let tdINN=document.createElement('td');
+                let tdBtn=document.createElement("td");
+                let btn=document.createElement("button");
+
+                tdName.innerHTML=insurants[i].dataValues.TB_ORGNAME;
+                tdINN.innerHTML=insurants[i].dataValues.TB_ORGINN
+                tdBtn.appendChild(btn);
+                btn.classList.add("btn");
+                btn.classList.add("btn-info");
+                btn.innerHTML="Choose";
+
+                btn.addEventListener("click", function(event){
+                    choose(insurants[i].dataValues.id, insurants[i].dataValues.TB_ORGNAME);
+                });
+
+                tr.appendChild(tdName);
+                tr.appendChild(tdINN);
+                tr.appendChild(tdBtn);
+
+                insurant_list.appendChild(tr);
+            }   
+        });
+
+        const init=()=>{
+            formState=false;
+            form.style.display="none";
+            ipcRenderer.send("insurant_list");
+        } 
+
+        const choose = (id, name)=>{
+            
+            document.getElementById("insurant_input").value=id;
+            document.getElementById("insurant_label").innerHTML=name;
+            $("#insurant_modal").modal('hide');
+        } 
+        const getFormData=()=>{
+            if(!validate()){
+                return false;
+            }
+            const myform = new formData(document.querySelector('form#ins'))
+            var object = {};
+            myform.forEach((value, key)=>{
+                object[key] = value;
+            });
+            
+            ipcRenderer.send("insurant_create", object)
+            $("#insurant_modal").modal('hide');
+        }
+        const validate=()=>{
+            let form=document.getElementById("ins");
+            let inputs=form.getElementsByTagName("input");
+
+            for(let i=0;i<inputs.length;i++){
+                if(inputs[i].value===""&&inputs[i].style.display!="none"){
+                    alert("Пожалуйста, заполните все поля");
+                    return false;
+                }
+            }
+            return true;
+        }
+        const phone_validate=(evt)=>{
+            var charCode = (evt.which) ? evt.which : evt.keyCode
+            if ((charCode >= 48 && charCode <= 57)||evt.key=="+")
+                return true
+            evt.preventDefault();
+        }
+        const toggleForm=(event)=>{
+            
+            if(formState){
+                formState=false;
+                event.target.innerHTML="CREATE"
+                list.style.display="block";
+                form.style.display="none";
+                return 0;
+            }
+            formState=true;
+            event.target.innerHTML="BACK TO THE LIST"
+            list.style.display="none";
+            form.style.display="block";
+            return 0;
+        }
+
+        init();
+    }
+    insurant_component();
+</script>

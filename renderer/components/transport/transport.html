@@ -1,0 +1,65 @@
+<div>
+	<h3>
+		Траспортное (ые) средство (а)
+		<button class="pull-right btn btn-warning" type="button" data-toggle="modal" data-target="#transport_modal" id="triggerClearBtn">Создать</button>
+	</h3>
+	<table class="table">
+		<thead>
+			<th>Марка и Модель</th>
+			<th>Регистр. №</th>
+			<th>Год выпуска</th>
+			<th colspan="2">Цвет, № кузова (шасси)</th>
+			<th>№ двигателя</th>
+			<th colspan="2">№ тех. паспорта</th>
+			<th>Стоимость ТС</th>
+			<th>Противоугонная сигнализация</th>
+			<th>Водители № доверенности, прав (категория)</th>
+			<th>Примечания (наличие повреждений)</th>
+		</thead>
+		<tbody id="transport_list">
+			
+		</tbody>
+	</table>
+	<div style="display: none">
+		<table>
+			<tr id="transport_row">
+				<td data-label="TB_MARKA"></td>
+				<td data-label="REGNUMBER"></td>
+				<td data-label="TB_YEAR"></td>
+				<td data-label="TB_COLOR"></td>
+				<td data-label="TB_KUZOV"></td>
+				<td data-label="TB_DVIGATEL"></td>
+				<td data-label="TB_TEXPSERY"></td>
+				<td data-label="TB_TEXPNUMBER"></td>
+				<td data-label="TB_STOIMOST"></td>
+				<td><input type="checkbox"></td>
+				<td><button type="button" class="btn btn-success">+</button></td>
+				<td data-label="TB_DEFECTOPIS"></td>
+			</tr>
+		</table>
+	</div>
+</div>
+<script>
+	const transport=()=>{
+		const {ipcRenderer} = require('electron');
+		const transport_list= document.getElementById("transport_list");
+		const rowTemplate=document.getElementById("transport_row");
+		const triggerClearBtn=document.getElementById('triggerClearBtn');
+
+		ipcRenderer.on("transport_create_resp", (event, transport)=>{
+			let tr=rowTemplate.cloneNode(true);
+			for(let i=0;i<tr.children.length;i++){
+				if(tr.children[i].dataset.label){
+					tr.children[i].innerHTML=transport.dataValues[tr.children[i].dataset.label];
+				}
+			}
+			transport_list.appendChild(tr);
+		});
+
+		triggerClearBtn.addEventListener("click", ()=>{
+			let event=new Event("transport_form_clear");
+			window.dispatchEvent(event);
+		});
+	}
+	transport();
+</script>

@@ -1,8 +1,7 @@
 const { ipcMain } = require('electron')
 const window = require('electron').BrowserWindow;
 const Beneficiar = require('../models/beneficiar.js');
-const axios = require('axios');
-const md5 = require('md5');
+
 
 const beneficiar_controller = () => {
 
@@ -18,8 +17,14 @@ const beneficiar_controller = () => {
         }
 
     }
-    return {
-        beneficiar_create: create
+    const list = async (event, win) => {
+        const beneficiars= await Beneficiar.findAll();
+        win.webContents.send('beneficiar_list_resp',beneficiars);
     }
+    return {
+        beneficiar_create: create,
+        beneficiar_list: list
+    }
+
 }
 module.exports = beneficiar_controller();

@@ -1,6 +1,8 @@
 const {app, BrowserWindow, ipcMain,Notification } = require('electron');
-const { beneficiar_create } = require('./controllers/beneficiar_controller.js');
-const { insurant_create } = require('./controllers/insurant_controller.js');
+const { beneficiar_create, beneficiar_list} = require('./controllers/beneficiar_controller.js');
+const { insurant_create, insurant_list} = require('./controllers/insurant_controller.js');
+const {transport_create}=require("./controllers/transport_controller.js");
+const {load_objects} = require("./controllers/premiya_controller.js");
 const {login,set_local_password,local_password_init, check_local_pass} = require('./controllers/user_controller.js');
 const {create}=require("./controllers/contract_controller.js");
 const dns=require('dns');
@@ -8,7 +10,7 @@ var internet=false;
 
 var mainWindow;
 async function createWindow() {
-  const win = new BrowserWindow({
+  const win = await new BrowserWindow({
     width: 800,
     height: 600,
     webPreferences: {
@@ -58,6 +60,24 @@ ipcMain.on('check_local_pass', (event, credentials) => {
 ipcMain.on('contract_create', (event, payload) => {
   create(event, payload, mainWindow);
 });
+
+ipcMain.on('beneficiar_list', (event) => {
+  beneficiar_list(event, mainWindow);
+});
+
+ipcMain.on('insurant_list', (event) => {
+  insurant_list(event, mainWindow);
+});
+
+ipcMain.on('transport_create', (event, args, contract_id) => {
+  transport_create(event, args, contract_id);
+});
+
+
+ipcMain.on('load_objects', (event, contract_id) => {
+  load_objects(event, contract_id);
+});
+
 
 
 // Shoh functions
